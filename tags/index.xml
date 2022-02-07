@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Щпаргалка</title>
+    <link>https://stavis-dev.github.io/tags/</link>
+    <description>Recent content in Tags on Щпаргалка</description>
+    <image>
+      <url>https://stavis-dev.github.io/papermod-cover.png</url>
+      <link>https://stavis-dev.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 07 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stavis-dev.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>programing</title>
+      <link>https://stavis-dev.github.io/tags/programing/</link>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stavis-dev.github.io/tags/programing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://stavis-dev.github.io/tags/python/</link>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stavis-dev.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>chia</title>
+      <link>https://stavis-dev.github.io/tags/chia/</link>
+      <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stavis-dev.github.io/tags/chia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://stavis-dev.github.io/tags/linux/</link>
+      <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stavis-dev.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Raspberry pi</title>
+      <link>https://stavis-dev.github.io/tags/raspberry-pi/</link>
+      <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stavis-dev.github.io/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>майнинг</title>
+      <link>https://stavis-dev.github.io/tags/%D0%BC%D0%B0%D0%B9%D0%BD%D0%B8%D0%BD%D0%B3/</link>
+      <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stavis-dev.github.io/tags/%D0%BC%D0%B0%D0%B9%D0%BD%D0%B8%D0%BD%D0%B3/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

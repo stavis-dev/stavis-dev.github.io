@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://stavis-dev.github.io/sitemap.xml

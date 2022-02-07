@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>linux on Щпаргалка</title>
+    <link>https://stavis-dev.github.io/tags/linux/</link>
+    <description>Recent content in linux on Щпаргалка</description>
+    <image>
+      <url>https://stavis-dev.github.io/papermod-cover.png</url>
+      <link>https://stavis-dev.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 28 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stavis-dev.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raspberry pi</title>
+      <link>https://stavis-dev.github.io/posts/raspberry_pi/</link>
+      <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stavis-dev.github.io/posts/raspberry_pi/</guid>
+      <description>Настройка малинки как wifi роутера</description>
+    </item>
+    
+    <item>
+      <title>Майнинг монеты chia</title>
+      <link>https://stavis-dev.github.io/posts/mining/chia/</link>
+      <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stavis-dev.github.io/posts/mining/chia/</guid>
+      <description>Краткая инструкция по майнингу монеты chia</description>
+    </item>
+    
+  </channel>
+</rss>
