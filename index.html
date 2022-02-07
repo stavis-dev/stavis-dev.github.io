@@ -98,32 +98,47 @@
 </footer>
 </article>
 <article class=post-entry>
+<figure class=entry-cover><img loading=lazy src=https://habrastorage.org/r/w1560/getpro/habr/upload_files/8df/e22/3b3/8dfe223b32adb1473cf0fbdb5a6584c8.png alt=Картинка>
+</figure>
 <header class=entry-header>
-<h2>Raspberry pi
+<h2>Датаклассы
 </h2>
 </header>
 <section class=entry-content>
-<p>Первое подключение Сетевые настройки Создать файл wpa_supplicant.conf Внутри его прописать:
-ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 country=RU network={ ssid="Name_wi_spot" psk="your_password_to_wifi" key_mgmt=WPA-PSK } Включить доступ по ssh при установке Для того, чтоб после первого подключения малины, сразу после того как залит образ был доступ к ней по ssh протоколу.
-Необходимо в корневую дерикторию кинуть файл с названием ssh без расширения.
-После подключения устройства к сети (по кабелю), можно будет подключиться к малине по ее IP адресу....</p>
+<p>0 – Dataclasses: общая картина Dataclasses, как ясно следует из названия – это классы, предназначенные для хранения данных. Основная идея заключается в том, что мы иногда определяем классы, которые действуют только как контейнеры данных, и когда так случается, мы тратим значительное количество времени на написание шаблонного кода с кучей аргументов, уродливым методом init и множеством переопределенных функций.
+Dataclasses решают эту проблему, предоставляя из коробки ряд дополнительных полезных методов. Более того, поскольку dataclasses относительно новые для экосистемы Python, в них применяются современные практики, такие как аннотации типов....</p>
 </section>
-<footer class=entry-footer><span title="2022-01-28 00:00:00 +0000 UTC">января 28, 2022</span>&nbsp;·&nbsp;4 мин&nbsp;·&nbsp;Stavis</footer>
-<a class=entry-link aria-label="post link to Raspberry pi" href=https://stavis-dev.github.io/posts/raspberry_pi/></a>
+<footer class=entry-footer><span title="2022-02-07 00:00:00 +0000 UTC">февраля 7, 2022</span>&nbsp;·&nbsp;6 мин&nbsp;·&nbsp;rikki_tikki</footer>
+<a class=entry-link aria-label="post link to Датаклассы" href=https://stavis-dev.github.io/python/dataclasses/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Майнинг монеты chia
+<h2>Мануал по языку Python
 </h2>
 </header>
 <section class=entry-content>
-<p>Мониторинг Установка чиа
-Ниже Перечисленны команды мониторинга.
-действие команда Посмотреть подключеня к нодам chia show -c Работа в режиме полной ноды Хотя бы одна из машин сети чиа должна работать в режиме полной ноды. Будем считать, что она “Главная” в домашней сети chia. Для этого на той машине, которая будет так работать следует запусить команду:
-# start node chia start node # The answer is: chia_full_node: started # stop node chia stop node # The answer is: chia_full_node: Stopped # check conection to nodes chia show -c # добавить путь к полной ноде: # Например если в сети есть машина с полной нодйо # предположим ее адрес 192....</p>
+<p>Stavis-dev Codewars
+Replit Codewars
+Классы в гугл колаб
+К README файлу
+Распаковка Множественное интование через map # прогон x, y, z через map превращая их в инты. x, y, z = map(int, (x, y, z)) Копирование списка (массива) Через слайсы.
+numbers = [1, 2, 3] copy_numbers = numbers[:] Реверсирование списка (массива) чтобы записать список в обратном порядке достаточно использовать срез вида [::-1]...</p>
 </section>
-<footer class=entry-footer><span title="2022-01-28 00:00:00 +0000 UTC">января 28, 2022</span>&nbsp;·&nbsp;6 мин&nbsp;·&nbsp;Stavis</footer>
-<a class=entry-link aria-label="post link to Майнинг монеты chia" href=https://stavis-dev.github.io/posts/mining/chia/></a>
+<footer class=entry-footer><span title="2022-02-07 00:00:00 +0000 UTC">февраля 7, 2022</span>&nbsp;·&nbsp;1 мин&nbsp;·&nbsp;Stavis Vega</footer>
+<a class=entry-link aria-label="post link to Мануал по языку Python" href=https://stavis-dev.github.io/python/python/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Работа с файлами Pyhton
+</h2>
+</header>
+<section class=entry-content>
+<p>Запись / Чтение в json файл Запись данных в json файл:
+import json # Save data to json file with open('file_name.json', 'a') as f: json.dump(res, f, indent=4, ensure_ascii=False) Чтение данных из json файла:
+import json # Load data from json file with open('file_name.json', 'r') as f: serieses = json.load(f) Запись / Чтение в обыкновенные файлы Обыкновенные файлы я называю файлы, которые требуется просто прочиать построчно. Чтение данных из обыкновенных файлов (например html):...</p>
+</section>
+<footer class=entry-footer><span title="2019-03-08 00:00:00 +0000 UTC">марта 8, 2019</span>&nbsp;·&nbsp;1 мин&nbsp;·&nbsp;Stavis Vega</footer>
+<a class=entry-link aria-label="post link to Работа с файлами Pyhton" href=https://stavis-dev.github.io/python/save_load/></a>
 </article>
 </main>
 <footer class=footer>
