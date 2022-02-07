@@ -83,7 +83,7 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+    description: "Копилка знаний и фишечек"
     author: Stavis Vega
     # author: ["Me", "You"] # multiple authors
 
@@ -120,20 +120,20 @@ params:
             которые я решил "где то записать".  
             На самом деле я просто практикуюсь с генератором сайтов "hugo". 
             Так что пожалуйста строго не судите.  
-            Темы базы абсолютно разные. От програмирования до Автосервиса.
+            Темы базы абсолютно разные. От програмирования до...
             **Дважды подумайте**, прежде чем читать это...
            
     socialIcons:
         - name: github
           url: "https://github.com/stavis-dev"
         - name: KoFi
-          url: "https://ko-fi.com/adityatelange"
+          url: "https://stavis-dev.github.io/"
         - name: RsS
           url: "index.xml"
 
     editPost:
-        URL: ""
-        Text: "Suggest Changes" # edit text
+        URL: "https://github.com/stavis-dev/stavis-dev.github.io/tree/main/content"
+        Text: "Править текст" # edit text
         appendFilePath: true # to append file path to Edit link
 
     # label:
