@@ -5,7 +5,20 @@ date: 2019-03-08
 description: Пару шорткодов для экономии времени при написании python скриптов
 math: true
 ShowBreadCrumbs: false
+tags: ["python", "programing", "shortcodes"]
 ---
+## csv файлы
+
+### Запись в csv
+
+```python
+import json
+
+# Save data to json file
+with open('file_name.json', 'a') as f:
+    json.dump(res, f, indent=4, ensure_ascii=False)
+```
+
 ## Запись / Чтение в json файл
 
 Запись данных в  json файл:

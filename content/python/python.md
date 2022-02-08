@@ -5,7 +5,6 @@ date: "2022-02-07"
 description: "Фишечки языка Python"
 tags: ["python", "programing"]
 ShowBreadCrumbs: true
-aliases: ["migrate-from-jekyl"]
 ShowToc: true
 TocOpen: true
 ---
@@ -15,6 +14,20 @@ TocOpen: true
 * [Классы в гугл колаб](https://colab.research.google.com/drive/1vSmI7E49MBA4kA38B_MT6mgWvBKgEorC)  
 
 * [К README файлу](README.md)
+
+## Gists
+
+### Date
+
+```py
+from datetime import datetime
+
+datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+# 2013-09-18 11:16:32
+
+datetime.now().strftime('%Y-%m-%d')
+# 2013-09-18
+```
 
 ## Распаковка
 
@@ -92,4 +105,16 @@ group_to_process = {
     'client': process_client_recuest,
 }
 group_to_process[user.group](user, request)
+```
+
+## Приведение типов
+
+### str to tuple / list
+
+```python
+sites_urls = "some.url, second.com, therd.com"
+
+if isinstance(sites_urls, str):
+      sites_urls= tuple(sites_urls.split(', '))
+      print(sites_urls)
 ```

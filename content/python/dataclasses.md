@@ -10,11 +10,14 @@ ShowToc: true
 TocOpen: true
 math: true
 cover:
-    image: "https://habrastorage.org/r/w1560/getpro/habr/upload_files/8df/e22/3b3/8dfe223b32adb1473cf0fbdb5a6584c8.png" # image path/url
+    image: "https://miro.medium.com/max/1400/1*7pr8EL8EDsP296pxL7Wz_g.png"
     alt: "Картинка" # alt text
     caption: "Датаклассы" # display caption under cover
 ---
 ## 0 – Dataclasses: общая картина
+
+>Статья более чем полностью скопированна с сайта habr.com    
+>[Оригинал текста](https://habr.com/ru/company/otus/blog/650257/)
 
 `Dataclasses`, как ясно следует из названия – это классы, предназначенные для хранения данных. Основная идея заключается в том, что мы иногда определяем классы, которые действуют только как контейнеры данных, и когда так случается, мы тратим значительное количество времени на написание шаблонного кода с кучей аргументов, уродливым методом __init__ и множеством переопределенных функций.
 
@@ -355,6 +358,3 @@ print(p1 > p2)
 * [medium.com](https://medium.com/mindorks/understanding-python-dataclasses-part-1-c3ccd4355c34)
 * [invivoo.com](https://www.invivoo.com/dataclasses-python/)
 * [florimond.dev](https://florimond.dev/en/posts/2018/10/reconciling-dataclasses-and-properties-in-python/)
-
->Статья более чем полностью скопитьванна с сайта habr  
->[Оригинал текста](https://habr.com/ru/company/otus/blog/650257/)
