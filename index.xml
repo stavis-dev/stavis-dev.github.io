@@ -29,6 +29,24 @@
     </item>
     
     <item>
+      <title>Python. Кортежи (tuple)</title>
+      <link>https://stavis-dev.github.io/python/types/python-types-tuple/</link>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stavis-dev.github.io/python/types/python-types-tuple/</guid>
+      <description>Python. Кортежи (tuple)</description>
+    </item>
+    
+    <item>
+      <title>Python. Работа со списками (list)</title>
+      <link>https://stavis-dev.github.io/python/types/python-types-list/</link>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stavis-dev.github.io/python/types/python-types-list/</guid>
+      <description>Работа со списками (list)</description>
+    </item>
+    
+    <item>
       <title>Датаклассы</title>
       <link>https://stavis-dev.github.io/python/dataclasses/</link>
       <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
@@ -43,6 +61,15 @@
       <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://stavis-dev.github.io/python/python/</guid>
+      <description>Фишечки языка Python</description>
+    </item>
+    
+    <item>
+      <title>Словари (dict) и работа с ними. Методы словарей</title>
+      <link>https://stavis-dev.github.io/python/types/python-types-dict/</link>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stavis-dev.github.io/python/types/python-types-dict/</guid>
       <description>Фишечки языка Python</description>
     </item>
     

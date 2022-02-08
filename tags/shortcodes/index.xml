@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>shortcodes on Щпаргалка</title>
+    <link>https://stavis-dev.github.io/tags/shortcodes/</link>
+    <description>Recent content in shortcodes on Щпаргалка</description>
+    <image>
+      <url>https://stavis-dev.github.io/papermod-cover.png</url>
+      <link>https://stavis-dev.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 08 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://stavis-dev.github.io/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Работа с файлами Pyhton</title>
+      <link>https://stavis-dev.github.io/python/save_load/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stavis-dev.github.io/python/save_load/</guid>
+      <description>Пару шорткодов для экономии времени при написании python скриптов</description>
+    </item>
+    
+  </channel>
+</rss>

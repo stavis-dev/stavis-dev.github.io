@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>tuple on Щпаргалка</title>
+    <link>https://stavis-dev.github.io/tags/tuple/</link>
+    <description>Recent content in tuple on Щпаргалка</description>
+    <image>
+      <url>https://stavis-dev.github.io/papermod-cover.png</url>
+      <link>https://stavis-dev.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 07 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stavis-dev.github.io/tags/tuple/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python. Кортежи (tuple)</title>
+      <link>https://stavis-dev.github.io/python/types/python-types-tuple/</link>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stavis-dev.github.io/python/types/python-types-tuple/</guid>
+      <description>Python. Кортежи (tuple)</description>
+    </item>
+    
+  </channel>
+</rss>
