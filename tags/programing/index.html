@@ -110,8 +110,7 @@ Dataclasses решают эту проблему, предоставляя из 
 Replit Codewars
 Классы в гугл колаб
 К README файлу
-Gists Date from datetime import datetime datetime.now().strftime('%Y-%m-%d%H:%M:%S') # 2013-09-18 11:16:32 datetime.now().strftime('%Y-%m-%d') # 2013-09-18 Распаковка Множественное интование через map # прогон x, y, z через map превращая их в инты. x, y, z = map(int, (x, y, z)) Копирование списка (массива) Через слайсы.
-numbers = [1, 2, 3] copy_numbers = numbers[:] Реверсирование списка (массива) чтобы записать список в обратном порядке достаточно использовать срез вида [::-1]...</p>
+Date from datetime import datetime datetime.now().strftime('%Y-%m-%d%H:%M:%S') # 2013-09-18 11:16:32 datetime.now().strftime('%Y-%m-%d') # 2013-09-18 Распаковка # Пример тупла tpl = ('bla-bla', 1, 2, 3, 4, 'a', 'b') # части элементов из множества # получаем последний элемент (первые передаем в подстрочный) *_, a, b = tpl a, b # получаем первый и последний элементы a, *_, b = tpl a, b # получаем первые 2 элемента a, b, *_ = tpl a, b Множественное интование через map # прогон x, y, z через map превращая их в инты....</p>
 </section>
 <footer class=entry-footer><span title="2022-02-07 00:00:00 +0000 UTC">февраля 7, 2022</span>&nbsp;·&nbsp;2 мин&nbsp;·&nbsp;Stavis Vega</footer>
 <a class=entry-link aria-label="post link to Мануал по языку Python" href=https://stavis-dev.github.io/python/python/></a>
@@ -136,9 +135,9 @@ dictionary = {'персона': 'человек', 'марафон': 'гонка 
 </h2>
 </header>
 <section class=entry-content>
-<p>csv файлы Запись в csv import json # Save data to json file with open('file_name.json', 'a') as f: json.dump(res, f, indent=4, ensure_ascii=False) Запись / Чтение в json файл Запись данных в json файл:
+<p>csv файлы Запись в csv import csv with open('pased_site.csv', 'w', encoding="utf-8:") as f: a_pen = csv.writer(f) a_pen.writerow(('sep=', ' ')) a_pen.writerow(('Title', 'Descrition', 'H1', 'url')) for table in tables: try: a_pen.writerow((table['Title'], table['Descrition'], table['H1'], table['url'])) except Exception: continue Запись / Чтение в json файл Запись данных в json файл:
 import json # Save data to json file with open('file_name.json', 'a') as f: json.dump(res, f, indent=4, ensure_ascii=False) Чтение данных из json файла:
-import json # Load data from json file with open('file_name.json', 'r') as f: serieses = json....</p>
+import json # Load data from json file with open('file_name....</p>
 </section>
 <footer class=entry-footer><span title="2019-03-08 00:00:00 +0000 UTC">марта 8, 2019</span>&nbsp;·&nbsp;1 мин&nbsp;·&nbsp;Stavis Vega</footer>
 <a class=entry-link aria-label="post link to Работа с файлами Pyhton" href=https://stavis-dev.github.io/python/save_load/></a>
