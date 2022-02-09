@@ -4,7 +4,6 @@ author: Stavis Vega
 date: "2022-02-07"
 description: "Фишечки языка Python"
 tags: ["python", "programing"]
-ShowBreadCrumbs: true
 ShowToc: true
 TocOpen: true
 ---
@@ -14,8 +13,6 @@ TocOpen: true
 * [Классы в гугл колаб](https://colab.research.google.com/drive/1vSmI7E49MBA4kA38B_MT6mgWvBKgEorC)  
 
 * [К README файлу](README.md)
-
-## Gists
 
 ### Date
 
@@ -29,7 +26,28 @@ datetime.now().strftime('%Y-%m-%d')
 # 2013-09-18
 ```
 
-## Распаковка
+### Распаковка
+
+```py
+# Пример тупла
+tpl = ('bla-bla', 1, 2, 3, 4, 'a', 'b')
+
+# части элементов из множества
+# получаем последний элемент (первые передаем в подстрочный)
+*_, a, b = tpl
+
+a, b
+
+# получаем первый и последний элементы
+a, *_, b = tpl
+
+a, b
+
+# получаем первые 2 элемента
+a, b, *_ = tpl
+
+a, b
+```
 
 ### Множественное интование через map
 
@@ -118,3 +136,9 @@ if isinstance(sites_urls, str):
       sites_urls= tuple(sites_urls.split(', '))
       print(sites_urls)
 ```
+
+## Gists
+
+Цветной вывод `print` в консоль
+
+{{< gist stavis-dev 32f56f0f9cf9a7ba09e9e1964f80e91b >}}

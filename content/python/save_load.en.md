@@ -4,7 +4,6 @@ title: Working with files Pyhton
 date: 2019-03-08
 description: A couple of shortcodes to save time when writing python scripts
 math: true
-ShowBreadCrumbs: false
 ---
 ## Save / Load to json
 
