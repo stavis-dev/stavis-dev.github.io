@@ -1,17 +1,18 @@
 ---
 author: Stavis
 title: "Raspberry pi"
-date: 2022-01-28
+date: "2022-02-02"
 description: "Настройка малинки как wifi роутера"
 tags: ["Raspberry pi", "linux"]
 categories: ["devops", "programing"]
 ShowToc: true
 TocOpen: true
-weight: 1
 ShowBreadCrumbs: true
 ---
+
 ## Первое подключение
 
+... Испробовано на Малинке 3й версии.
 ### Сетевые настройки
 
 1. Создать файл `wpa_supplicant.conf`

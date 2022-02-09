@@ -5,7 +5,7 @@ date: "2022-02-07"
 description: "9 причин использовать dataclasses в Python"
 tags: ["python", "programing"]
 ShowBreadCrumbs: true
-aliases: [""]
+# aliases: [""]
 ShowToc: true
 TocOpen: true
 math: true

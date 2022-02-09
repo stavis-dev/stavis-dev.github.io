@@ -1,5 +1,5 @@
 baseURL: "https://stavis-dev.github.io/"
-title: PaperMod
+title: Щпаргалка
 paginate: 5
 theme: PaperMod
 defaultContentLanguage: 'ru'
@@ -44,6 +44,9 @@ languages:
                 - name: Python
                   url: python/
                   weight: 6
+                - name: Блог
+                  url: posts/
+                  weight: 7
                 - name: Поиск
                   url: search/
                   weight: 10
@@ -65,6 +68,9 @@ languages:
                 - name: Python
                   url: python/
                   weight: 6
+                - name: Blog
+                  url: posts/
+                  weight: 7
                 - name: Search
                   url: search/
                   weight: 10
