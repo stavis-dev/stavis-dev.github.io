@@ -11,15 +11,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 07 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stavis-dev.github.io/categories/programing/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Raspberry pi</title>
-      <link>https://stavis-dev.github.io/posts/raspberry_pi/</link>
-      <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://stavis-dev.github.io/posts/raspberry_pi/</guid>
-      <description>Настройка малинки как wifi роутера</description>
-    </item>
-    
-    <item>
       <title>Майнинг монеты chia</title>
       <link>https://stavis-dev.github.io/posts/mining/chia/</link>
       <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
@@ -53,6 +44,15 @@
       
       <guid>https://stavis-dev.github.io/python/types/python-types-dict/</guid>
       <description>Фишечки языка Python</description>
+    </item>
+    
+    <item>
+      <title>Raspberry pi</title>
+      <link>https://stavis-dev.github.io/posts/raspberry_pi/</link>
+      <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stavis-dev.github.io/posts/raspberry_pi/</guid>
+      <description>Настройка малинки как wifi роутера</description>
     </item>
     
   </channel>
