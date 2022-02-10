@@ -46,14 +46,5 @@
       <description>Фишечки языка Python</description>
     </item>
     
-    <item>
-      <title>Raspberry pi</title>
-      <link>https://stavis-dev.github.io/posts/raspberry_pi/</link>
-      <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://stavis-dev.github.io/posts/raspberry_pi/</guid>
-      <description>Настройка малинки как wifi роутера</description>
-    </item>
-    
   </channel>
 </rss>

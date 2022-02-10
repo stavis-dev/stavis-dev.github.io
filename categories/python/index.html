@@ -87,6 +87,19 @@
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Замена рeгулярными выражениями
+</h2>
+</header>
+<section class=entry-content>
+<p>Замены в регулярных выражениях В стандартных строках Python есть функция .replace(old, new), которую можно успешно использовать для замены одной строки на другую:
+string = 'Алёна мыла ёлку!' print(string.replace('ё', 'е')) Алена мыла елку! Но, что, делать в более сложных случаях? Ну не писать же несколько раз вызов функции .replace() с разными аргументами
+string = 'Ёлку мыла Алёна...' print(string.replace('ё', 'е').replace('Ё', 'Е')) Елку мыла Алена... На помощь приходят регулярные выражения и модуль re со своей функцией re....</p>
+</section>
+<footer class=entry-footer><span title="2022-02-09 00:00:00 +0000 UTC">февраля 9, 2022</span>&nbsp;·&nbsp;3 мин&nbsp;·&nbsp;pykili.github.io</footer>
+<a class=entry-link aria-label="post link to Замена рeгулярными выражениями" href=https://stavis-dev.github.io/python/modules/python-re-sub/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Python. Кортежи (tuple)
 </h2>
 </header>
@@ -110,19 +123,40 @@
 <a class=entry-link aria-label="post link to Python. Работа со списками (list)" href=https://stavis-dev.github.io/python/types/python-types-list/></a>
 </article>
 <article class="post-entry tag-entry">
+<figure class=entry-cover><img loading=lazy src=https://miro.medium.com/max/1400/1*7pr8EL8EDsP296pxL7Wz_g.png alt=Картинка>
+</figure>
 <header class=entry-header>
-<h2>Словари (dict) и работа с ними. Методы словарей
+<h2>Датаклассы
 </h2>
 </header>
 <section class=entry-content>
-<p>Создание словарей Как выглядит словарь python Что такое словарь.
-Словарь — неупорядоченная структура данных, которая позволяет хранить пары «ключ — значение».
-Вот пример словаря на Python:
-dictionary = {'персона': 'человек', 'марафон': 'гонка бегунов длиной около 26 миль', 'противостоять': 'оставаться сильным, несмотря на давление', 'бежать': 'двигаться со скоростью'} Данный словарь использует строки в качестве ключей, однако ключом может являться в принципе любой неизменяемый тип данных. Значением же конкретного ключа может быть что угодно....</p>
+<p>0 – Dataclasses: общая картина Статья более чем полностью скопированна с сайта habr.com Оригинал текста
+Dataclasses, как ясно следует из названия – это классы, предназначенные для хранения данных. Основная идея заключается в том, что мы иногда определяем классы, которые действуют только как контейнеры данных, и когда так случается, мы тратим значительное количество времени на написание шаблонного кода с кучей аргументов, уродливым методом init и множеством переопределенных функций.
+Dataclasses решают эту проблему, предоставляя из коробки ряд дополнительных полезных методов....</p>
 </section>
-<footer class=entry-footer><span title="2022-02-07 00:00:00 +0000 UTC">февраля 7, 2022</span>&nbsp;·&nbsp;4 мин&nbsp;·&nbsp;Stavis Vega</footer>
-<a class=entry-link aria-label="post link to Словари (dict) и работа с ними. Методы словарей" href=https://stavis-dev.github.io/python/types/python-types-dict/></a>
+<footer class=entry-footer><span title="2022-02-07 00:00:00 +0000 UTC">февраля 7, 2022</span>&nbsp;·&nbsp;6 мин&nbsp;·&nbsp;rikki_tikki</footer>
+<a class=entry-link aria-label="post link to Датаклассы" href=https://stavis-dev.github.io/python/dataclasses/></a>
 </article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>Мануал по языку Python
+</h2>
+</header>
+<section class=entry-content>
+<p>Stavis-dev Codewars
+Replit Codewars
+Классы в гугл колаб
+К README файлу
+Date from datetime import datetime datetime.now().strftime('%Y-%m-%d%H:%M:%S') # 2013-09-18 11:16:32 datetime.now().strftime('%Y-%m-%d') # 2013-09-18 Распаковка # Пример тупла tpl = ('bla-bla', 1, 2, 3, 4, 'a', 'b') # части элементов из множества # получаем последний элемент (первые передаем в подстрочный) *_, a, b = tpl a, b # получаем первый и последний элементы a, *_, b = tpl a, b # получаем первые 2 элемента a, b, *_ = tpl a, b Множественное интование через map # прогон x, y, z через map превращая их в инты....</p>
+</section>
+<footer class=entry-footer><span title="2022-02-07 00:00:00 +0000 UTC">февраля 7, 2022</span>&nbsp;·&nbsp;2 мин&nbsp;·&nbsp;Stavis Vega</footer>
+<a class=entry-link aria-label="post link to Мануал по языку Python" href=https://stavis-dev.github.io/python/python/></a>
+</article>
+<footer class=page-footer>
+<nav class=pagination>
+<a class=next href=https://stavis-dev.github.io/categories/python/page/2/>Следующая »</a>
+</nav>
+</footer>
 </main>
 <footer class=footer>
 <span>&copy; 2022 <a href=https://stavis-dev.github.io/>Щпаргалка</a></span>

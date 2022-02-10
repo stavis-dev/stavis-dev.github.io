@@ -110,36 +110,6 @@
 <a class=entry-link aria-label="post link to Python. Работа со списками (list)" href=https://stavis-dev.github.io/python/types/python-types-list/></a>
 </article>
 <article class="post-entry tag-entry">
-<figure class=entry-cover><img loading=lazy src=https://miro.medium.com/max/1400/1*7pr8EL8EDsP296pxL7Wz_g.png alt=Картинка>
-</figure>
-<header class=entry-header>
-<h2>Датаклассы
-</h2>
-</header>
-<section class=entry-content>
-<p>0 – Dataclasses: общая картина Статья более чем полностью скопированна с сайта habr.com Оригинал текста
-Dataclasses, как ясно следует из названия – это классы, предназначенные для хранения данных. Основная идея заключается в том, что мы иногда определяем классы, которые действуют только как контейнеры данных, и когда так случается, мы тратим значительное количество времени на написание шаблонного кода с кучей аргументов, уродливым методом init и множеством переопределенных функций.
-Dataclasses решают эту проблему, предоставляя из коробки ряд дополнительных полезных методов....</p>
-</section>
-<footer class=entry-footer><span title="2022-02-07 00:00:00 +0000 UTC">февраля 7, 2022</span>&nbsp;·&nbsp;6 мин&nbsp;·&nbsp;rikki_tikki</footer>
-<a class=entry-link aria-label="post link to Датаклассы" href=https://stavis-dev.github.io/python/dataclasses/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Мануал по языку Python
-</h2>
-</header>
-<section class=entry-content>
-<p>Stavis-dev Codewars
-Replit Codewars
-Классы в гугл колаб
-К README файлу
-Date from datetime import datetime datetime.now().strftime('%Y-%m-%d%H:%M:%S') # 2013-09-18 11:16:32 datetime.now().strftime('%Y-%m-%d') # 2013-09-18 Распаковка # Пример тупла tpl = ('bla-bla', 1, 2, 3, 4, 'a', 'b') # части элементов из множества # получаем последний элемент (первые передаем в подстрочный) *_, a, b = tpl a, b # получаем первый и последний элементы a, *_, b = tpl a, b # получаем первые 2 элемента a, b, *_ = tpl a, b Множественное интование через map # прогон x, y, z через map превращая их в инты....</p>
-</section>
-<footer class=entry-footer><span title="2022-02-07 00:00:00 +0000 UTC">февраля 7, 2022</span>&nbsp;·&nbsp;2 мин&nbsp;·&nbsp;Stavis Vega</footer>
-<a class=entry-link aria-label="post link to Мануал по языку Python" href=https://stavis-dev.github.io/python/python/></a>
-</article>
-<article class="post-entry tag-entry">
 <header class=entry-header>
 <h2>Словари (dict) и работа с ними. Методы словарей
 </h2>
@@ -153,11 +123,19 @@ dictionary = {'персона': 'человек', 'марафон': 'гонка 
 <footer class=entry-footer><span title="2022-02-07 00:00:00 +0000 UTC">февраля 7, 2022</span>&nbsp;·&nbsp;4 мин&nbsp;·&nbsp;Stavis Vega</footer>
 <a class=entry-link aria-label="post link to Словари (dict) и работа с ними. Методы словарей" href=https://stavis-dev.github.io/python/types/python-types-dict/></a>
 </article>
-<footer class=page-footer>
-<nav class=pagination>
-<a class=next href=https://stavis-dev.github.io/tags/python/page/2/>Следующая »</a>
-</nav>
-</footer>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>Работа с файлами Pyhton
+</h2>
+</header>
+<section class=entry-content>
+<p>csv файлы Запись в csv import csv with open('pased_site.csv', 'w', encoding="utf-8:") as f: a_pen = csv.writer(f) a_pen.writerow(('sep=', ' ')) a_pen.writerow(('Title', 'Descrition', 'H1', 'url')) for table in tables: try: a_pen.writerow((table['Title'], table['Descrition'], table['H1'], table['url'])) except Exception: continue Запись / Чтение в json файл Запись данных в json файл:
+import json # Save data to json file with open('file_name.json', 'a') as f: json.dump(res, f, indent=4, ensure_ascii=False) Чтение данных из json файла:
+import json # Load data from json file with open('file_name....</p>
+</section>
+<footer class=entry-footer><span title="2019-03-08 00:00:00 +0000 UTC">марта 8, 2019</span>&nbsp;·&nbsp;1 мин&nbsp;·&nbsp;Stavis Vega</footer>
+<a class=entry-link aria-label="post link to Работа с файлами Pyhton" href=https://stavis-dev.github.io/python/save_load/></a>
+</article>
 </main>
 <footer class=footer>
 <span>&copy; 2022 <a href=https://stavis-dev.github.io/>Щпаргалка</a></span>

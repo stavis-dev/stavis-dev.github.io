@@ -11,24 +11,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 07 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stavis-dev.github.io/tags/programing/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Датаклассы</title>
-      <link>https://stavis-dev.github.io/python/dataclasses/</link>
-      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://stavis-dev.github.io/python/dataclasses/</guid>
-      <description>9 причин использовать dataclasses в Python</description>
-    </item>
-    
-    <item>
-      <title>Мануал по языку Python</title>
-      <link>https://stavis-dev.github.io/python/python/</link>
-      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://stavis-dev.github.io/python/python/</guid>
-      <description>Фишечки языка Python</description>
-    </item>
-    
-    <item>
       <title>Словари (dict) и работа с ними. Методы словарей</title>
       <link>https://stavis-dev.github.io/python/types/python-types-dict/</link>
       <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
