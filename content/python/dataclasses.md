@@ -3,7 +3,8 @@ title: "Датаклассы"
 author: rikki_tikki
 date: "2022-02-07"
 description: "9 причин использовать dataclasses в Python"
-tags: ["python", "programing"]
+tags: ["dataclasses"]
+categories: ["python"]
 # aliases: [""]
 ShowToc: true
 TocOpen: true

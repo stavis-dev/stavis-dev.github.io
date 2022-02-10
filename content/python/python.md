@@ -3,7 +3,8 @@ title: "Мануал по языку Python"
 author: Stavis Vega
 date: "2022-02-07"
 description: "Фишечки языка Python"
-tags: ["python", "programing"]
+tags: ["triks"]
+categories: ["python"]
 ShowToc: true
 TocOpen: true
 ---

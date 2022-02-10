@@ -3,8 +3,8 @@ author: Stavis
 title: "Raspberry pi"
 date: "2022-02-02"
 description: "Настройка малинки как wifi роутера"
-tags: ["Raspberry pi", "linux"]
-categories: ["devops", "programing"]
+tags: ["Raspberry pi"]
+categories: ["devops", "linux"]
 ShowToc: true
 TocOpen: true
 ShowBreadCrumbs: true
