@@ -11,12 +11,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 07 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stavis-dev.github.io/tags/dict/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Словари (dict) и работа с ними. Методы словарей</title>
+      <title>Словари (dict) и работа с ними.</title>
       <link>https://stavis-dev.github.io/python/types/python-types-dict/</link>
       <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://stavis-dev.github.io/python/types/python-types-dict/</guid>
-      <description>Фишечки языка Python</description>
+      <description>Словари в python. Работа со словарями методы.</description>
     </item>
     
   </channel>
