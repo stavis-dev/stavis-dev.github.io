@@ -1,8 +1,8 @@
 ---
-title: Словари (dict) и работа с ними. Методы словарей
+title: Словари (dict) и работа с ними.
 author: Stavis Vega
 date: "2022-02-07"
-description: "Фишечки языка Python"
+description: "Словари в python. Работа со словарями методы."
 tags: ["python", "programing", "types", "dict"]
 categories: ["python", "programing"]
 ShowBreadCrumbs: true

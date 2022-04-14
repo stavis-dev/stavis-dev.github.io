@@ -27,14 +27,14 @@ print(a)
 С кортежем мы не можем производить такие операции, т.к. элементы его изменять нельзя.
 
 ```python
->>> b = (1, 2, 3)
->>> print(b)
-(1, 2, 3)
->>> b[1] = 15
-Traceback (most recent call last):
-  File "<pyshell#6>", line 1, in <module>
-    b[1] = 15
-TypeError: 'tuple' object does not support item assignment
+b = (1, 2, 3)
+print(b)
+# (1, 2, 3)
+b[1] = 15
+# Traceback (most recent call last):
+#   File "<pyshell#6>", line 1, in <module>
+#     b[1] = 15
+# TypeError: 'tuple' object does not support item assignment
 ```
 
 ## Зачем нужны кортежи в Python?
