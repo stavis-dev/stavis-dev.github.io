@@ -9,7 +9,25 @@
       <link>https://stavis-dev.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 09 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stavis-dev.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stavis-dev.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>education</title>
+      <link>https://stavis-dev.github.io/tags/education/</link>
+      <pubDate>Wed, 13 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stavis-dev.github.io/tags/education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>https://stavis-dev.github.io/tags/vim/</link>
+      <pubDate>Wed, 13 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stavis-dev.github.io/tags/vim/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>re</title>
       <link>https://stavis-dev.github.io/tags/re/</link>

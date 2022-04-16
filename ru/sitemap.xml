@@ -2,11 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://stavis-dev.github.io/posts/mining/chia/</loc>
-    <lastmod>2022-01-28T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://stavis-dev.github.io/categories/</loc>
-    <lastmod>2022-02-09T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,6 +13,50 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://stavis-dev.github.io/categories/"
+                />
+  </url><url>
+    <loc>https://stavis-dev.github.io/tags/education/</loc>
+    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stavis-dev.github.io/categories/linux/</loc>
+    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stavis-dev.github.io/posts/</loc>
+    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stavis-dev.github.io/categories/soft/</loc>
+    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stavis-dev.github.io/tags/</loc>
+    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://stavis-dev.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://stavis-dev.github.io/tags/"
+                />
+  </url><url>
+    <loc>https://stavis-dev.github.io/tags/vim/</loc>
+    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stavis-dev.github.io/posts/vim/</loc>
+    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stavis-dev.github.io/</loc>
+    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://stavis-dev.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://stavis-dev.github.io/"
                 />
   </url><url>
     <loc>https://stavis-dev.github.io/categories/python/</loc>
@@ -43,34 +84,8 @@
     <loc>https://stavis-dev.github.io/categories/regex/</loc>
     <lastmod>2022-02-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://stavis-dev.github.io/tags/</loc>
-    <lastmod>2022-02-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://stavis-dev.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://stavis-dev.github.io/tags/"
-                />
-  </url><url>
     <loc>https://stavis-dev.github.io/python/modules/python-re-sub/</loc>
     <lastmod>2022-02-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://stavis-dev.github.io/</loc>
-    <lastmod>2022-02-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://stavis-dev.github.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://stavis-dev.github.io/"
-                />
   </url><url>
     <loc>https://stavis-dev.github.io/tags/%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D1%8B%D0%B5-%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F/</loc>
     <lastmod>2022-02-09T00:00:00+00:00</lastmod>
@@ -120,12 +135,6 @@
     <loc>https://stavis-dev.github.io/categories/devops/</loc>
     <lastmod>2022-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://stavis-dev.github.io/categories/linux/</loc>
-    <lastmod>2022-02-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://stavis-dev.github.io/posts/</loc>
-    <lastmod>2022-02-02T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://stavis-dev.github.io/tags/raspberry-pi/</loc>
     <lastmod>2022-02-02T00:00:00+00:00</lastmod>
   </url><url>
@@ -139,6 +148,9 @@
     <lastmod>2022-01-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://stavis-dev.github.io/tags/%D0%BC%D0%B0%D0%B9%D0%BD%D0%B8%D0%BD%D0%B3/</loc>
+    <lastmod>2022-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stavis-dev.github.io/posts/mining/chia/</loc>
     <lastmod>2022-01-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://stavis-dev.github.io/tags/shortcodes/</loc>

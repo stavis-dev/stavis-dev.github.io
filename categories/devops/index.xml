@@ -11,21 +11,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 02 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stavis-dev.github.io/categories/devops/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Майнинг монеты chia</title>
-      <link>https://stavis-dev.github.io/posts/mining/chia/</link>
-      <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://stavis-dev.github.io/posts/mining/chia/</guid>
-      <description>Краткая инструкция по майнингу монеты chia</description>
-    </item>
-    
-    <item>
       <title>Raspberry pi</title>
       <link>https://stavis-dev.github.io/posts/raspberry_pi/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://stavis-dev.github.io/posts/raspberry_pi/</guid>
       <description>Настройка малинки как wifi роутера</description>
+    </item>
+    
+    <item>
+      <title>Майнинг монеты chia</title>
+      <link>https://stavis-dev.github.io/posts/mining/chia/</link>
+      <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stavis-dev.github.io/posts/mining/chia/</guid>
+      <description>Краткая, или не очень инструкция по майнингу монеты chia</description>
     </item>
     
   </channel>
