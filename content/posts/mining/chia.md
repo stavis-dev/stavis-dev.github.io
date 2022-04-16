@@ -2,12 +2,11 @@
 author: Stavis
 title: Майнинг монеты chia
 date: 2022-01-28
-description: Краткая инструкция по майнингу монеты chia
+description: Краткая, или не очень инструкция по майнингу монеты chia
 tags: ["майнинг", "chia", "linux"]
 categories: ["devops", "programing"]
 ShowToc: true
 TocOpen: false
-weight: 1
 ShowBreadCrumbs: true
 ---
 ## Мониторинг
