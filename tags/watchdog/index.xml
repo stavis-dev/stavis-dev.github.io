@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>watchdog on Щпаргалка</title>
+    <link>https://stavis-dev.github.io/tags/watchdog/</link>
+    <description>Recent content in watchdog on Щпаргалка</description>
+    <image>
+      <url>https://stavis-dev.github.io/papermod-cover.png</url>
+      <link>https://stavis-dev.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 21 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stavis-dev.github.io/tags/watchdog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hiveos инструкция для админов</title>
+      <link>https://stavis-dev.github.io/posts/mining/hive-os/</link>
+      <pubDate>Thu, 21 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stavis-dev.github.io/posts/mining/hive-os/</guid>
+      <description>Описание, комманды и настройки системы для майнинга hiveos</description>
+    </item>
+    
+  </channel>
+</rss>

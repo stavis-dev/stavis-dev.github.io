@@ -9,7 +9,16 @@
       <link>https://stavis-dev.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 13 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stavis-dev.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stavis-dev.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hiveos инструкция для админов</title>
+      <link>https://stavis-dev.github.io/posts/mining/hive-os/</link>
+      <pubDate>Thu, 21 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stavis-dev.github.io/posts/mining/hive-os/</guid>
+      <description>Описание, комманды и настройки системы для майнинга hiveos</description>
+    </item>
+    
     <item>
       <title>Комманды vim</title>
       <link>https://stavis-dev.github.io/posts/vim/</link>

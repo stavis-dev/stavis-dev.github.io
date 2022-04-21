@@ -2,8 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://stavis-dev.github.io/tags/bahs/</loc>
+    <lastmod>2022-04-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://stavis-dev.github.io/categories/</loc>
-    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,20 +18,26 @@
                 href="https://stavis-dev.github.io/categories/"
                 />
   </url><url>
-    <loc>https://stavis-dev.github.io/tags/education/</loc>
-    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
+    <loc>https://stavis-dev.github.io/categories/devops/</loc>
+    <lastmod>2022-04-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stavis-dev.github.io/tags/hiveos/</loc>
+    <lastmod>2022-04-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stavis-dev.github.io/posts/mining/hive-os/</loc>
+    <lastmod>2022-04-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://stavis-dev.github.io/categories/linux/</loc>
-    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stavis-dev.github.io/categories/mining/</loc>
+    <lastmod>2022-04-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://stavis-dev.github.io/posts/</loc>
-    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://stavis-dev.github.io/categories/soft/</loc>
-    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://stavis-dev.github.io/tags/</loc>
-    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -40,14 +49,11 @@
                 href="https://stavis-dev.github.io/tags/"
                 />
   </url><url>
-    <loc>https://stavis-dev.github.io/tags/vim/</loc>
-    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://stavis-dev.github.io/posts/vim/</loc>
-    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
+    <loc>https://stavis-dev.github.io/tags/watchdog/</loc>
+    <lastmod>2022-04-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://stavis-dev.github.io/</loc>
-    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -58,6 +64,18 @@
                 hreflang="ru"
                 href="https://stavis-dev.github.io/"
                 />
+  </url><url>
+    <loc>https://stavis-dev.github.io/tags/education/</loc>
+    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stavis-dev.github.io/categories/soft/</loc>
+    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stavis-dev.github.io/tags/vim/</loc>
+    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stavis-dev.github.io/posts/vim/</loc>
+    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://stavis-dev.github.io/categories/python/</loc>
     <lastmod>2022-02-09T00:00:00+00:00</lastmod>
@@ -131,9 +149,6 @@
   </url><url>
     <loc>https://stavis-dev.github.io/python/types/python-types-dict/</loc>
     <lastmod>2022-02-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://stavis-dev.github.io/categories/devops/</loc>
-    <lastmod>2022-02-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://stavis-dev.github.io/tags/raspberry-pi/</loc>
     <lastmod>2022-02-02T00:00:00+00:00</lastmod>

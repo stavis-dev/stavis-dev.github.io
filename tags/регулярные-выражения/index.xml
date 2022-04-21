@@ -11,12 +11,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 09 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stavis-dev.github.io/tags/%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D1%8B%D0%B5-%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Замена рeгулярными выражениями</title>
+      <title>Замена текста рeгулярными выражениями</title>
       <link>https://stavis-dev.github.io/python/modules/python-re-sub/</link>
       <pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://stavis-dev.github.io/python/modules/python-re-sub/</guid>
-      <description>Замены с помощью регулярных выражений в python</description>
+      <description>Замена текста с помощью регулярных выражений в python</description>
     </item>
     
   </channel>
