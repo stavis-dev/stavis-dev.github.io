@@ -1,8 +1,8 @@
 ---
 author: pykili.github.io
-title: Замена рeгулярными выражениями
+title: Замена текста рeгулярными выражениями
 date: "2022-02-09"
-description: "Замены с помощью регулярных выражений в python"
+description: "Замена текста с помощью регулярных выражений в python"
 math: true
 tags: ["regex", "re", "регулярные выражения"]
 categories: ["python", "regex"]

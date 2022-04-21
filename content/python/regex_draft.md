@@ -5,7 +5,7 @@ title: Рeгулярные выражения в Pyhton
 date: "2022-02-07"
 description: "Примеры из регулярных выражений на python которые лучше записать, чем запомнить"
 math: true
-tags: ["python", "programing", "shortcodes"]
+tags: ["python", "programing"]
 ---
 https://pykili.github.io/prog/02-if-and-comparison-ops
 ## Модуль Re для регулярных выражений в Python
