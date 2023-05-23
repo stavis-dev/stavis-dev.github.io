@@ -10,7 +10,7 @@ TocOpen: false
 ShowBreadCrumbs: true
 cover:
   hidden: true
-  image: "nvim.png"
+  image: "nvim.webp"
   alt: "vim панель" # alt text
   caption: "Vim управление" # display caption under cover
 ---
