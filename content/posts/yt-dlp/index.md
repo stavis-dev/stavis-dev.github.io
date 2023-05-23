@@ -3,7 +3,7 @@ author: Stavis
 date: "2022-12-24"
 
 title: "yt-dlp управление"
-description: "yt-dlp как работать с программой"
+description: "yt-dlp как качать любое видео из интернета"
 tags: ["yt-dlp", "youtube-dl"]
 categories: ["soft", "linux"]
 ShowToc: true
@@ -11,9 +11,9 @@ TocOpen: false
 ShowBreadCrumbs: true
 cover:
   hidden: true
-  image: "nvim.png"
-  alt: "vim панель" # alt text
-  caption: "Vim управление" # display caption under cover
+  image: "yt-dlp-header.webp"
+  alt: "yt-dlp лого" # alt text
+  caption: "yt-dlp управление" # display caption under cover
 ---
 
 ## скачивание только mp3 с youtube
