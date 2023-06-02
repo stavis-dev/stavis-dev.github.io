@@ -548,7 +548,8 @@ cover:
 
 ## Ссылки
 
-[Логические ошибки в виде карточек](https://obraz.io/dt_gallery/lf_slices/)
+[Логические ошибки в виде карточек](https://obraz.io/dt_gallery/lf_slices/)  
+[Вся правда о когнитивных искажениях](https://habr.com/ru/articles/578306/) - Хабр
 
 Листы для распечаток A4
 * [1й](https://obraz.io/wp-content/uploads/2017/10/logical-fallacies-1-ru.png) лист для распечатки
