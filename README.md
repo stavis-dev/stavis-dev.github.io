@@ -1,24 +1,31 @@
-# Памятки - записки
+# Website
 
-## Контент
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-### Изображения
+### Установка
 
-Оптимизировать сразу, можно через сервис [tinypng](https://tinypng.com/)  
-
-Контент сайта "Щпаргалка"..
-
-Установка:
-
-```bash
-git clone --recurse-submodules git@github.com:stavis-dev/stavis-dev.github.io.git
+```
+$ yarn
 ```
 
-Или если привыкли работать по старинке:
+### Local Development
 
-```bash
-git clone git@github.com:stavis-dev/stavis-dev.github.io.git
-git submodule init
-git submodule update
+```
+$ npm run start
 ```
 
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+### Build
+
+```
+$ npm run build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+### Deployment
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+[deploy on github](https://docusaurus.io/docs/deployment#deploying-to-github-pages)

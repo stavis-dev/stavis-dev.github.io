@@ -1,0 +1,8 @@
+{
+  "label": "Мануалы по софту",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Короткие или не очень мануалы по всяким софтам."
+  }
+}
