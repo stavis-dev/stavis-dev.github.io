@@ -4,10 +4,21 @@
         <title>Шпаргалка по знаниям Blog</title>
         <link>https://stavis-dev.github.io/blog</link>
         <description>Шпаргалка по знаниям Blog</description>
-        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 10 Jun 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ru</language>
+        <item>
+            <title><![CDATA[Первый пост из гитхаба]]></title>
+            <link>https://stavis-dev.github.io/blog/first-from-github</link>
+            <guid>https://stavis-dev.github.io/blog/first-from-github</guid>
+            <pubDate>Sat, 10 Jun 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Ни разу не писал посты сразу со страничек гитхаба. Это первый раз.]]></description>
+            <content:encoded><![CDATA[<p>Ни разу не писал посты сразу со страничек гитхаба. Это первый раз.</p>]]></content:encoded>
+            <category>hello</category>
+            <category>docusaurus</category>
+            <category>github</category>
+        </item>
         <item>
             <title><![CDATA[Welcome]]></title>
             <link>https://stavis-dev.github.io/blog/welcome</link>

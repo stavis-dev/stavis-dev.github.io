@@ -2,11 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stavis-dev.github.io/blog</id>
     <title>Шпаргалка по знаниям Blog</title>
-    <updated>2021-08-26T00:00:00.000Z</updated>
+    <updated>2023-06-10T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stavis-dev.github.io/blog"/>
     <subtitle>Шпаргалка по знаниям Blog</subtitle>
     <icon>https://stavis-dev.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Первый пост из гитхаба]]></title>
+        <id>https://stavis-dev.github.io/blog/first-from-github</id>
+        <link href="https://stavis-dev.github.io/blog/first-from-github"/>
+        <updated>2023-06-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Ни разу не писал посты сразу со страничек гитхаба. Это первый раз.]]></summary>
+        <content type="html"><![CDATA[<p>Ни разу не писал посты сразу со страничек гитхаба. Это первый раз.</p>]]></content>
+        <author>
+            <name>Stavis Vega</name>
+            <uri>https://sebastienlorber.com</uri>
+        </author>
+        <category label="hello" term="hello"/>
+        <category label="docusaurus" term="docusaurus"/>
+        <category label="github" term="github"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://stavis-dev.github.io/blog/welcome</id>
