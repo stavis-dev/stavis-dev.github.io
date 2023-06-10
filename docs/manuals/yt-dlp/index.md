@@ -9,6 +9,7 @@ categories: ["soft", "linux"]
 ShowToc: true
 TocOpen: false
 ShowBreadCrumbs: true
+image: "yt-dlp-header.webp"
 cover:
   hidden: true
   image: "yt-dlp-header.webp"
