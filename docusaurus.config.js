@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://stavis-dev.github.io',
+  url: 'https://stavis-dev.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   onBrokenLinks: 'ignore',
@@ -44,7 +44,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/stavis-dev/stavis-dev.github.io',
+            'https://github.com/stavis-dev/stavis-dev.github.io/tree/main/',
         },
         // blog: false,
         blog: {
@@ -52,7 +52,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/stavis-dev/stavis-dev.github.io/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
