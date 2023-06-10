@@ -85,11 +85,13 @@ const config = {
             // label: 'GitHub',
             // label: "🐙",
             position: 'right',
+            className: 'navbar-icon navbar-icon-github',
+            'aria-label': 'GitHub repository',
             html: `<svg
               stroke="currentColor"
               fill="currentColor"
               stroke-width="0"
-              viewBox="0 0 512 512"
+              viewBox="0 0 496 512"
               height="24"
               width="24"
               xmlns="http://www.w3.org/2000/svg">
@@ -100,6 +102,8 @@ const config = {
           {
             href: "https://twitter.com/stavisvega",
             position: "right",
+            className: 'navbar-icon navbar-icon-twitter',
+            'aria-label': 'Twitter page',
             // label: "🐦",
             html: `<svg
               stroke="currentColor"
