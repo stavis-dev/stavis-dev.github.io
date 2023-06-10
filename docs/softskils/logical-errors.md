@@ -4,16 +4,13 @@ author: Stavis Vega
 date: "2023-05-04"
 description: "Пятьдесят логических ошибок. Примеры ошибок, помощь в избавлении от стереотипов мышления."
 tags: ["Логика",]
+image: "https://media.proglib.io/wp-uploads/2018/01/45675477bb165f999.jpg"
 categories: ["softskills", "conversation"]
 # aliases: [""]
 ShowToc: true
 TocOpen: false
 math: true
-cover:
-  hidden: true  # спрятать
-  image: "https://blog.mann-ivanov-ferber.ru/wp-content/uploads/2017/07/Untitled-1-12.png"
-  alt: "Логические ошибки" # alt text
-  caption: "Логические ошибки" # display caption under cover
+
 ---
 
 ![логика](https://media.proglib.io/wp-uploads/2018/01/45675477bb165f999.jpg)
