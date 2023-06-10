@@ -9,13 +9,14 @@ categories: ["soft", "linux"]
 ShowToc: true
 TocOpen: false
 ShowBreadCrumbs: true
-image: "yt-dlp-header.webp"
 cover:
   hidden: true
   image: "yt-dlp-header.webp"
   alt: "yt-dlp лого" # alt text
   caption: "yt-dlp управление" # display caption under cover
 ---
+
+![TDD Banner](yt-dlp-header.webp)
 
 ## скачивание только mp3 с youtube
 
