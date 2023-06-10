@@ -14,6 +14,7 @@ cover:
   alt: "vim панель" # alt text
   caption: "Vim управление" # display caption under cover
 ---
+![neovim screenshot](nvim.webp)
 
 > Я сейчас в процессе обучения vim, так что контент будет меняться регулярно.
 
