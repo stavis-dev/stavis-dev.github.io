@@ -14,7 +14,10 @@ cover:
   image: "https://cdn.lifehacker.ru/wp-content/uploads/2016/10/spongebob_1477589304.gif"
   alt: "Скороговорки" # alt text
   caption: "Тренируем речевой аппарат" # display caption under cover
+  
 ---
+
+![спанч боб](https://cdn.lifehacker.ru/wp-content/uploads/2016/10/spongebob_1477589304.gif)
 
 Сборник современных, не скучных скороговорок.  
 Перенес только потому, что на остальных сайтах,
