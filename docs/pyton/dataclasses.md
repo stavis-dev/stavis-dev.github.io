@@ -5,16 +5,16 @@ date: "2022-02-07"
 description: "9 причин использовать dataclasses в Python"
 tags: ["dataclasses"]
 categories: ["python"]
-# aliases: [""]
-ShowToc: true
-TocOpen: true
 math: true
 cover:
-    hidden: true
-    image: "https://miro.medium.com/max/1400/1*7pr8EL8EDsP296pxL7Wz_g.png"
-    alt: "Картинка" # alt text
-    caption: "Датаклассы" # display caption under cover
+  hidden: true
+  image: 'https://miro.medium.com/max/1400/1*7pr8EL8EDsP296pxL7Wz_g.png'
+  alt: "Картинка"
+  caption: "Датаклассы"
 ---
+
+![from dataclasses](https://miro.medium.com/max/1400/1*7pr8EL8EDsP296pxL7Wz_g.png)
+
 ## 0 – Dataclasses: общая картина
 
 >Статья более чем полностью скопированна с сайта habr.com    
