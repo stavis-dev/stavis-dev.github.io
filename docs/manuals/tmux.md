@@ -1,5 +1,4 @@
 ---
-draft: true
 author: Stavis
 title: "Памятка по tmux"
 description: "Шпаргалка памятка по приложению tmux"
