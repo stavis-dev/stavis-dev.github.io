@@ -1,19 +1,12 @@
 ---
-draft: true
+draft: false
 author: Stavis
 title: "Демон systemd"
 date: "2022-04-15"
 description: "Systemd демон которого легко приручить, systemctl как справится в linux"
 tags: ["systemctl", "автозапуск линукс", "autostart"]
 categories: ["devops", "linux"]
-ShowToc: true
-TocOpen: false
-ShowBreadCrumbs: true
-cover:
-    hidden: false
-    image: "https://timesofcloud.com/wp-content/uploads/2020/07/linux-systemd.jpg"
-    alt: "systemd" # alt text
-    caption: "systemd" # display caption under cover
+image: "https://timesofcloud.com/wp-content/uploads/2020/07/linux-systemd.jpg"
 ---
 Вместе с подсистемой `systemd` появилась команда `systemctl`.
 Она позволяет управлять основными процессами Linux.
