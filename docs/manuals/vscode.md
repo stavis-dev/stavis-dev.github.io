@@ -53,7 +53,7 @@ nvim $HOME/Library/Application\ Support/Code/User/settings.json
 "editor.hover.enabled": false,
 ```
 
-### снипет ifmain
+### Снипет ifmain
 
 In vscode, `File->Preferences->User Snippets`.  
 Type python and choose python. A json file will open
@@ -74,7 +74,7 @@ This is the default main snippet:
     },
 ```
 
-### вертикальная полоса ограничитель символов
+### Вертикальная полоса ограничитель символов
 
 ```js
 "editor.rulers": [80,120],
