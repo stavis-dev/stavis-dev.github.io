@@ -1,20 +1,12 @@
 ---
 title: "Линукс терминал"
-author: Stavis Vega
-date: "2022-05-25"
+author: Stavis
 description: "Управление косколью, быстрые комманды терминала 
     и лайфхаки, которые могут пригодиться"
 tags: ["terminal", "ssh"]
 categories: ["devops", "linux"]
-# aliases: [""]
-ShowToc: true
-TocOpen: true
-math: true
-# cover:
-#     hidden: true
-#     image: "https://miro.medium.com/max/1400/1*7pr8EL8EDsP296pxL7Wz_g.png"
-#     alt: "Картинка" # alt text
-#     caption: "Датаклассы" # display caption under cover
+image: "https://miro.medium.com/max/1400/1*7pr8EL8EDsP296pxL7Wz_g.png"
+
 ---
 
 Быстрые команды терминала линукс (Mac). Управление клавишами.
@@ -86,7 +78,7 @@ math: true
 
 Ниже всякие удобности, которые иногда пригождаются.
 
-## Сбос терминала
+### Сбос терминала
 
 ```bash
 reset
@@ -97,6 +89,7 @@ reset
 ```bash
 curl ifconfig.me
 ```
+`curl 2ip.ua` - выдаст ip, провайдера, локацию.
 
 ### Прогноз погоды прямо в терминале
 
