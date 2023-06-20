@@ -1,10 +1,12 @@
 ---
 title: "Шпаргалка по unittest python"
 description: "Примеры по unittest в питоне"
-author: Stavis
-date: "2023-06-20"
+sidebar_label: "Unittest примеры"
 tags: ["triks"]
 categories: ["python"]
+last_update:
+  date: 2023-06-20
+  author: stavis
 
 ---
 
