@@ -2,7 +2,7 @@
 title: "Шпаргалка по unittest python"
 description: "Примеры по unittest в питоне"
 author: Stavis
-date: "2022-02-07"
+date: "2023-06-20"
 tags: ["triks"]
 categories: ["python"]
 ShowToc: true
@@ -53,6 +53,7 @@ if __name__ == '__main__':
 
 ### Использования патчей
 
+Если нужна подмена возвращаемых значений например `json`
 
 ```py
 import io
