@@ -22,3 +22,11 @@ tags: [music, hobbies]
 ## Версия чуть по сложнее
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oF5PJa6nuKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Для совсем разбирающихся
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nOkBCgbUjTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Ноты
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-be13G2il5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
