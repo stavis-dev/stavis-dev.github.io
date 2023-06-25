@@ -13,7 +13,7 @@
         <link href="https://stavis-dev.github.io/blog/2023/06/25/veter-peremen-text"/>
         <updated>2023-06-25T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Текст и ноты песни "Ветер перемен" из вильма "Мэри Поппинс досвиданья"]]></summary>
-        <content type="html"><![CDATA[<p><img loading="lazy" src="https://thumbs.dfs.ivi.ru/storage4/contents/a/a/5b2b7bf95faf1aebd34374f91cabda.jpg/400x226/" alt="Мэри Поппинс до свидания" class="img_ev3q"></p><h1>Текст песни Мэри Поппинс - Ветер перемен</h1><p>Кружит земля, как в детстве карусель,<br>
+        <content type="html"><![CDATA[<p><img loading="lazy" src="https://thumbs.dfs.ivi.ru/storage4/contents/a/a/5b2b7bf95faf1aebd34374f91cabda.jpg/400x226/" alt="Мэри Поппинс до свидания" class="img_ev3q"></p><p><strong>Ветер перемен.</strong></p><ul><li>муз.М.Дунаевский</li><li>сл.Н.Олев</li></ul><p>Кружит земля, как в детстве карусель,<br>
 <!-- -->А над землей кружат ветра потерь,<br>
 <!-- -->Ветра потерь, разлук, обид и зла,<br>
 <!-- -->Им нет числа,</p><p>Им нет числа - сквозят из всех щелей,<br>
@@ -33,10 +33,10 @@
 <!-- -->Он придет, он будет добрый, ласковый<br>
 <!-- -->Ветер перемен.<br>
 <!-- -->Он придет, он будет добрый, ласковый<br>
-<!-- -->Ветер перемен.  </p><p><strong>Ветер перемен.</strong></p><ul><li>муз.М.Дунаевский</li><li>сл.Н.Олев</li></ul><p>[youtube]<!-- -->(<a href="https://youtu.be/C-HJ7qHCksA%5D" target="_blank" rel="noopener noreferrer">https://youtu.be/C-HJ7qHCksA]</a></p>]]></content>
+<!-- -->Ветер перемен.  </p><p><a href="https://youtu.be/C-HJ7qHCksA" target="_blank" rel="noopener noreferrer">youtube</a></p>]]></content>
         <author>
             <name>Stavis Vega</name>
-            <uri>https://sebastienlorber.com</uri>
+            <uri>https://github.com/stavis-dev</uri>
         </author>
         <category label="music" term="music"/>
         <category label="hobbies" term="hobbies"/>
@@ -52,7 +52,7 @@
 <!-- -->С неприятным удивлением обнаружил, что многое в моей "базе знаний" записано хаотично. И отдельными страницами инфу трудно воспринять.</p><p>В общем походу добавления правок, блог и база знаний будет наполняться.</p>]]></content>
         <author>
             <name>Stavis Vega</name>
-            <uri>https://sebastienlorber.com</uri>
+            <uri>https://github.com/stavis-dev</uri>
         </author>
         <category label="hello" term="hello"/>
         <category label="docusaurus" term="docusaurus"/>
@@ -67,7 +67,7 @@
         <content type="html"><![CDATA[<p><a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer">Docusaurus blogging features</a> are powered by the <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer">blog plugin</a>.</p><p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p><p>Regular blog authors can be added to <code>authors.yml</code>.</p><p>The blog post date can be extracted from filenames, such as:</p><ul><li><code>2019-05-30-welcome.md</code></li><li><code>2019-05-30-welcome/index.md</code></li></ul><p>A blog post folder can be convenient to co-locate blog post images:</p><p><img loading="lazy" alt="Docusaurus Plushie" src="/assets/images/docusaurus-plushie-banner-a60f7593abca1e3eef26a9afa244e4fb.jpeg" width="1500" height="500" class="img_ev3q"></p><p>The blog supports tags as well!</p><p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content>
         <author>
             <name>Stavis Vega</name>
-            <uri>https://sebastienlorber.com</uri>
+            <uri>https://github.com/stavis-dev</uri>
         </author>
         <category label="facebook" term="facebook"/>
         <category label="hello" term="hello"/>
