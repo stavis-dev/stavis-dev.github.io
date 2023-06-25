@@ -2,7 +2,7 @@
 title: "Ветер перемен как играть"
 description: 'Как играть "Ветер перемен" из вильма "Мэри Поппинс досвиданья" на пианино'
 authors: stavis
-image:https://thumbs.dfs.ivi.ru/storage4/contents/a/a/5b2b7bf95faf1aebd34374f91cabda.jpg/400x226/ 
+image: https://thumbs.dfs.ivi.ru/storage4/contents/a/a/5b2b7bf95faf1aebd34374f91cabda.jpg/400x226/ 
 tags: [music, hobbies]
 ---
 # Текст песни Мэри Поппинс - Ветер перемен
