@@ -4,10 +4,20 @@
         <title>Шпаргалка по знаниям Blog</title>
         <link>https://stavis-dev.github.io/blog</link>
         <description>Шпаргалка по знаниям Blog</description>
-        <lastBuildDate>Sun, 25 Jun 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 26 Jun 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ru</language>
+        <item>
+            <title><![CDATA[Ветер перемен как играть]]></title>
+            <link>https://stavis-dev.github.io/blog/2023/06/26/veter-peremen-how-to-play</link>
+            <guid>https://stavis-dev.github.io/blog/2023/06/26/veter-peremen-how-to-play</guid>
+            <pubDate>Mon, 26 Jun 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Как играть "Ветер перемен" из вильма "Мэри Поппинс досвиданья" на пианино]]></description>
+            <content:encoded><![CDATA[<p><img loading="lazy" src="https://thumbs.dfs.ivi.ru/storage4/contents/a/a/5b2b7bf95faf1aebd34374f91cabda.jpg/400x226/" alt="Мэри Поппинс до свидания" class="img_ev3q"></p><p><strong>Ветер перемен.</strong></p><ul><li>муз.М.Дунаевский</li><li>сл.Н.Олев</li></ul><iframe width="560" height="315" src="https://www.youtube.com/embed/oF5PJa6nuKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>]]></content:encoded>
+            <category>music</category>
+            <category>hobbies</category>
+        </item>
         <item>
             <title><![CDATA[Ветер перемен текст песни]]></title>
             <link>https://stavis-dev.github.io/blog/2023/06/25/veter-peremen-text</link>
