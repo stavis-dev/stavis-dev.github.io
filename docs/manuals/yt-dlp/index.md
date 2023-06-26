@@ -20,6 +20,16 @@ cover:
 
 ![TDD Banner](yt-dlp-header.webp)
 
+
+#### Options {#options}
+
+Настройки: ключей. Полный список в [реозитории](https://github.com/yt-dlp/yt-dlp#general-options). 
+
+| Name | Short | Description |
+| --- | --- | --- |
+| `--list-formats` | `-F` |  List available formats of each video. |
+| `--format` | `-f` | Video format code |
+
 Со сторонних сайтов искать плейлисты в формате `m3u8`.
 
 Со временем пользования программой понял, что лучше всего
@@ -53,7 +63,7 @@ cover:
 youtube-dl -o '%(title)s.%(ext)s' --format "bestvideo+bestaudio[ext=m4a]/bestvideo+bestaudio/best" --merge-output-format mp4 --yes-playlist https://youtube.com/playlist?list=PLisqB92_b4TlQH3jVGf6lrFMVqalCTjAQ
 ```
 
-## одиночное видео
+## Одиночное видео
 
 ```bash
 
