@@ -99,7 +99,7 @@ yt-dlp --skip-download --write-thumbnail --convert-thumbnails jpg
 
 Пример для скачивания `youtube` роликов через сервис [colab](https://colab.research.google.com/drive/1VYZOzBjoacWr7s9Al-J932byqaylRunW)
 
-```shell
+```shell title="yt-dlp.conf"
 
 # Lines starting with # are comments
 # Formats
@@ -108,7 +108,7 @@ yt-dlp --skip-download --write-thumbnail --convert-thumbnails jpg
 -f 22/bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best
 
 # Templafe folder
--P "/content/videos/"
+-P "./videos/"
 # Save all videos under YouTube directory in your home directory
 -o %(title)s/%(title)s.%(ext)s
 
