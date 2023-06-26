@@ -95,7 +95,13 @@ yt-dlp --skip-download --write-thumbnail --convert-thumbnails jpg
 
 ### Файл конфигурации
 
-`yt-dlp.conf`
+В случае регулярного использования команд можно задать файл конфигурации`yt-dlp.conf`
+
+:::tip My tip
+
+Use this awesome feature option
+
+:::
 
 Пример для скачивания `youtube` роликов через сервис [colab](https://colab.research.google.com/drive/1VYZOzBjoacWr7s9Al-J932byqaylRunW)
 
