@@ -79,18 +79,6 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {
-              type: 'doc',
-              position: 'left',
-              docId: 'introduction',
-              label: 'Docs',
-            },
-          {
-              type: 'docSidebar',
-              position: 'left',
-              sidebarId: 'api',
-              label: 'API',
-            },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/stavis-dev',
