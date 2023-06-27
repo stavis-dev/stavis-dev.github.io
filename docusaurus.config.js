@@ -129,6 +129,10 @@ const config = {
                 label: 'Tutorial',
                 to: '/docs/intro',
               },
+              {
+                label: 'Docusaurus',
+                href: 'https://docusaurus.io/',
+              },
             ],
           },
           {
