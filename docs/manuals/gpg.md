@@ -1,7 +1,7 @@
 ---
 author: Stavis
-title: "GPG работаем с программой"
-description: "Шифрование приложеним gpg"
+title: "Шифруем с GPG"
+description: "Шифрование программой gpg"
 tags: ["gpg"]
 categories: ["devops", "linux"]
 ---
