@@ -3,6 +3,7 @@ title: "Методы пропаганды ч.2"
 description: "Популярные методы пропаганды продолжение"
 tags: ["политика"]
 categories: ["softskils", "selfupgrade"]
+draft: true
 
 ---
 # Методы пропаганды продолжение
