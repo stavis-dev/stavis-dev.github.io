@@ -22,7 +22,7 @@ STORAGE_BUCKET_NAME=my-super-important-data
 Почти в каждом языке программирования есть пакет или библиотека,
 которые можно использовать для чтения переменных окружения из файла `.env`,
 а не из вашей локальной среды. 
-Для Python этой библиотекой является `python-dotenv`. 
+Для Python этой библиотекой является [python-dotenv][python-dotenv]. 
 Как только библиотека установлена, обычный вариант использования `python-dotenv` требует добавления в ваш проект всего двух строк кода.
 
 ```python title="app.py"
@@ -49,6 +49,6 @@ load_dotenv(dotenv_path=dotenv_path)
 
 Для большинства приложений это вся информация,
 которая вам должна понадобиться для продуктивной работы с python-dotenv, однако есть несколько дополнительных функций,
-о которых вы можете прочитать в документации [python-dotenv](https://pypi.org/project/python-dotenv/).
+о которых вы можете прочитать в документации [python-dotenv][python-dotenv].
 
-
+[python-dotenv]: <https://pypi.org/project/python-dotenv/> "Python-dotenv"
