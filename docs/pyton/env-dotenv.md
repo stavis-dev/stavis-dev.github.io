@@ -1,10 +1,8 @@
 ---
 author: stavis
 title: Использование .env
-date: "2022-02-09"
 description: "Работа с .env файлами. Храним переменные правильно"
-tags: ["regex", "re", "регулярные выражения"]
-categories: ["python", "modules"]
+tags: ["modules"]
 
 ---
 
