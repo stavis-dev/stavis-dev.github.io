@@ -6,7 +6,11 @@ sidebar_position: 1
 
 Документация по IT и около IT тематики **Docusaurus in less than 5 minutes**.
 
-## Getting Started
+## Полезные ссылки
+
+Бесплатные версии GPT чатов.
+- [freegpt-webui](https://freegpt-webui.ramonvc.repl.co/chat/) чат, или [repo](https://github.com/ramonvc/freegpt-webui/tree/main)
+- [you.com](https://you.com/) - требуется регистрация
 
 Get started by **creating a new site**.
 
