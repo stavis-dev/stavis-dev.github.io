@@ -54,6 +54,31 @@ firefox_options.add_argument("--private")
 driver = webdriver.Firefox(options=firefox_options)
 ```
 
+## Обнаружение автоматизаци
+
+По умолчанию сайт понимает когда не него заходит браузер с плагином автоматизации, или если запросы идут с браузера в headless "скрытом" режиме. Пример как происходит [Обнаружение Chrome headless](https://antoinevastel.com/bot%20detection/2018/01/17/detect-chrome-headless-v2.html) режима бразуера.
+
+- [Посмотреть](https://antoinevastel.com/bots/) свой `fingetprint`
+- Тест на бота [antoinevastel.com](https://antoinevastel.com/bots/datadome)
+В некоторых случаях полезно препятствовать обнаружению.
+Ниже рабочие методы.
+
+```py
+from selenium.webdriver.chrome.options import Options
+options = Options()
+
+options.add_argument('--disable-blink-features=AutomationControlled')
+options.add_experimental_option('useAutomationExtension', False)  # Turn-off useAutomationExtension
+options.add_experimental_option("excludeSwitches", ["enable-automation"])  # Exclude the collection of enable-automation switches
+
+driver = webdriver.Chrome(options=options)
+driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+driver.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.53 Safari/537.36'})
+print(driver.execute_script("return navigator.userAgent;"))
+```
+- [Ответ на stackoverflow](https://stackoverflow.com/questions/53039551/selenium-webdriver-modifying-navigator-webdriver-flag-to-prevent-selenium-detec/53040904#53040904) с решением этой проблемы.
+
+
 ## Links
 
 Официальные ссылки
