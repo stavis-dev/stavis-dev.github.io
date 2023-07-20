@@ -60,6 +60,8 @@ driver = webdriver.Firefox(options=firefox_options)
 
 - [Посмотреть](https://antoinevastel.com/bots/) свой `fingetprint`
 - Тест на бота [antoinevastel.com](https://antoinevastel.com/bots/datadome)
+- еще тест на бота []()
+
 В некоторых случаях полезно препятствовать обнаружению.
 Ниже рабочие методы.
 
@@ -77,6 +79,7 @@ driver.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent": 'Mozilla/5.
 print(driver.execute_script("return navigator.userAgent;"))
 ```
 - [Ответ на stackoverflow](https://stackoverflow.com/questions/53039551/selenium-webdriver-modifying-navigator-webdriver-flag-to-prevent-selenium-detec/53040904#53040904) с решением этой проблемы.
+- Как определяется selenium ответ на [stackoverflow.com](https://stackoverflow.com/questions/33225947/can-a-website-detect-when-you-are-using-selenium-with-chromedriver?noredirect=1&lq=1)
 
 
 ## Links
