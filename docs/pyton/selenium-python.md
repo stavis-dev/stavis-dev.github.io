@@ -78,6 +78,12 @@ driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () =>
 driver.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.53 Safari/537.36'})
 print(driver.execute_script("return navigator.userAgent;"))
 ```
+
+Еще вариантом могут быть уже пропатченые драйвера. Например репозиторий [selenium-stealth](https://github.com/diprajpatra/selenium-stealth)
+
+Так же будет полезна репа [Selenium-Profiles](https://github.com/kaliiiiiiiiii/Selenium-Profiles)
+
+
 - [Ответ на stackoverflow](https://stackoverflow.com/questions/53039551/selenium-webdriver-modifying-navigator-webdriver-flag-to-prevent-selenium-detec/53040904#53040904) с решением этой проблемы.
 - Как определяется selenium ответ на [stackoverflow.com](https://stackoverflow.com/questions/33225947/can-a-website-detect-when-you-are-using-selenium-with-chromedriver?noredirect=1&lq=1)
 
