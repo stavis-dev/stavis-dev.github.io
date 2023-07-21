@@ -60,7 +60,7 @@ driver = webdriver.Firefox(options=firefox_options)
 
 - [Посмотреть](https://antoinevastel.com/bots/) свой `fingetprint`
 - Тест на бота [antoinevastel.com](https://antoinevastel.com/bots/datadome)
-- еще тест на бота []()
+- еще тест на бота [bot.sannysoft.com](https://bot.sannysoft.com/)
 
 В некоторых случаях полезно препятствовать обнаружению.
 Ниже рабочие методы.
