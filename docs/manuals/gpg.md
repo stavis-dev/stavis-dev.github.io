@@ -2,8 +2,8 @@
 author: Stavis
 title: "Шифруем с GPG"
 description: "Шифрование программой gpg"
-tags: ["gpg"]
-categories: ["devops", "linux"]
+tags: ["gpg", "linux"]
+
 ---
 
 # GPG
