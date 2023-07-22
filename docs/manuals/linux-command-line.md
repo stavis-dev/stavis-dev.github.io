@@ -283,7 +283,7 @@ alias ll="ls -l"
 
 Пример файла:
 
-```txt
+```txt title="animals.txt"
 python	Programming Python	2010	Lutz, Mark
 snail	SSH, The Secure Shell	2005	Barrett, Daniel
 alpaca	Intermediate Perl	2012	Schwartz, Randal
