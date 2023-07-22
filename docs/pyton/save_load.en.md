@@ -3,7 +3,8 @@ author: Stavis Vega
 title: Working with files Pyhton
 date: 2019-03-08
 description: A couple of shortcodes to save time when writing python scripts
-math: true
+draft: true
+
 ---
 ## Save / Load to json
 
