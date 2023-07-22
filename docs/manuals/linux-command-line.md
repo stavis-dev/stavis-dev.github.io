@@ -118,10 +118,18 @@ cut -f4 animals.txt | cut -d, -f1
 sort
 ```
 
-или в порядке убывания (с параметром -r)
+| Опции | Описание |
+| --- | --- |
+| `-r` | сортировать в порядке убывания |
+| `-n` | сортировать в числовом порядке |
+
+Пример:
 
 ```sh
-sort -r
+cut -f3 animals.txt | sort -n | head -n3
+# 1999
+# 2005
+# 2005
 ```
 
 ## pushd, popd, dirs
@@ -244,3 +252,43 @@ popd +N
 ```
 
 удаляет каталог, расположенный на позиции N, из стека, считая сверху вниз. Отрицательный аргумент (-N) означает отсчет снизу стека. Подсчет начинается с нуля, поэтому popd +1 удаляет второй каталог сверху:
+
+## env Переменные окружения
+
+Для вывода на экран значений переменных HOME и USER запустите команду
+printenv:
+
+```sh
+printenv HOME
+# /home/smith
+printenv USER
+# smith
+```
+
+## alias
+
+Отобразить список всех алиасов:
+
+```sh
+alias
+```
+
+Создать алиас
+
+```sh
+alias ll="ls -l"
+```
+
+## Файл animals.txt
+
+Пример файла:
+
+```txt
+python	Programming Python	2010	Lutz, Mark
+snail	SSH, The Secure Shell	2005	Barrett, Daniel
+alpaca	Intermediate Perl	2012	Schwartz, Randal
+robin	MySQL High Availability	2014	Bell, Charles
+horse	Linux in a Nutshell	2009	Siever, Ellen
+donkey	Cisco IOS in a Nutshell	2005	Boney, James
+oryx	Writing Word Macros	1999	Roman, Steven
+```
