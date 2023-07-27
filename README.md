@@ -29,3 +29,8 @@ This command generates static content into the `build` directory and can be serv
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
 
 [deploy on github](https://docusaurus.io/docs/deployment#deploying-to-github-pages)
+
+
+### Ideal image
+
+[пример использования](https://github.com/venom-blockchain/venom-blockchain.github.io/blob/main/docs/start/general/wallet/multisignature-account/sending-tokens-from-the-multisignature-account.md?plain=1)
