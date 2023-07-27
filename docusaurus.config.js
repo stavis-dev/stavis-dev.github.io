@@ -93,7 +93,7 @@ const config = {
             label: 'Tutorial',
           },
           {
-              to: '/docs/Python',
+              to: 'category/python---шпаргалка',
               label: 'Python',
               position: 'left',
               activeBaseRegex: `/python/`,
