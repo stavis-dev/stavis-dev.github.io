@@ -76,9 +76,10 @@ const config = {
       algolia: {
           appId: '4AQD0NYHWH',
           apiKey: '51f81baefc1f07fad57973808a9e8d68',
-          indexName: 'stavis.dev-gh',
+          indexName: 'docusaurus-2',
         },
       navbar: {
+        hideOnScroll: true,  // исчезает при прокрутке вниз
         title: 'Главная',
         logo: {
           alt: 'Логотип сайта',
