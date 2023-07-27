@@ -92,6 +92,12 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
+          {
+              to: '/docs/Python',
+              label: 'Python',
+              position: 'left',
+              activeBaseRegex: `/python/`,
+          },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/stavis-dev',
