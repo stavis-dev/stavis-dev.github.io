@@ -75,7 +75,7 @@ const config = {
         },
       algolia: {
           appId: 'A4WYJ5NE7Y',
-          apiKey: '51f81baefc1f07fad57973808a9e8d68',
+          apiKey: 'cb4b5e527ad56fad87cb1bdbd3ba2d64',
           indexName: 'stavis-devio',
         },
       navbar: {
