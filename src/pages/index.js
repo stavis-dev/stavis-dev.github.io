@@ -29,12 +29,12 @@ function HomepageHeader() {
 export default function Home() {
   return (
     <Layout
-      title='Welcome to Venom'
-      description="The Knowledge Base is the entry point into the Venom universe. Get to know the technology behind the incredible scalability of the Venom blockchain.">
+      title='Записки айтишника.'
+      description="База знаний начинающего IT исследователя, начало в мир информационных технологий.">
       <HomepageHeader />
       <main>
         <div className={clsx('main__container', 'container')}>
-          <h2 className={clsx(styles.main__title)}>Explore the Knowledge Base</h2>
+          <h2 className={clsx(styles.main__title)}>Основные блоки</h2>
 
           <div className={clsx(styles.main__container, styles.main__explore)}>
             <div className={clsx(styles.main__col, 'col col--3')}>
@@ -43,19 +43,10 @@ export default function Home() {
               </h3>
               <ul>
                 <li>
-                  <a href="/general/whats-new">What's New</a>
+                  <a href="/general/whats-new">Обо мне</a>
                 </li>
                 <li>
-                  <a href="/general/ecosystem">Ecosystem</a>
-                </li>
-                <li>
-                  <a href="/general/wallet/create-a-new-wallet-account">Create a new Wallet Account</a>
-                </li>
-                <li>
-                  <a href="/general/balance-transfers">Balance Transfers</a>
-                </li>
-                <li>
-                  <a href="/general/community">Community</a>
+                  <a href="category/python---шпаргалка">Python шпаргалка</a>
                 </li>
               </ul>
             </div>
