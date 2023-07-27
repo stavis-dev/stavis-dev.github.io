@@ -24,7 +24,14 @@ const config = {
   organizationName: 'stavis-dev', // Usually your GitHub org/user name.
   projectName: 'stavis-dev.github.io', // Usually your repo name.
 
-
+  // https://github.com/sgromkov/docusaurus-plugin-yandex-metrica
+  // https://github.com/sgromkov/gromkov.me/blob/main/docusaurus.config.js
+  plugins: [
+        ['docusaurus-plugin-yandex-metrica', {
+            counterID: '86645179',
+        }]
+    ],
+  
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
