@@ -134,7 +134,69 @@ dict((key, value) for item in list if condition)
 
 Словари в Python имеют множество различных полезных методов, которые помогут вам в работе с ними. Вот лишь некоторые из них:
 
-### get()
+### dict.clear()
+
+Метод `clear` позволяет очистить словарь:
+
+```python
+    In [1]: london = {'name': 'London1', 'location': 'London Str'}
+
+    In [2]: london.clear()
+
+    In [3]: london
+    Out[3]: {}
+```
+
+### dict.copy()
+
+Метод `copy` позволяет создать полную копию словаря.
+
+Если указать, что один словарь равен другому:
+
+```python
+
+    In [4]: london = {'name': 'London1', 'location': 'London Str', 'vendor': 'Cisco'}
+
+    In [5]: london2 = london
+
+    In [6]: id(london)
+    Out[6]: 25489072
+
+    In [7]: id(london2)
+    Out[7]: 25489072
+
+    In [8]: london['vendor'] = 'Juniper'
+
+    In [9]: london2['vendor']
+    Out[9]: 'Juniper'
+```
+
+В этом случае london2 это еще одно имя, которое ссылается на словарь. И
+при изменениях словаря london меняется и словарь london2, так как это
+ссылки на один и тот же объект.
+
+Поэтому, если нужно сделать копию словаря, надо использовать метод
+copy():
+
+```python
+
+    In [10]: london = {'name': 'London1', 'location': 'London Str', 'vendor': 'Cisco'}
+
+    In [11]: london2 = london.copy()
+
+    In [12]: id(london)
+    Out[12]: 25524512
+
+    In [13]: id(london2)
+    Out[13]: 25563296
+
+    In [14]: london['vendor'] = 'Juniper'
+
+    In [15]: london2['vendor']
+    Out[15]: 'Cisco'
+```   
+
+### dict.get()
 
 `dict.get(key[, default])` - возвращает значение ключа, но если его нет, не бросает исключение, а возвращает `default` (по умолчанию `None`).
 
@@ -167,7 +229,7 @@ None
 story_count.get('два', 0)
 ```
 
-### update()
+### dict.update()
 
 Метод `update()` пригодится, если нужно обновить несколько пар сразу.  
 Метод принимает другой словарь в качестве аргумента.
@@ -211,7 +273,66 @@ print(story_count)
 # >>> {'двенадцать': 12, 'сто': 100, 'пять': 5}
 ```
 
-### keys()
+### dict.setdefault()
+
+
+Метод `setdefault` ищет ключ, и если его нет, вместо ошибки создает
+ключ со значением `None`.
+
+```py
+
+    In [21]: london = {'name': 'London1', 'location': 'London Str', 'vendor': 'Cisco'}
+
+    In [22]: ios = london.setdefault('ios')
+
+    In [23]: print(ios)
+    None
+
+    In [24]: london
+    Out[24]: {'name': 'London1', 'location': 'London Str', 'vendor': 'Cisco', 'ios': None}
+```
+
+Если ключ есть, setdefault возвращает значение, которое ему
+соответствует:
+
+```py
+
+    In [25]: london.setdefault('name')
+    Out[25]: 'London1'
+```
+
+Второй аргумент позволяет указать, какое значение должно соответствовать
+ключу:
+
+```py
+
+    In [26]: model = london.setdefault('model', 'Cisco3580')
+
+    In [27]: print(model)
+    Cisco3580
+
+    In [28]: london
+    Out[28]:
+    {'name': 'London1',
+     'location': 'London Str',
+     'vendor': 'Cisco',
+     'ios': None,
+     'model': 'Cisco3580'}
+```
+
+Метод setdefault заменяет такую конструкцию:
+
+```py
+
+    In [30]: if key in london:
+        ...:     value = london[key]
+        ...: else:
+        ...:     london[key] = 'somevalue'
+        ...:     value = london[key]
+        ...:
+```
+
+### dict.keys()
 
 Метод `keys()` возвращает коллекцию ключей в словаре.
 
@@ -221,7 +342,7 @@ print(story_count.keys())
 # >>> ['сто', 'пять', 'двенадцать']
 ```
 
-### values()
+### dict.values()
 
 Метод `values()` возвращает коллекцию значений в словаре.
 
@@ -231,7 +352,7 @@ print(story_count.values())
 # >>> [100, 12, 5]
 ```
 
-### items()
+### dict.items()
 
 Метод `items()` возвращает пары «ключ — значение».
 
@@ -243,6 +364,20 @@ print(story_count.values())
 ('бежал', 'бежать в прошедшем времени'),
 ('марафон', 'гонка бегунов длиной около 26 миль'),
 ('туфли', 'туфля во множественном числе')]
+```
+
+### del dict[key]
+
+Удалить ключ и значение:
+
+```py
+
+    In [35]: london = {'name': 'London1', 'location': 'London Str', 'vendor': 'Cisco'}
+
+    In [36]: del london['name']
+
+    In [37]: london
+    Out[37]: {'location': 'London Str', 'vendor': 'Cisco'}
 ```
 
 ## Примеры
