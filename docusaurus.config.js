@@ -28,7 +28,7 @@ const config = {
   // https://github.com/sgromkov/gromkov.me/blob/main/docusaurus.config.js
   plugins: [
         ['docusaurus-plugin-yandex-metrica', {
-            counterID: '86645179',
+            counterID: '94461914',
         }]
     ],
   
