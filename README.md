@@ -33,4 +33,5 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 
 ### Ideal image
 
+[плагин](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-ideal-image)  
 [пример использования](https://github.com/venom-blockchain/venom-blockchain.github.io/blob/main/docs/start/general/wallet/multisignature-account/sending-tokens-from-the-multisignature-account.md?plain=1)
