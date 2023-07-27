@@ -29,7 +29,19 @@ const config = {
   plugins: [
         ['docusaurus-plugin-yandex-metrica', {
             counterID: '94461914',
-        }]
+        }],
+        [
+        'ideal-image',
+        /** @type {import('@docusaurus/plugin-ideal-image').PluginOptions} */
+        ({
+          quality: 70,
+          max: 1030,
+          min: 640,
+          steps: 2,
+          // Use false to debug, but it incurs huge perf costs
+          disableInDev: true,
+        }),
+      ],
     ],
   
   // Even if you don't use internalization, you can use this field to set useful
@@ -68,6 +80,9 @@ const config = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        gtag: {
+          trackingID: 'G-5EZH6Q0C8W',
         },
       }),
     ],
