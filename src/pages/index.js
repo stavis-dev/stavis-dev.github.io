@@ -15,18 +15,18 @@ function HomepageHeader() {
     <header className={clsx('main', styles.mainBanner)}>
       <div className={clsx('main__container', 'container')}>
         <h1 className={clsx(styles.main__title)}>
-          Welcome to the Venom Knowledge Base
+          Welcome to the Stavis Knowledge Base
         </h1>
         <p>
-          The Knowledge Base is the entry point into the Venom universe.<br/>
-          Get to know the technology behind the incredible scalability of the Venom blockchain.
+          Тут собрана небольшая база знаний, которую пришлось накопить за время моих IT исканий.<br/>
+          База постепенно перемещается из локальной колекции Obdidian, пополняться  будет частями.
         </p>
       </div>
     </header>
   );
 }
 
-export default function Home(): JSX.Element {
+export default function Home() {
   return (
     <Layout
       title='Welcome to Venom'
