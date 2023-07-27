@@ -20,6 +20,8 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+      - name: Add yandex metrika
+        run: npm install --save docusaurus-plugin-yandex-metrica
       - name: Build website
         run: npm run build
 
