@@ -12,7 +12,7 @@ export default function SocialLinks() {
             </svg>
             <div>
             <p>Discord</p>
-            <a href="https://discord.venom.foundation" target="_blank">Venom Foundation</a> |
+            <a href="https://server-discord.com/1077641834668507237" target="_blank">My discord</a> |
             <a style={{marginLeft: "10px"}} href="https://discord.venom.foundation/dev" target="_blank">Dev Channel</a>
             </div>
         </div>
@@ -23,7 +23,7 @@ export default function SocialLinks() {
             </svg>
             <div>
                 <p>Twitter</p>
-                <a href="https://twitter.com/venomfoundation" target="_blank">@venomfoundation</a>
+                <a href="https://twitter.com/stavisvega" target="_blank">@stavisvega</a>
             </div>
         </div>
 
@@ -32,8 +32,8 @@ export default function SocialLinks() {
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.33333 23.9156V21H7C5.067 21 3.5 19.433 3.5 17.5V7C3.5 5.067 5.067 3.5 7 3.5H21C22.933 3.5 24.5 5.067 24.5 7V17.5C24.5 19.433 22.933 21 21 21H14.495L10.2811 24.3711C10.106 24.5112 9.86607 24.5385 9.66397 24.4413C9.46187 24.3442 9.33333 24.1398 9.33333 23.9156ZM11.325 8.50866C10.8693 8.05305 10.1307 8.05305 9.67504 8.50866C9.21943 8.96427 9.21943 9.70296 9.67504 10.1586L11.1834 11.667L9.67504 13.1753C9.21943 13.6309 9.21943 14.3696 9.67504 14.8252C10.1307 15.2809 10.8693 15.2809 11.325 14.8252L13.6583 12.4919C13.8771 12.2731 14 11.9764 14 11.667C14 11.3575 13.8771 11.0608 13.6583 10.842L11.325 8.50866ZM15.1667 14.0003C14.5223 14.0003 14 14.5226 14 15.167C14 15.8113 14.5223 16.3336 15.1667 16.3336H17.5C18.1443 16.3336 18.6667 15.8113 18.6667 15.167C18.6667 14.5226 18.1443 14.0003 17.5 14.0003H15.1667Z" fill="white"></path>
             </svg>
             <div>
-                <p>Forum</p>
-                <a href="https://forum.venom.foundation" target="_blank">forum.venom.foundation</a>
+                <p>This Knowledge Base</p>
+                <a href="https://stavis-dev.github.io/" target="_blank">Knowledge Base</a>
             </div>
         </div>
 
@@ -44,8 +44,8 @@ export default function SocialLinks() {
                 <path d="M23.4803 12.0003C23.4803 15.0364 22.9705 17.4991 22.3415 17.4991C21.7125 17.4991 21.203 15.037 21.203 12.0003C21.203 8.96355 21.7128 6.50146 22.3415 6.50146C22.9703 6.50146 23.4803 8.96333 23.4803 12.0003Z" fill="white"></path>
             </svg>
             <div>
-                <p>Medium</p>
-                <a href="https://medium.com/@venom.foundation" target="_blank">@venom.foundation</a>
+                <p>vc.ru</p>
+                <a href="https://vc.ru/u/696741-stavis-vega" target="_blank">@stavis-vega</a>
             </div>
         </div>
 
@@ -54,7 +54,7 @@ export default function SocialLinks() {
                 <path d="M256,32C132.3,32,32,134.9,32,261.7c0,101.5,64.2,187.5,153.2,217.9a17.56,17.56,0,0,0,3.8.4c8.3,0,11.5-6.1,11.5-11.4,0-5.5-.2-19.9-.3-39.1a102.4,102.4,0,0,1-22.6,2.7c-43.1,0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1,1.4-14.1h.1c22.5,2,34.3,23.8,34.3,23.8,11.2,19.6,26.2,25.1,39.6,25.1a63,63,0,0,0,25.6-6c2-14.8,7.8-24.9,14.2-30.7-49.7-5.8-102-25.5-102-113.5,0-25.1,8.7-45.6,23-61.6-2.3-5.8-10-29.2,2.2-60.8a18.64,18.64,0,0,1,5-.5c8.1,0,26.4,3.1,56.6,24.1a208.21,208.21,0,0,1,112.2,0c30.2-21,48.5-24.1,56.6-24.1a18.64,18.64,0,0,1,5,.5c12.2,31.6,4.5,55,2.2,60.8,14.3,16.1,23,36.6,23,61.6,0,88.2-52.4,107.6-102.3,113.3,8,7.1,15.2,21.1,15.2,42.5,0,30.7-.3,55.5-.3,63,0,5.4,3.1,11.5,11.4,11.5a19.35,19.35,0,0,0,4-.4C415.9,449.2,480,363.1,480,261.7,480,134.9,379.7,32,256,32Z"/></svg>
             <div>
                 <p>Github</p>
-                <a href="https://github.com/venom-blockchain" target="_blank">venom-blockchain</a>
+                <a href="https://github.com/stavis-dev" target="_blank">stavis-dev</a>
             </div>
         </div>
     </div>
