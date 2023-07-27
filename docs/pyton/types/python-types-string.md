@@ -1,5 +1,5 @@
 ---
-title: "Строки в Python"
+title: "Строки str"
 author: stavis
 description: "Тип данных string в Питоне, описание, методы"
 tags: ["functions", "sorted"]
@@ -383,3 +383,17 @@ In [11]: tunnel = """
     ['FastEthernet0/0', '', '', '', '', '', '', '', '', '', '', '', '15.0.15.1', '', '', '', '', '', '', 'YES', 'manual', 'up', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'up']
 ```
 
+## Дополнительные материалы
+
+Документация:
+
+-  [Strings](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
+-   [Methods](https://docs.python.org/3/library/stdtypes.html#string-methods)
+- [basics](https://docs.python.org/3/tutorial/introduction.html#lists)
+
+Форматирование строк:
+
+-  Примеры использования форматирования [строк](https://pyformat.info/)
+- [Синтаксис](https://docs.python.org/3/library/string.html#format-string-syntax) форматирования строк
+- Python 3s [f-Strings](https://realpython.com/python-f-strings/): An Improved String Formatting Syntax (Guide)
+- Python String Formatting Best [Practices](https://realpython.com/python-string-formatting/)
