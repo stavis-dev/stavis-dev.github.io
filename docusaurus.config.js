@@ -108,10 +108,10 @@ const config = {
       navbar: {
         hideOnScroll: true,  // исчезает при прокрутке вниз
         title: 'Главная',
-        logo: {
-          alt: 'Логотип сайта',
-          src: 'img/logo.svg',
-        },
+        // logo: {
+        //   alt: 'Логотип сайта',
+        //   src: 'img/logo.svg',
+        // },
         items: [
           {
             type: 'docSidebar',
