@@ -66,11 +66,24 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      // Кнопка сдвигающая левый сайдбар внизу
       docs: {
           sidebar: {
             hideable: true,
             autoCollapseCategories: true,
           },
+        },
+      algolia: {
+          appId: '4AQD0NYHWH',
+          apiKey: '51f81baefc1f07fad57973808a9e8d68',
+          indexName: 'stavis.dev-gh',
+          replaceSearchResultPathname:
+            isDev || isDeployPreview
+              ? {
+                  from: /^\/docs\/next/g,
+                  to: '/docs',
+                }
+              : undefined,
         },
       navbar: {
         title: 'Главная',
