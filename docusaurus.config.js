@@ -74,9 +74,9 @@ const config = {
           },
         },
       algolia: {
-          appId: '4AQD0NYHWH',
+          appId: 'A4WYJ5NE7Y',
           apiKey: '51f81baefc1f07fad57973808a9e8d68',
-          indexName: 'docusaurus-2',
+          indexName: 'stavis-devio',
         },
       navbar: {
         hideOnScroll: true,  // исчезает при прокрутке вниз
