@@ -71,6 +71,7 @@ const config = {
             hideable: true,
             autoCollapseCategories: true,
           },
+        },
       navbar: {
         title: 'Главная',
         logo: {
