@@ -1,6 +1,11 @@
-🌍
-*[Čeština](README-cs.md) ∙ [Deutsch](README-de.md) ∙ [Ελληνικά](README-el.md) ∙ [English](README.md) ∙ [Español](README-es.md) ∙ [Français](README-fr.md) ∙ [Indonesia](README-id.md) ∙ [Italiano](README-it.md) ∙ [日本語](README-ja.md) ∙ [한국어](README-ko.md) ∙ [polski](README-pl.md) ∙ [Português](README-pt.md) ∙ [Română](README-ro.md) ∙ [Русский](README-ru.md) ∙ [Slovenščina](README-sl.md) ∙ [Українська](README-uk.md) ∙ [简体中文](README-zh.md) ∙ [繁體中文](README-zh-Hant.md)*
+---
+title: "Искусство командной строки"
+description: "Искусство командной строки развивам навык консоли."
+tags: ["linux", "book"]
+categories: ["linux", "book"]
+draft: true
 
+---
 
 # Искусство командной строки
 
@@ -575,3 +580,5 @@ mkdir empty && rsync -r --delete empty/ some-dir && rmdir some-dir
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
 Оригинальная работа и перевод на русский язык распространяется под лицензией [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+
+[Источник](https://github.com/jlevy/the-art-of-command-line/blob/master/README-ru.md)
