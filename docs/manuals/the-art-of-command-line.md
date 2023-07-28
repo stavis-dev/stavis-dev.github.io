@@ -2,8 +2,7 @@
 title: "Искусство командной строки"
 description: "Искусство командной строки развивам навык консоли."
 tags: ["linux", "book"]
-categories: ["linux", "book"]
-draft: true
+draft: false
 
 ---
 
