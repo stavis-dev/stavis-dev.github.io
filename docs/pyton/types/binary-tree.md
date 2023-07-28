@@ -23,10 +23,10 @@ tags: ["python", "programing", "treenode", "Data Structure"]
 
 ```python
 class TreeNode:
-    def __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
+  def __init__(self, val=0, left=None, right=None):
+    self.val = val
+    self.left = left
+    self.right = right
 ```
 
 И… все! Если речь идет о двоичном дереве, единственное, что его отличает от связного списка, это то, что вместо next у нас тут есть left и right.
@@ -41,6 +41,42 @@ tree.left = TreeNode(2)
 tree.right = TreeNode(3)
 tree.left.left = TreeNode(4)
 tree.left.right = TreeNode(5)
+```
+
+### Создание дерева из list
+
+```python
+def from_list(l):
+    nodes = [TreeNode(v) for v in l]
+    kids = nodes[::-1]
+    root = kids.pop()
+    for node in nodes:
+        if node:
+            if kids:
+                node.left = kids.pop()
+            if kids:
+                node.right = kids.pop()
+    return root
+
+t = TreeNode.from_list([4,2,7,1,3,6,9])
+print(t)
+```
+
+Еще вариант
+
+```python
+def creatBTree(data, index):
+    pNode = None
+    if index < len(data):
+        if data[index] == None:
+            return
+        pNode = TreeNode(data[index])
+        pNode.left = creatBTree(data, 2 * index + 1) # [1, 3, 7, 15, ...]
+        pNode.right = creatBTree(data, 2 * index + 2) # [2, 5, 12, 25, ...]
+    return pNode
+
+lst = [5,4,8,11,None,13,4,7,2,None,None,None,1]
+root = creatBTree(lst, 0)
 ```
 
 ## Обход двоичного дерева
@@ -94,5 +130,6 @@ def pre_order(node):
 
 - https://leetcode.com/problems/binary-tree-maximum-path-sum/
 - https://leetcode.com/problems/path-sum/
+- https://leetcode.com/problems/invert-binary-tree/
 
 
