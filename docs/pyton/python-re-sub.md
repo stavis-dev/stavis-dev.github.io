@@ -146,4 +146,6 @@ get_mail_provider('ivan@yandex.ru')
 'yandex.ru'
 ```
 
->[Оригинал статьи](https://github.com/pykili/pykili.github.io/blob/master/_docs/prog/18-regexp-sub.md)
+> [Оригинал статьи](https://github.com/pykili/pykili.github.io/blob/master/_docs/prog/18-regexp-sub.md)
+>
+> [Еще мануалы по модулю re](https://github.com/natenka/pyneng-book/tree/master/docs/source/book/15_module_re)
