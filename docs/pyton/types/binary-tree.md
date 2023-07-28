@@ -86,8 +86,13 @@ def pre_order(node):
 - [оригинал](https://pythonist.ru/obhod-dvoichnogo-dereva-na-python/) статьи
 - статья о [деревьях](https://andorei.github.io/learnwithpython.ru2e/ch19.html) в Питоне
 
-Примеры на letcode
+### Видео материалы
+
+- [Задача из Собеседования в Microsoft (Бинарные Деревья)](https://www.youtube.com/watch?v=R4UHOLZ-bEk)
+
+### Примеры на letcode
 
 - https://leetcode.com/problems/binary-tree-maximum-path-sum/
 - https://leetcode.com/problems/path-sum/
+
 
