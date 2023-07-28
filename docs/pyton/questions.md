@@ -1,4 +1,12 @@
-# Python
+---
+title: "Вопросы Python"
+description: "Вопросы попадающиеся на собеседованиях на разработчика python"
+tags: ["python", "questions"]
+draft: false
+
+---
+
+# Python вопросы собеседования
 
 ## Последовательности
 
