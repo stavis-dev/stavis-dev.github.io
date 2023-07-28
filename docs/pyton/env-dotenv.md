@@ -15,6 +15,13 @@ tags: ["modules"]
 GCP_PROJECT_ID=my-project-id
 SERVICE_ACCOUNT_FILE=path/to/serviceAccountCredentials
 STORAGE_BUCKET_NAME=my-super-important-data
+
+DEBUG=True
+TEMPLATE_DEBUG=True
+SECRET_KEY=ARANDOMSECRETKEY
+DATABASE_URL=mysql://myuser:mypassword@myhost/mydatabase
+PERCENTILE=90%
+#COMMENTED=42
 ```
 
 Во всех языках есть модули которые работдают с файлами
@@ -22,7 +29,21 @@ STORAGE_BUCKET_NAME=my-super-important-data
 Почти в каждом языке программирования есть пакет или библиотека,
 которые можно использовать для чтения переменных окружения из файла `.env`,
 а не из вашей локальной среды. 
-Для Python этой библиотекой является [python-dotenv][python-dotenv]. 
+Для Python есть несколько:
+
+- [Python-dotenv][python-dotenv-pypi]
+- [Python-decouple][python-decouple-pypi]
+
+
+
+## Python-dotenv
+
+Библиотека сторонная устанавливается стандартно:
+
+```sh
+pip install python-dotenv
+```
+
 Как только библиотека установлена, обычный вариант использования `python-dotenv` требует добавления в ваш проект всего двух строк кода.
 
 ```python title="app.py"
@@ -51,4 +72,46 @@ load_dotenv(dotenv_path=dotenv_path)
 которая вам должна понадобиться для продуктивной работы с python-dotenv, однако есть несколько дополнительных функций,
 о которых вы можете прочитать в документации [python-dotenv][python-dotenv].
 
-[python-dotenv]: <https://pypi.org/project/python-dotenv/> "Python-dotenv"
+## Python-decouple
+
+Библиотека так же является сторонеей, предварительно устанавливаем:
+
+```sh
+pip install python-decouple
+```
+
+Аналогично с предыдущей библиотекой код будет выглядить так:
+
+```python title="app.py"
+from decouple import config
+
+SECRET_KEY = config('SECRET_KEY')
+DEBUG = config('DEBUG', default=False, cast=bool)
+EMAIL_HOST = config('EMAIL_HOST', default='localhost')
+EMAIL_PORT = config('EMAIL_PORT', default=25, cast=int)
+```
+
+### ini files
+
+Приятным дополнением Decouple является поддержкой не только `.env`, но и `.ini` файлов.
+
+```ini title="settings.ini"
+[settings]
+DEBUG=True
+TEMPLATE_DEBUG=%(DEBUG)s
+SECRET_KEY=ARANDOMSECRETKEY
+DATABASE_URL=mysql://myuser:mypassword@myhost/mydatabase
+PERCENTILE=90%%
+#COMMENTED=42
+```
+_Примечание_: Поскольку `ConfigParser` поддерживает интерполяцию строк, для представления символа `%` вам нужно экранировать его как `%%`.
+
+Подробнее про все возможности Decouple можно узнать в [ретозитории][python-decouple-github]
+
+[python-dotenv-pypi]: <https://pypi.org/project/python-dotenv/> "Python-dotenv pypi"
+[python-dotenv-github]: <https://github.com/theskumar/python-dotenv> "Python-dotenv github"
+
+[python-decouple-pypi]: <https://github.com/HBNetwork/python-decouple> "Python-decouple pypi"
+[python-decouple-github]: <https://pypi.org/project/python-decouple/> "Python-decouple github"
+
+
