@@ -77,18 +77,16 @@ Explanation: The square root of 8 is 2.82842..., and since we round it down to t
 
 ```python
 def mySqrt(x: int) -> int:
-    if x == 0:
-        return 0
-    first, last = 1, x
-    while first <= last:
-        mid = first + (last - first) // 2
-        if mid == x // mid:
+    left, right = 1, x
+    while left <= right:
+        mid = (left + right) // 2
+        if mid * mid == x:
             return mid
-        elif mid > x // mid:
-            last = mid - 1
+        if mid * mid > x:
+            right = mid - 1
         else:
-            first = mid + 1
-    return last
+            left = mid + 1
+    return right
 ```
 
 Результат выполнения
