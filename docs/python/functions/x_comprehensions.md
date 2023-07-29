@@ -55,15 +55,14 @@ items = ["10", "20", "30", "1", "11", "100"]
 List comp выше аналогичен такой цикл:
 
 ```python
+items = ["10", "20", "30", "1", "11", "100"]
 
-    items = ["10", "20", "30", "1", "11", "100"]
+vlans = []
+  for vl in items:
+      vlans.append(int(vl))
 
-    vlans = []
-    for vl in items:
-        vlans.append(int(vl))
-
-    print(vlans)
-    # [10, 20, 30, 1, 11, 100]
+print(vlans)
+# [10, 20, 30, 1, 11, 100]
 ```
 
 Соответствие между обычным циклом и генератором списка:
@@ -77,28 +76,26 @@ List comp выше аналогичен такой цикл:
 конвертирует их и добавляет в итоговый список only_digits:
 
 ```python
+items = ['10', '20', 'a', '30', 'b', '40']
 
-    items = ['10', '20', 'a', '30', 'b', '40']
+only_digits = []
 
-    only_digits = []
+for item in items:
+    if item.isdigit():
+        only_digits.append(int(item))
 
-    for item in items:
-        if item.isdigit():
-            only_digits.append(int(item))
-
-    In [9]: print(only_digits)
-    [10, 20, 30, 40]
+print(only_digits)
+# [10, 20, 30, 40]
 ```
 
 Аналогичный вариант в виде list comprehensions:
 
 ```python
+items = ['10', '20', 'a', '30', 'b', '40']
+only_digits = [int(item) for item in items if item.isdigit()]
 
-    items = ['10', '20', 'a', '30', 'b', '40']
-    only_digits = [int(item) for item in items if item.isdigit()]
-
-    In [12]: print(only_digits)
-    [10, 20, 30, 40]
+print(only_digits)
+# [10, 20, 30, 40]
 ```
 
 Соответствие между циклом с условием и генератором списка с условием:
@@ -158,11 +155,10 @@ List comp выше аналогичен такой цикл:
 Полный синтаксис генератора списка выглядит так:
 
 ```python
-
-    [expression for item1 in iterable1 if condition1
-                for item2 in iterable2 if condition2
-                ...
-                for itemN in iterableN if conditionN ]
+[expression for item1 in iterable1 if condition1
+            for item2 in iterable2 if condition2
+            ...
+            for itemN in iterableN if conditionN ]
 ```
 
 Это значит, можно использовать несколько for в выражении.
@@ -180,27 +176,25 @@ vlans = [[10, 21, 35], [101, 115, 150], [111, 40, 50]]
 Первый вариант — с помощью циклов for:
 
 ```python
+result = []
 
-    result = []
-
-    for vlan_list in vlans:
-        for vlan in vlan_list:
-            result.append(vlan)
+for vlan_list in vlans:
+    for vlan in vlan_list:
+        result.append(vlan)
 
 
-    In [19]: print(result)
-    [10, 21, 35, 101, 115, 150, 111, 40, 50]
+print(result)
+# [10, 21, 35, 101, 115, 150, 111, 40, 50]
 ```
 
-Аналогичный вариант с генератором списков:
+Получить плоский список из нескольких вложенных, генератором списков:
 
 ```python
+vlans = [[10, 21, 35], [101, 115, 150], [111, 40, 50]]
+result = [vlan for vlan_list in vlans for vlan in vlan_list]
 
-    vlans = [[10, 21, 35], [101, 115, 150], [111, 40, 50]]
-    result = [vlan for vlan_list in vlans for vlan in vlan_list]
-
-    In [22]: print(result)
-    [10, 21, 35, 101, 115, 150, 111, 40, 50]
+print(result)
+# [10, 21, 35, 101, 115, 150, 111, 40, 50]
 ```
 
 Соответствие между двумя вложенными циклами и генератором списка с двумя циклами:
@@ -208,7 +202,7 @@ vlans = [[10, 21, 35], [101, 115, 150], [111, 40, 50]]
 ![image](https://raw.githubusercontent.com/natenka/pyneng-book/master/images/08_list_comp_for_for.png)
 
 Можно одновременно проходиться по двум последовательностям, используя
-zip:
+`zip`:
 
 ```python
 
@@ -236,24 +230,22 @@ zip:
 Например, такое выражение:
 
 ```python
+d = {}
 
-    d = {}
+for num in range(1, 11):
+    d[num] = num**2
 
-    for num in range(1, 11):
-        d[num] = num**2
-
-    In [29]: print(d)
-    {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100}
+print(d)
+# {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100}
 ```
 
 Можно заменить генератором словаря:
 
 ```python
+d = {num: num**2 for num in range(1, 11)}
 
-    d = {num: num**2 for num in range(1, 11)}
-
-    In [31]: print(d)
-    {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100}
+print(d)
+# {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100}
 ```
 
 Еще один пример, в котором надо преобразовать существующий словарь и
