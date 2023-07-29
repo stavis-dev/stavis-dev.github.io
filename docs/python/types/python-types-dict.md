@@ -141,7 +141,7 @@ del dictionary['противостоять']
 dict((key, value) for item in list if condition)
 ```
 
-Подробнее про генераторы словарей можно прочитать [тут](./functions/x_comprehensions.md/#dict-comprehensions-генераторы-словарей)
+Подробнее про генераторы словарей можно прочитать [тут](../functions/x_comprehensions.md/#dict-comprehensions-генераторы-словарей)
 
 ## Методы словарей
 
