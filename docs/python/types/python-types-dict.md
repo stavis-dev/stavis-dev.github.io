@@ -59,36 +59,58 @@ my_dict = {True: 'yes', 1: 'no', 1.0: 'maybe'}
 
 ### Создание словаря
 
-#### Пустого словаря
-
-```py
-d = dict()
-```
-
-или простой метод
+#### C помощью литерала:
 
 ```py
 d = {}
+# {}
+
+d = {'dict_key': 1, 'dictionary': 2}
+# {'dict_key': 1, 'dictionary': 2}
 ```
 
-#### Словаря с данными
-
-Явно:
-
-```py
-d = {'dict': 1, 'dictionary': 2}
-```
-с помощью функции `dict()`
+#### C помощью функции dict
 
 ```py
 d = dict(short='dict', long='dictionary')
 # {'short': 'dict', 'long': 'dictionary'}
 
-d_int = dict([(1, 1), (2, 4)])
+d = dict([(1, 1), (2, 4)])
 # {1: 1, 2: 4}
 
 d_str = dict(("ab", "bc"))
 # {"a": "b", "b": "c"}
+```
+
+#### С помощью метода fromkeys
+
+```py
+d = dict.fromkeys(['a', 'b'])
+# {'a': None, 'b': None}
+
+d = dict.fromkeys(['a', 'b'], 100)
+# {'a': 100, 'b': 100}
+```
+
+#### С помощью генераторов словарей
+
+Генераторы словарей. Они имеют похожий на генераторы списков синтаксис, но возвращают словарь:
+
+```py
+d = {a: a ** 2 for a in range(7)}
+# {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36}
+```
+
+Подробнее про генераторы словарей можно прочитать [тут](../functions/x_comprehensions.md/#dict-comprehensions-генераторы-словарей)
+
+Но принцип довольно простой
+
+```py
+# Явно
+{ key:value for item in list if conditional }
+
+# функцией dict
+dict((key, value) for item in list if condition)
 ```
 
 ### Получение данных из словаря
@@ -128,20 +150,6 @@ dictionary['туфля'] = 'хорошая туфля'
 # Удаляем значение с ключом "противостоять" из словаря
 del dictionary['противостоять']
 ```
-
-## Генераторы словарей
-
-Генераторы словарей. Они имеют похожий на генераторы списков синтаксис, но возвращают словарь:
-
-```py
-# Явно
-{ key:value for item in list if conditional }
-
-# функцией dict
-dict((key, value) for item in list if condition)
-```
-
-Подробнее про генераторы словарей можно прочитать [тут](../functions/x_comprehensions.md/#dict-comprehensions-генераторы-словарей)
 
 ## Методы словарей
 
