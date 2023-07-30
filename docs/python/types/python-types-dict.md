@@ -113,6 +113,17 @@ d = {a: a ** 2 for a in range(7)}
 dict((key, value) for item in list if condition)
 ```
 
+#### С помощью упаковщика zip
+
+```python
+key_list = ['marvel_hero', 'dc_hero']
+value_list = ['Spiderman', 'Flash']
+superhero_dict = dict(zip(key_list, value_list))
+
+print((superhero_dict))
+# {'marvel_hero': 'Spiderman', 'dc_hero': 'Flash'}
+```
+
 ### Получение данных из словаря
 
 Для получения значения конкретного ключа используются квадратные скобки `[]`. 
@@ -321,7 +332,6 @@ london.setdefault('name')
 ключу:
 
 ```py
-
     In [26]: model = london.setdefault('model', 'Cisco3580')
 
     In [27]: print(model)
@@ -351,9 +361,10 @@ if key in london:
 Метод `keys()` возвращает коллекцию ключей в словаре.
 
 ```py
+story_count = {'сто': 100, 'девяносто': 90, 'двенадцать': 12, 'пять': 5}
 print(story_count.keys())
 
-# >>> ['сто', 'пять', 'двенадцать']
+# dict_keys(['сто', 'девяносто', 'двенадцать', 'пять'])
 ```
 
 ### dict.values()
@@ -361,9 +372,10 @@ print(story_count.keys())
 Метод `values()` возвращает коллекцию значений в словаре.
 
 ```py
+story_count = {'сто': 100, 'девяносто': 90, 'двенадцать': 12, 'пять': 5}
 print(story_count.values())
 
-# >>> [100, 12, 5]
+# dict_values([100, 90, 12, 5])
 ```
 
 ### dict.items()
@@ -371,13 +383,10 @@ print(story_count.values())
 Метод `items()` возвращает пары «ключ — значение».
 
 ```py
-dictionary.items()
-[('персона', 'человек'),
-('бежать', 'двигаться со скоростью'),
-('туфля', 'род обуви, закрывающей ногу не выше щиколотки'),
-('бежал', 'бежать в прошедшем времени'),
-('марафон', 'гонка бегунов длиной около 26 миль'),
-('туфли', 'туфля во множественном числе')]
+story_count = {'сто': 100, 'девяносто': 90, 'двенадцать': 12, 'пять': 5}
+story_count.items()
+
+# dict_items([('сто', 100), ('девяносто', 90), ('двенадцать', 12), ('пять', 5)])
 ```
 
 ## Примеры
@@ -387,12 +396,7 @@ dictionary.items()
 Вы можете провести итерацию по каждому ключу в словаре.
 
 ```py
-
-story_count = {'сто': 100,
-               'девяносто': 90,
-               'двенадцать': 12,
-               'пять': 5}
-
+story_count = {'сто': 100, 'девяносто': 90, 'двенадцать': 12, 'пять': 5}
 for key in story_count:
    print(key)
 
@@ -432,4 +436,33 @@ my_dict = {'сто': 100,
 result = {key: val for key, val in sorted(my_dict.items(), key = lambda ele: ele[0])}
 
 # result -> {'двенадцать': 12, 'девяносто': 90, 'пять': 5, 'сто': 100}
-````
+```
+
+### dict to list
+
+Для конвертации dict в list достаточно проитерировать словарь попарно с помощью метода items(),
+и, на каждой итерации, добавлять пару ключ:значение к заранее созданному списку.
+На выходе получим список списков, где каждый подсписок есть пара из исходного словаря.
+
+```py
+medicine_chest = dict(top_part='potion', bot_part='bandage')
+medicine_list = []
+for key, con in medicine_chest.items():
+    temp = [key, con]
+    medicine_list.append(temp)
+
+# [['top_part', 'potion'], ['bot_part', 'bandage']]
+```
+
+### Инициализировать список ключей
+
+Для этого удобно использовать генератор. 
+
+```python
+list_of_keys = ['q', 'w', 'e', 'r', 't']
+generated_dict = {k: 0 for k in list_of_keys}
+
+print(generated_dict)
+# {'q': 0, 'w': 0, 'e': 0, 'r': 0, 't': 0}
+```
+
