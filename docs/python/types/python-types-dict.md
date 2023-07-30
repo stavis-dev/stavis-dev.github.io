@@ -92,6 +92,17 @@ d = dict.fromkeys(['a', 'b'], 100)
 # {'a': 100, 'b': 100}
 ```
 
+#### С помощью упаковщика zip
+
+```python
+key_list = ['marvel_hero', 'dc_hero']
+value_list = ['Spiderman', 'Flash']
+superhero_dict = dict(zip(key_list, value_list))
+
+print((superhero_dict))
+# {'marvel_hero': 'Spiderman', 'dc_hero': 'Flash'}
+```
+
 #### С помощью генераторов словарей
 
 Генераторы словарей. Они имеют похожий на генераторы списков синтаксис, но возвращают словарь:
@@ -113,15 +124,14 @@ d = {a: a ** 2 for a in range(7)}
 dict((key, value) for item in list if condition)
 ```
 
-#### С помощью упаковщика zip
+Также генератор удобен, когда нужно инициализировать какой-то имеющийся список ключей:
 
 ```python
-key_list = ['marvel_hero', 'dc_hero']
-value_list = ['Spiderman', 'Flash']
-superhero_dict = dict(zip(key_list, value_list))
+list_of_keys = ['q', 'w', 'e', 'r', 't']
+generated_dict = {k: 0 for k in list_of_keys}
 
-print((superhero_dict))
-# {'marvel_hero': 'Spiderman', 'dc_hero': 'Flash'}
+print(generated_dict)
+# {'q': 0, 'w': 0, 'e': 0, 'r': 0, 't': 0}
 ```
 
 ### Получение данных из словаря
@@ -425,14 +435,10 @@ for key, value in dictionary.items():
 ### Сортировка словаря
 
 Сотритовка может производиться разными способами.
-Пример сортировки по ключу
+Пример сортировки по ключу с помощью генератора
 
 ```py
-my_dict = {'сто': 100,
-               'девяносто': 90,
-               'двенадцать': 12,
-               'пять': 5}
-
+my_dict = {'сто': 100, 'девяносто': 90, 'двенадцать': 12, 'пять': 5}
 result = {key: val for key, val in sorted(my_dict.items(), key = lambda ele: ele[0])}
 
 # result -> {'двенадцать': 12, 'девяносто': 90, 'пять': 5, 'сто': 100}
@@ -454,15 +460,14 @@ for key, con in medicine_chest.items():
 # [['top_part', 'potion'], ['bot_part', 'bandage']]
 ```
 
-### Инициализировать список ключей
-
-Для этого удобно использовать генератор. 
+Тот же результат в одну строчку
 
 ```python
-list_of_keys = ['q', 'w', 'e', 'r', 't']
-generated_dict = {k: 0 for k in list_of_keys}
+my_dict = {'сто': 100, 'девяносто': 90, 'двенадцать': 12, 'пять': 5}
+nl = [[k, v] for k, v in my_dict.items()]
 
-print(generated_dict)
-# {'q': 0, 'w': 0, 'e': 0, 'r': 0, 't': 0}
+# [['сто', 100], ['девяносто', 90], ['двенадцать', 12], ['пять', 5]]
 ```
+
+
 
