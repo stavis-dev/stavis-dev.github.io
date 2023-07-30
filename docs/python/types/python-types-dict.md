@@ -119,8 +119,11 @@ dict((key, value) for item in list if condition)
 Предположим, что в нашем словаре есть пара `'марафон': 26`.
 
 ```py
+dictionary = {'марафон': 26}
+
 # берём значение с ключом "марафон"
 dictionary['марафон']
+# 26
 ```
 
 Опять же, вы получите ошибку, если попытаетесь получить значение по несуществующему ключу.  
@@ -160,12 +163,10 @@ del dictionary['противостоять']
 Метод `clear` позволяет очистить словарь:
 
 ```python
-    In [1]: london = {'name': 'London1', 'location': 'London Str'}
+london = {'name': 'London1', 'location': 'London Str'}
 
-    In [2]: london.clear()
-
-    In [3]: london
-    Out[3]: {}
+london.clear()
+# {}
 ```
 
 ### dict.copy()
@@ -175,21 +176,18 @@ del dictionary['противостоять']
 Если указать, что один словарь равен другому:
 
 ```python
+london = {'name': 'London1', 'location': 'London Str', 'vendor': 'Cisco'}
+london2 = london
+id(london)
+# 25489072
 
-    In [4]: london = {'name': 'London1', 'location': 'London Str', 'vendor': 'Cisco'}
+id(london2)
+# 25489072
 
-    In [5]: london2 = london
+london['vendor'] = 'Juniper'
 
-    In [6]: id(london)
-    Out[6]: 25489072
-
-    In [7]: id(london2)
-    Out[7]: 25489072
-
-    In [8]: london['vendor'] = 'Juniper'
-
-    In [9]: london2['vendor']
-    Out[9]: 'Juniper'
+london2['vendor']
+# 'Juniper'
 ```
 
 В этом случае london2 это еще одно имя, которое ссылается на словарь. И
@@ -200,21 +198,19 @@ del dictionary['противостоять']
 copy():
 
 ```python
+london = {'name': 'London1', 'location': 'London Str', 'vendor': 'Cisco'}
+london2 = london.copy()
 
-    In [10]: london = {'name': 'London1', 'location': 'London Str', 'vendor': 'Cisco'}
+id(london)
+# 25524512
 
-    In [11]: london2 = london.copy()
+id(london2)
+# 25563296
 
-    In [12]: id(london)
-    Out[12]: 25524512
+london['vendor'] = 'Juniper'
 
-    In [13]: id(london2)
-    Out[13]: 25563296
-
-    In [14]: london['vendor'] = 'Juniper'
-
-    In [15]: london2['vendor']
-    Out[15]: 'Cisco'
+london2['vendor']
+# 'Cisco'
 ```   
 
 ### dict.get()
@@ -234,13 +230,14 @@ story_count = {'сто': 100,
 ```python
 # Ключ "двенадцать" существует и метод get в данном случае вернёт 12
 story_count.get('двенадцать')
+# 12
 ```
 
 Метод можно использовать для проверки наличия ключей в словаре:
 
 ```python
 story_count.get('два')
-None
+# None
 ```
 
 Также можно указать значение по умолчанию, которое будет возвращено вместо `None`, если ключа в словаре не окажется:
