@@ -1,13 +1,11 @@
 ---
-title: "Cписок (list)"
-author: Stavis Vega
-date: "2022-02-07"
+title: "Cписок (list) в Python"
+sidebar_label: 'Cписок (list)'
 description: "Работа со списками в python (list)"
 tags: ["python", "types", "list"]
-categories: ["python", "programing"]
-ShowBreadCrumbs: true
-ShowToc: true
-TocOpen: true
+
+author: stavis
+
 ---
 
 Одна из ключевых особенностей Python, благодаря которой он является таким популярным – это простота. Особенно подкупает простота работы с различными структурами данных – списками, кортежами, словарями и множествами. Сегодня мы рассмотрим работу со списками.
