@@ -1,5 +1,5 @@
 ---
-title: "map in python"
+title: "Функция map()"
 author: stavis
 description: "Функция map в питоне"
 tags: ["functions", "map"]
@@ -15,17 +15,16 @@ tags: ["functions", "map"]
 Перевести все строки в верхний регистр:
 
 ```python
+list_of_words = ['one', 'two', 'list', '', 'dict']
 
-    In [1]: list_of_words = ['one', 'two', 'list', '', 'dict']
+map(str.upper, list_of_words)
+# <map at 0xb45eb7ec>
 
-    In [2]: map(str.upper, list_of_words)
-    Out[2]: <map at 0xb45eb7ec>
-
-    In [3]: list(map(str.upper, list_of_words))
-    Out[3]: ['ONE', 'TWO', 'LIST', '', 'DICT']
+list(map(str.upper, list_of_words))
+# ['ONE', 'TWO', 'LIST', '', 'DICT']
 ```
 
-:::note:
+:::note
 
 `str.upper("aaa")` делает то же самое что `"aaa".upper()`.
 
@@ -34,34 +33,30 @@ tags: ["functions", "map"]
 ## Конвертация в числа:
 
 ```python
+list_of_str = ['1', '2', '5', '10']
 
-    In [3]: list_of_str = ['1', '2', '5', '10']
-
-    In [4]: list(map(int, list_of_str))
-    Out[4]: [1, 2, 5, 10]
+list(map(int, list_of_str))
+# [1, 2, 5, 10]
 ```
 
 Вместе с map удобно использовать лямбда-выражения:
 
 ```python
+vlans = [100, 110, 150, 200, 201, 202]
 
-    In [5]: vlans = [100, 110, 150, 200, 201, 202]
-
-    In [6]: list(map(lambda x: 'vlan {}'.format(x), vlans))
-    Out[6]: ['vlan 100', 'vlan 110', 'vlan 150', 'vlan 200', 'vlan 201', 'vlan 202']
+list(map(lambda x: 'vlan {}'.format(x), vlans))
+# ['vlan 100', 'vlan 110', 'vlan 150', 'vlan 200', 'vlan 201', 'vlan 202']
 ```
 
 Если функция, которую использует map(), ожидает два аргумента, то
 передаются два списка:
 
 ```python
+nums = [1, 2, 3, 4, 5]
+nums2 = [100, 200, 300, 400, 500]
 
-    In [7]: nums = [1, 2, 3, 4, 5]
-
-    In [8]: nums2 = [100, 200, 300, 400, 500]
-
-    In [9]: list(map(lambda x, y: x*y, nums, nums2))
-    Out[9]: [100, 400, 900, 1600, 2500]
+list(map(lambda x, y: x*y, nums, nums2))
+# [100, 400, 900, 1600, 2500]
 ```
 
 ## List comprehension вместо map
@@ -81,41 +76,37 @@ comprehension генерирует список.
 Перевести все строки в верхний регистр:
 
 ```python
+list_of_words = ['one', 'two', 'list', '', 'dict']
+uppers = [word.upper() for word in list_of_words]
 
-    In [48]: list_of_words = ['one', 'two', 'list', '', 'dict']
-
-    In [49]: [word.upper() for word in list_of_words]
-    Out[49]: ['ONE', 'TWO', 'LIST', '', 'DICT']
+# ['ONE', 'TWO', 'LIST', '', 'DICT']
 ```
 
 ## Конвертация в числа:
 
 ```python
+list_of_str = ['1', '2', '5', '10']
 
-    In [50]: list_of_str = ['1', '2', '5', '10']
+nums = [int(i) for i in list_of_str]
 
-    In [51]: [int(i) for i in list_of_str]
-    Out[51]: [1, 2, 5, 10]
+# [1, 2, 5, 10]
 ```
 
 Форматирование строк:
 
 ```python
+vlans = [100, 110, 150, 200, 201, 202]
 
-    In [52]:  vlans = [100, 110, 150, 200, 201, 202]
-
-    In [53]: [f'vlan {x}' for x in vlans]
-    Out[53]: ['vlan 100', 'vlan 110', 'vlan 150', 'vlan 200', 'vlan 201', 'vlan 202']
+lc = [f'vlan {x}' for x in vlans]
+# ['vlan 100', 'vlan 110', 'vlan 150', 'vlan 200', 'vlan 201', 'vlan 202']
 ```
 
 Для получения пар элементов используется zip:
 
 ```python
+nums = [1, 2, 3, 4, 5]
+nums2 = [100, 200, 300, 400, 500]
 
-    In [54]: nums = [1, 2, 3, 4, 5]
-
-    In [55]: nums2 = [100, 200, 300, 400, 500]
-
-    In [56]: [x * y for x, y in zip(nums, nums2)]
-    Out[56]: [100, 400, 900, 1600, 2500]
+lc = [x * y for x, y in zip(nums, nums2)]
+# [100, 400, 900, 1600, 2500]
 ```
