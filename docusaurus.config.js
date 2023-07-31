@@ -107,7 +107,7 @@ const config = {
         },
       navbar: {
         hideOnScroll: true,  // исчезает при прокрутке вниз
-        title: 'Главная',
+        title: 'Обо мне',
         // logo: {
         //   alt: 'Логотип сайта',
         //   src: 'img/logo.svg',
