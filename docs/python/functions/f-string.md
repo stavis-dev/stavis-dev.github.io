@@ -91,117 +91,107 @@ F-строка сразу выполняется и в нее подставля
 которые должны быть определены ранее:
 
 ```python
+ip = '10.1.1.1'
+mask = 24
 
-    In [7]: ip = '10.1.1.1'
-
-    In [8]: mask = 24
-
-    In [9]: print(f"IP: {ip}, mask: {mask}")
-    IP: 10.1.1.1, mask: 24
+print(f"IP: {ip}, mask: {mask}")
+# IP: 10.1.1.1, mask: 24
+```
 
 Если необходимо подставить другие значения, надо создать новые
-переменные (с теми же именами) и снова написать f-строку:
-
-```python
-
-    In [11]: ip = '10.2.2.2'
-
-    In [12]: mask = 24
-
-    In [13]: print(f"IP: {ip}, mask: {mask}")
-    IP: 10.2.2.2, mask: 24
-```
+переменные (с теми же именами) и снова написать `f-строку`
 
 При использовании f-строк в циклах, f-строку надо писать в теле цикла,
 чтобы она "подхватывала" новые значения переменных на каждой итерации:
 
 ```python
-    In [1]: ip_list = ['10.1.1.1/24', '10.2.2.2/24', '10.3.3.3/24']
+ip_list = ['10.1.1.1/24', '10.2.2.2/24', '10.3.3.3/24']
 
-    In [2]: for ip_address in ip_list:
-       ...:     ip, mask = ip_address.split('/')
-       ...:     print(f"IP: {ip}, mask: {mask}")
-       ...:
-    IP: 10.1.1.1, mask: 24
-    IP: 10.2.2.2, mask: 24
-    IP: 10.3.3.3, mask: 24
+for ip_address in ip_list:
+  ip, mask = ip_address.split('/')
+  print(f"IP: {ip}, mask: {mask}")
 
-### Примеры использования f-строк
+# IP: 10.1.1.1, mask: 24
+# IP: 10.2.2.2, mask: 24
+# IP: 10.3.3.3, mask: 24
+```
+
+### Примеры f-строк
 
 Базовая подстановка переменных:
 
 ```python
-    In [1]: intf_type = 'Gi'
-    In [2]: intf_name = '0/3'
+intf_type = 'Gi'
+intf_name = '0/3'
 
-    In [3]: f'interface {intf_type}/{intf_name}'
-    Out[3]: 'interface Gi0/3'
+print(f'interface {intf_type}/{intf_name}')
+# 'interface Gi0/3'
 ```
 
 Выравнивание столбцами:
 
 ```python
-    In [6]: topology = [['sw1', 'Gi0/1', 'r1', 'Gi0/2'],
-       ...:             ['sw1', 'Gi0/2', 'r2', 'Gi0/1'],
-       ...:             ['sw1', 'Gi0/3', 'r3', 'Gi0/0'],
-       ...:             ['sw1', 'Gi0/5', 'sw4', 'Gi0/2']]
-       ...:
+In [6]: topology = [['sw1', 'Gi0/1', 'r1', 'Gi0/2'],
+   ...:             ['sw1', 'Gi0/2', 'r2', 'Gi0/1'],
+   ...:             ['sw1', 'Gi0/3', 'r3', 'Gi0/0'],
+   ...:             ['sw1', 'Gi0/5', 'sw4', 'Gi0/2']]
+   ...:
 
-    In [7]: for connection in topology:
-       ...:     l_device, l_port, r_device, r_port = connection
-       ...:     print(f'{l_device:10} {l_port:7} {r_device:10} {r_port:7}')
-       ...:
-    sw1        Gi0/1   r1         Gi0/2
-    sw1        Gi0/2   r2         Gi0/1
-    sw1        Gi0/3   r3         Gi0/0
-    sw1        Gi0/5   sw4        Gi0/2
+In [7]: for connection in topology:
+   ...:     l_device, l_port, r_device, r_port = connection
+   ...:     print(f'{l_device:10} {l_port:7} {r_device:10} {r_port:7}')
+   ...:
+sw1        Gi0/1   r1         Gi0/2
+sw1        Gi0/2   r2         Gi0/1
+sw1        Gi0/3   r3         Gi0/0
+sw1        Gi0/5   sw4        Gi0/2
 ```
 
 Ширина столбцов может быть указана через переменную:
 
 ```python
-    In [6]: topology = [['sw1', 'Gi0/1', 'r1', 'Gi0/2'],
-       ...:             ['sw1', 'Gi0/2', 'r2', 'Gi0/1'],
-       ...:             ['sw1', 'Gi0/3', 'r3', 'Gi0/0'],
-       ...:             ['sw1', 'Gi0/5', 'sw4', 'Gi0/2']]
-       ...:
+In [6]: topology = [['sw1', 'Gi0/1', 'r1', 'Gi0/2'],
+   ...:             ['sw1', 'Gi0/2', 'r2', 'Gi0/1'],
+   ...:             ['sw1', 'Gi0/3', 'r3', 'Gi0/0'],
+   ...:             ['sw1', 'Gi0/5', 'sw4', 'Gi0/2']]
+   ...:
 
-    In [7]: width = 10
+In [7]: width = 10
 
-    In [8]: for connection in topology:
-       ...:     l_device, l_port, r_device, r_port = connection
-       ...:     print(f'{l_device:{width}} {l_port:{width}} {r_device:{width}} {r_port:{width}}')
-       ...:
-    sw1        Gi0/1      r1         Gi0/2
-    sw1        Gi0/2      r2         Gi0/1
-    sw1        Gi0/3      r3         Gi0/0
-    sw1        Gi0/5      sw4        Gi0/2
+In [8]: for connection in topology:
+   ...:     l_device, l_port, r_device, r_port = connection
+   ...:     print(f'{l_device:{width}} {l_port:{width}} {r_device:{width}} {r_port:{width}}')
+   ...:
+sw1        Gi0/1      r1         Gi0/2
+sw1        Gi0/2      r2         Gi0/1
+sw1        Gi0/3      r3         Gi0/0
+sw1        Gi0/5      sw4        Gi0/2
 ```
 
 Работа со словарями
 
 ```python
-    In [1]: session_stats = {'done': 10, 'todo': 5}
+In [1]: session_stats = {'done': 10, 'todo': 5}
 
-    In [2]: if session_stats['todo']:
-       ...:     print(f"Pomodoros done: {session_stats['done']}, TODO: {session_stats['todo']}")
-       ...: else:
-       ...:     print(f"Good job! All {session_stats['done']} pomodoros done!")
-       ...:
-    Pomodoros done: 10, TODO: 5
+In [2]: if session_stats['todo']:
+   ...:     print(f"Pomodoros done: {session_stats['done']}, TODO: {session_stats['todo']}")
+   ...: else:
+   ...:     print(f"Good job! All {session_stats['done']} pomodoros done!")
+   ...:
+Pomodoros done: 10, TODO: 5
 ```
 
 Вызов функции len внутри f-строки:
 
 ```python
-    In [2]: topology = [['sw1', 'Gi0/1', 'r1', 'Gi0/2'],
-       ...:             ['sw1', 'Gi0/2', 'r2', 'Gi0/1'],
-       ...:             ['sw1', 'Gi0/3', 'r3', 'Gi0/0'],
-       ...:             ['sw1', 'Gi0/5', 'sw4', 'Gi0/2']]
-       ...:
+In [2]: topology = [['sw1', 'Gi0/1', 'r1', 'Gi0/2'],
+   ...:             ['sw1', 'Gi0/2', 'r2', 'Gi0/1'],
+   ...:             ['sw1', 'Gi0/3', 'r3', 'Gi0/0'],
+   ...:             ['sw1', 'Gi0/5', 'sw4', 'Gi0/2']]
+   ...:
 
-    In [3]: print(f'Количество подключений в топологии: {len(topology)}')
-    Количество подключений в топологии: 4
+print(f'Количество подключений в топологии: {len(topology)}')
+Количество подключений в топологии: 4
 ```
 
 Вызов метода upper внутри f-строки:
@@ -216,13 +206,12 @@ print(f'Zen of {name.upper()}')
 Конвертация чисел в двоичный формат:
 
 ```python
+ip = '10.1.1.1'
 
-    In [7]: ip = '10.1.1.1'
+oct1, oct2, oct3, oct4 = ip.split('.')
 
-    In [8]: oct1, oct2, oct3, oct4 = ip.split('.')
-
-    In [9]: print(f'{int(oct1):08b} {int(oct2):08b} {int(oct3):08b} {int(oct4):08b}')
-    00001010 00000001 00000001 00000001
+print(f'{int(oct1):08b} {int(oct2):08b} {int(oct3):08b} {int(oct4):08b}')
+# 00001010 00000001 00000001 00000001
 ```
 
 ## Что использовать format или f-строки
@@ -257,14 +246,13 @@ format позволяет создать шаблон в одном месте �
 по шаблону далеко не всегда оправдано. Пример создания функции:
 
 ```python
+In [1]: def show_me_ip(ip, mask):
+   ...:     return f"IP: {ip}, mask: {mask}"
+   ...:
 
-    In [1]: def show_me_ip(ip, mask):
-       ...:     return f"IP: {ip}, mask: {mask}"
-       ...:
+In [2]: show_me_ip('10.1.1.1', 24)
+Out[2]: 'IP: 10.1.1.1, mask: 24'
 
-    In [2]: show_me_ip('10.1.1.1', 24)
-    Out[2]: 'IP: 10.1.1.1, mask: 24'
-
-    In [3]: show_me_ip('192.16.10.192', 28)
-    Out[3]: 'IP: 192.16.10.192, mask: 28'
+In [3]: show_me_ip('192.16.10.192', 28)
+Out[3]: 'IP: 192.16.10.192, mask: 28'
 ```
