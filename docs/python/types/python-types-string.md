@@ -1,8 +1,8 @@
 ---
-title: "Строки str"
+title: "Строки (str)"
 author: stavis
 description: "Тип данных string в Питоне, описание, методы"
-tags: ["functions", "sorted"]
+tags: ["functions", "string", "python"]
 
 ---
 
