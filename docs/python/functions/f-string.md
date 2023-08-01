@@ -47,13 +47,13 @@ f"IP: {ip}, mask: {mask}"
 
 ```python
 
-    In [1]: f"IP: {ip}, mask: {mask}"
-    ---------------------------------------------------------------------------
-    NameError                                 Traceback (most recent call last)
-    <ipython-input-1-e6f8e01ac9c4> in <module>()
-    ----> 1 f"IP: {ip}, mask: {mask}"
+f"IP: {ip}, mask: {mask}"
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-1-e6f8e01ac9c4> in <module>()
+----> 1 f"IP: {ip}, mask: {mask}"
 
-    NameError: name 'ip' is not defined
+NameError: name 'ip' is not defined
 ```
 
 Кроме подстановки значений переменных, в фигурных скобках можно писать
@@ -118,7 +118,7 @@ for ip_address in ip_list:
 # IP: 10.3.3.3, mask: 24
 ```
 
-### Примеры f-строк
+## Примеры f-строк
 
 Базовая подстановка переменных:
 
@@ -130,67 +130,68 @@ print(f'interface {intf_type}/{intf_name}')
 # 'interface Gi0/3'
 ```
 
-Выравнивание столбцами:
+### Выравнивание столбцами:
 
 ```python
-In [6]: topology = [['sw1', 'Gi0/1', 'r1', 'Gi0/2'],
-   ...:             ['sw1', 'Gi0/2', 'r2', 'Gi0/1'],
-   ...:             ['sw1', 'Gi0/3', 'r3', 'Gi0/0'],
-   ...:             ['sw1', 'Gi0/5', 'sw4', 'Gi0/2']]
-   ...:
+topology = [['sw1', 'Gi0/1', 'r1', 'Gi0/2'],
+            ['sw1', 'Gi0/2', 'r2', 'Gi0/1'],
+            ['sw1', 'Gi0/3', 'r3', 'Gi0/0'],
+            ['sw1', 'Gi0/5', 'sw4', 'Gi0/2']]
 
-In [7]: for connection in topology:
-   ...:     l_device, l_port, r_device, r_port = connection
-   ...:     print(f'{l_device:10} {l_port:7} {r_device:10} {r_port:7}')
-   ...:
-sw1        Gi0/1   r1         Gi0/2
-sw1        Gi0/2   r2         Gi0/1
-sw1        Gi0/3   r3         Gi0/0
-sw1        Gi0/5   sw4        Gi0/2
+
+for connection in topology:
+  l_device, l_port, r_device, r_port = connection
+  print(f'{l_device:10} {l_port:7} {r_device:10} {r_port:7}')
+
+# sw1        Gi0/1   r1         Gi0/2
+# sw1        Gi0/2   r2         Gi0/1
+# sw1        Gi0/3   r3         Gi0/0
+# sw1        Gi0/5   sw4        Gi0/2
 ```
 
 Ширина столбцов может быть указана через переменную:
 
 ```python
-In [6]: topology = [['sw1', 'Gi0/1', 'r1', 'Gi0/2'],
-   ...:             ['sw1', 'Gi0/2', 'r2', 'Gi0/1'],
-   ...:             ['sw1', 'Gi0/3', 'r3', 'Gi0/0'],
-   ...:             ['sw1', 'Gi0/5', 'sw4', 'Gi0/2']]
-   ...:
+topology = [['sw1', 'Gi0/1', 'r1', 'Gi0/2'],
+             ['sw1', 'Gi0/2', 'r2', 'Gi0/1'],
+             ['sw1', 'Gi0/3', 'r3', 'Gi0/0'],
+             ['sw1', 'Gi0/5', 'sw4', 'Gi0/2']]
 
-In [7]: width = 10
 
-In [8]: for connection in topology:
-   ...:     l_device, l_port, r_device, r_port = connection
-   ...:     print(f'{l_device:{width}} {l_port:{width}} {r_device:{width}} {r_port:{width}}')
-   ...:
-sw1        Gi0/1      r1         Gi0/2
-sw1        Gi0/2      r2         Gi0/1
-sw1        Gi0/3      r3         Gi0/0
-sw1        Gi0/5      sw4        Gi0/2
+width = 10
+
+for connection in topology:
+   l_device, l_port, r_device, r_port = connection
+
+print(f'{l_device:{width}} {l_port:{width}} {r_device:{width}} {r_port:{width}}')
+
+# sw1        Gi0/1      r1         Gi0/2
+# sw1        Gi0/2      r2         Gi0/1
+# sw1        Gi0/3      r3         Gi0/0
+# sw1        Gi0/5      sw4        Gi0/2
 ```
 
-Работа со словарями
+### Работа со словарями
 
 ```python
-In [1]: session_stats = {'done': 10, 'todo': 5}
+session_stats = {'done': 10, 'todo': 5}
 
-In [2]: if session_stats['todo']:
-   ...:     print(f"Pomodoros done: {session_stats['done']}, TODO: {session_stats['todo']}")
-   ...: else:
-   ...:     print(f"Good job! All {session_stats['done']} pomodoros done!")
-   ...:
-Pomodoros done: 10, TODO: 5
+if session_stats['todo']:
+   print(f"Pomodoros done: {session_stats['done']}, TODO: {session_stats['todo']}")
+else:
+   print(f"Good job! All {session_stats['done']} pomodoros done!")
+
+# Pomodoros done: 10, TODO: 5
 ```
 
-Вызов функции len внутри f-строки:
+### Вызов функции len внутри f-строки:
 
 ```python
-In [2]: topology = [['sw1', 'Gi0/1', 'r1', 'Gi0/2'],
-   ...:             ['sw1', 'Gi0/2', 'r2', 'Gi0/1'],
-   ...:             ['sw1', 'Gi0/3', 'r3', 'Gi0/0'],
-   ...:             ['sw1', 'Gi0/5', 'sw4', 'Gi0/2']]
-   ...:
+topology = [['sw1', 'Gi0/1', 'r1', 'Gi0/2'],
+             ['sw1', 'Gi0/2', 'r2', 'Gi0/1'],
+             ['sw1', 'Gi0/3', 'r3', 'Gi0/0'],
+             ['sw1', 'Gi0/5', 'sw4', 'Gi0/2']]
+
 
 print(f'Количество подключений в топологии: {len(topology)}')
 Количество подключений в топологии: 4
@@ -216,6 +217,19 @@ print(f'{int(oct1):08b} {int(oct2):08b} {int(oct3):08b} {int(oct4):08b}')
 # 00001010 00000001 00000001 00000001
 ```
 
+### Округления
+
+
+```python
+num = 2.3123
+
+print(f'{num:.1f}') # Limit to 1 decimal
+print(f'{num:.2f}') # Limit to 2 decimals
+
+# 2.3
+# 2.31
+```
+
 ## Что использовать format или f-строки
 
 Во многих случаях f-строки удобней использовать, так как шаблон выглядит
@@ -227,13 +241,13 @@ ip = [10, 1, 1, 1]
 
 oct1, oct2, oct3, oct4 = ip
 print(f'{oct1:08b} {oct2:08b} {oct3:08b} {oct4:08b}')
-       ...:
-    00001010 00000001 00000001 00000001
+    
+# 00001010 00000001 00000001 00000001
 
-    In [8]: template = "{:08b} "*4
+template = "{:08b} "*4
 
-    In [9]: template.format(oct1, oct2, oct3, oct4)
-    Out[9]: '00001010 00000001 00000001 00000001 '
+template.format(oct1, oct2, oct3, oct4)
+# '00001010 00000001 00000001 00000001 '
 ```
 
 Еще одна ситуация, когда format, как правило, удобней использовать:
@@ -248,13 +262,13 @@ format позволяет создать шаблон в одном месте �
 по шаблону далеко не всегда оправдано. Пример создания функции:
 
 ```python
-In [1]: def show_me_ip(ip, mask):
-   ...:     return f"IP: {ip}, mask: {mask}"
-   ...:
+def show_me_ip(ip, mask):
+   return f"IP: {ip}, mask: {mask}"
 
-In [2]: show_me_ip('10.1.1.1', 24)
-Out[2]: 'IP: 10.1.1.1, mask: 24'
 
-In [3]: show_me_ip('192.16.10.192', 28)
-Out[3]: 'IP: 192.16.10.192, mask: 28'
+show_me_ip('10.1.1.1', 24)
+# 'IP: 10.1.1.1, mask: 24'
+
+show_me_ip('192.16.10.192', 28)
+# 'IP: 192.16.10.192, mask: 28'
 ```
