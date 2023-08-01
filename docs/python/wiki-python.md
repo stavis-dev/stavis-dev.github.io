@@ -1,13 +1,13 @@
 ---
 title: "Мануал по языку Python"
-author: Stavis Vega
+author: stavis
 date: "2022-02-07"
 description: "Фишечки языка Python"
 tags: ["triks"]
-categories: ["python"]
-ShowToc: true
-TocOpen: true
+
 ---
+
+import Gist from 'react-gist'
 
 * [Stavis-dev Codewars](https://www.codewars.com/kata/556deca17c58da83c00002db/train/python)  
 * [Replit Codewars](https://replit.com/@StavisViegha/CodeWars#main.py)  
@@ -150,4 +150,8 @@ if isinstance(sites_urls, str):
 
 Цветной вывод `print` в консоль
 
+<Gist id='32f56f0f9cf9a7ba09e9e1964f80e91b' file='color_print.py' />
+
+```go
 {{< gist stavis-dev 32f56f0f9cf9a7ba09e9e1964f80e91b "color_print.py">}}
+```
