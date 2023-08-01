@@ -108,34 +108,3 @@ tags: ["books", "algorithms"]
 * сообщенияэ лектронной почты(от новых к старым).
 
 Алгоритм сортировки выбором легко объясняется, но медленно работает.
-
-### Пример кода
-```JavaScript
-    function findSmallest(arr) {
-        let smallest = arr[0];
-        let smallest_index = 0;
-
-        for(let i = 0; i < arr.length; i++) {
-            if(smallest > arr[i]) {
-                smallest = arr[i];
-                smallest_index = i;
-            }
-        }
-
-        return smallest_index;
-    }
-
-    function selectionSort(arr) {
-        let newArr = [];
-        let length = arr.length;
-
-        for(let i = 0; i < length; i++) {
-            let smallest = findSmallest(arr);
-            newArr.push(arr.splice(smallest, 1)[0]);
-        }
-
-        return newArr;
-    }
-
-    console.log(selectionSort([5, 3, 6, 2, 10]));
-```
