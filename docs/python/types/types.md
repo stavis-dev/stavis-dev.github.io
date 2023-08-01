@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 sidebar_label: "Типы данных Python"
+slug: ./tipy-dannykh-v-python
 
 title: "Типы данных Python"
 author: stavis
