@@ -1,13 +1,12 @@
 ---
-title: "Кортежи (tuple)"
-author: Stavis Vega
-date: "2022-02-07"
+sidebar_label: 'Кортежи (tuple) в python'
+
+title: "Кортежи (tuple) "
+author: stavis
+
 description: "Работа с кортежами в python (tuple)"
 tags: ["python", "types", "tuple"]
-categories: ["python", "programing"]
-ShowBreadCrumbs: true
-ShowToc: true
-TocOpen: true
+
 ---
 Данный урок посвящен кортежам `(tuple)` в Python. Основное внимание уделено вопросу использования кортежей, почему иногда лучше применять их, а не списки, рассмотрены способы создания и основные приемы работы с кортежами. Также затронем тему преобразования кортежа в список и обратно.
 

@@ -1,5 +1,7 @@
 ---
-title: "Словари (dict)"
+sidebar_label: 'Словари (dict)'
+
+title: "Словари (dict) в Python"
 author: Stavis Vega
 date: "2022-02-07"
 description: "Словари в python. Работа со словарями методы словарей."

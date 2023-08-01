@@ -2,10 +2,10 @@
 sidebar_label: 'Типы данных Python'
 sidebar_position: 1
 
-title: "ипы данных Python"
+title: "Типы данных Python"
 author: stavis
 description: "Тип данных string в Питоне, описание, методы"
-tags: ["functions", "string", "python"]
+tags: ["functions", "python"]
 
 ---
 

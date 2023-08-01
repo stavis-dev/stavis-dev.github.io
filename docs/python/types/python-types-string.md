@@ -1,5 +1,7 @@
 ---
-title: "Строки (str)"
+sidebar_label: 'Строки (str)'
+
+title: "Строки (str) в python"
 author: stavis
 description: "Тип данных string в Питоне, описание, методы"
 tags: ["functions", "string", "python"]

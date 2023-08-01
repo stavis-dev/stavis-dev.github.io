@@ -1,5 +1,7 @@
 ---
-title: "Множества (set)"
+sidebar_label: 'Множества (set)'
+
+title: "Множества (set) в python"
 author: Stavis
 description: "Множества в python. Работа со множествами методы set()."
 tags: ["python", "programing", "types", "set", "frozenset"]
