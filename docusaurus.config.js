@@ -121,10 +121,16 @@ const config = {
             label: 'Tutorial',
           },
           {
-              to: 'category/python',
-              label: 'Python',
-              position: 'left',
-              activeBaseRegex: `/python/`,
+            type: 'doc',
+            docId: 'python/readme',
+            position: 'left',
+            label: 'Python',
+          },
+          {
+            to: 'category/python/readme',
+            label: 'Python2',
+            position: 'left',
+            activeBaseRegex: `/python/`,
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
