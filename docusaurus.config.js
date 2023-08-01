@@ -121,7 +121,7 @@ const config = {
             label: 'Tutorial',
           },
           {
-              to: 'category/python---шпаргалка',
+              to: 'category/python',
               label: 'Python',
               position: 'left',
               activeBaseRegex: `/python/`,
