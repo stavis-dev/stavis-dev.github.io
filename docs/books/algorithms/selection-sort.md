@@ -145,3 +145,5 @@ def selection_sort(arr: list):
 if __name__ == "__main__":
     assert selection_sort([5, 3, 6, 2, 10]) == [2, 3, 5, 6, 10]
 ```
+
+[по материалом источника](https://fb2.top/grokaem-algoritmy-illyustrirovannoe-posobie-dlya-programmistov-i-lyubopytstvuyuschih-697746/read/part-5#19)
