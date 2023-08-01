@@ -89,24 +89,13 @@ export default function Home() {
                 <li>
                   <a href="/build/quick-start-on-testnet">Quick start developing on testnet</a>
                 </li>
-                <li>
-                  <a href="/build/development-guides/setting-up-the-venom-smart-contract-development-environment">Setting Up Smart Contract Development Environment</a>
-                </li>
-                <li>
-                  <a href="/build/development-guides/how-to-create-your-own-fungible-tip-3-token/fungible-tokens-in-venom-network">How to create your own fungible TIP-3 token</a>
-                </li>
+
+
                 <li>
                   <a href="/build/development-guides/developing-of-simple-voting-system/voting-system-basics">Developing of simple voting system</a>
                 </li>
-                <li>
-                  <a href="/build/development-guides/how-to-create-your-own-non-fungible-tip-4-token/non-fungible-tokens-in-venom-network">How to create your own non-fungible TIP-4 token</a>
-                </li>
-                <li>
-                  <a href="/build/development-guides/using-ever-sdk-and-devtools-to-work-with-venom">Using Ever SDK and developer tools to work with Venom Blockchain</a>
-                </li>
-                <li>
-                  <a href="/build/development-guides/using-evercloud-graphql-api-to-work-with-venom">Using Evercloud GraphQL API to work with Venom</a>
-                </li>
+
+
                 <li>
                   <a href="/build/tools-and-resources">Tools & Resources</a>
                 </li>
