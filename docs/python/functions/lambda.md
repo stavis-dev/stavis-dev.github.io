@@ -1,5 +1,7 @@
 ---
-title: "lambda in python"
+sidebar_label: "lambda функции"
+
+title: "lambda функции в python"
 author: stavis
 description: "Лямбда функции в питоне"
 tags: ["functions", "sorted"]

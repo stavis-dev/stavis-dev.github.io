@@ -1,5 +1,7 @@
 ---
-title: "Функция map()"
+sidebar_label: "Функция map()"
+
+title: "Функция map() в python"
 author: stavis
 description: "Функция map в питоне"
 tags: ["functions", "map"]

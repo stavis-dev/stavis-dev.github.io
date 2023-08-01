@@ -1,5 +1,7 @@
 ---
-title: "Вопросы Python"
+sidebar_label: "Собеседования"
+
+title: "Подготовка к собеседованию Python разработчика."
 description: "Вопросы попадающиеся на собеседованиях на разработчика python"
 tags: ["python", "questions"]
 draft: false

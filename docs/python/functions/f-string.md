@@ -1,5 +1,7 @@
 ---
-title: "f-string Python"
+sidebar_label: "f-string"
+
+title: "f-string в python"
 author: stavis
 description: "F строки в питоне."
 tags: ["functions", "f-string", "python", "string"]

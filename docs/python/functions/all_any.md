@@ -1,4 +1,6 @@
 ---
+sidebar_label: "функции all() | any()"
+
 title: "all(), any() в python"
 author: stavis
 description: "Функции all и any в питоне."

@@ -1,7 +1,9 @@
 ---
-title: "x_comprehensions"
+sidebar_label: x_comprehensions
+
+title: "List comprehensions | dict comprehensions | set comprehensions"
 author: stavis
-description: "List, dict, set comprehensions в Питоне"
+description: "Генераторы списков, генераторы словарей List comprehensions в Питоне"
 tags: ["python", "programing", "iterators", "comprehensions"]
 
 ---

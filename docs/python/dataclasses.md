@@ -1,16 +1,14 @@
 ---
-title: "Датаклассы"
+sidebar_label: "Датаклассы"
+
+title: "Датаклассы в языке питон"
 author: rikki_tikki
 date: "2022-02-07"
 description: "9 причин использовать dataclasses в Python"
 tags: ["dataclasses"]
-categories: ["python"]
-math: true
-cover:
-  hidden: true
-  image: 'https://miro.medium.com/max/1400/1*7pr8EL8EDsP296pxL7Wz_g.png'
-  alt: "Картинка"
-  caption: "Датаклассы"
+
+image: 'https://miro.medium.com/max/1400/1*7pr8EL8EDsP296pxL7Wz_g.png'
+
 ---
 
 ![from dataclasses](https://miro.medium.com/max/1400/1*7pr8EL8EDsP296pxL7Wz_g.png)

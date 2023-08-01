@@ -1,7 +1,7 @@
 ---
-sidebar_label: 'Кортежи (tuple) в python'
+sidebar_label: 'Кортежи (tuple)'
 
-title: "Кортежи (tuple) "
+title: "Кортежи (tuple) в python"
 author: stavis
 
 description: "Работа с кортежами в python (tuple)"

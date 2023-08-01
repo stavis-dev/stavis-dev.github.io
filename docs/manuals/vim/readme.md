@@ -1,18 +1,13 @@
 ---
-author: Stavis
-title: "Комманды vim, nvim"
+sidebar_label: "Команды vim"
+
+author: stavis
+title: "Vim: режимы, хоткейсы, команды"
 date: "2022-12-16"
 description: "Vim vi nvim быстыре комманды. (в процессе обучения - контент меняется регулярно)"
 tags: ["vim", "education", "nvim"]
-categories: ["soft", "linux"]
-ShowToc: true
-TocOpen: false
-ShowBreadCrumbs: true
-cover:
-  # hidden: true
-  image: "nvim.webp"
-  alt: "vim панель" # alt text
-  caption: "Vim управление" # display caption under cover
+
+image: "nvim.webp"
 ---
 ![neovim screenshot](nvim.webp)
 

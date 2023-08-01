@@ -1,4 +1,6 @@
 ---
+sidebar_label: "Команды yt-dlp"
+
 draft: true
 author: pythonru.com
 title: Рeгулярные выражения в Pyhton

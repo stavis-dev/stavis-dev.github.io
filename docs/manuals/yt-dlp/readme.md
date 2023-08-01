@@ -1,21 +1,15 @@
 ---
+sidebar_label: "Команды yt-dlp"
+
 author: Stavis
 date: "2022-12-24"
 
 title: "yt-dlp управление"
 description: "yt-dlp как качать любое видео из интернета"
 tags: ["yt-dlp", "youtube-dl"]
-categories: ["soft", "linux"]
+
 image: "yt-dlp-header.webp"
 
-ShowToc: true
-TocOpen: false
-ShowBreadCrumbs: true
-cover:
-  hidden: true
-  image: "yt-dlp-header.webp"
-  alt: "yt-dlp лого" # alt text
-  caption: "yt-dlp управление" # display caption under cover
 ---
 
 ![TDD Banner](yt-dlp-header.webp)

@@ -1,4 +1,6 @@
 ---
+sidebar_label: "функция sorted()"
+
 title: "Функция sorted в python"
 author: stavis
 description: "Обзор sorted() стандартной функции Python"

@@ -1,4 +1,6 @@
 ---
+sidebar_label: "Лучшие практики"
+
 author: Stavis
 title: "Лучшие практики python"
 description: "Лучшиие практики применения в python"
