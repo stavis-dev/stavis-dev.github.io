@@ -5,6 +5,7 @@
  */
 
 .navbar__brand {
+  padding-left: 40px;
   background-image: var(--ifm-logo-bg-image);
   background-repeat: no-repeat;
   background-size: contain;
