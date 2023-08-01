@@ -1,7 +1,10 @@
 ---
-title: "Бинарные Деревья (TreeNode)"
+sidebar_position: 10
+sidebar_label: "Бинарное Дерево (TreeNode)"
+
+title: "Бинарные Деревья (TreeNode) в python"
 author: Stavis
-description: "Структура данных 'бинарное дерево' в Питон."
+description: "Структура данных 'бинарное дерево' в Питоне"
 tags: ["python", "programing", "treenode", "Data Structure"]
 
 ---

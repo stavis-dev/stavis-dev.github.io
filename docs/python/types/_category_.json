@@ -1,7 +1,6 @@
 {
-  "label": "Типы данных Python",
   "position": 2,
-  "link": {
-  "description": "Методы и типы данных в Питоне. Быстрой найти инфу, освежить память."
-  }
+  "label": "Типы данных Python",
+  "collapsed": true,
+  "collapsible": true
 }
