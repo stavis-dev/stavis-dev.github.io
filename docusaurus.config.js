@@ -109,10 +109,10 @@ const config = {
       navbar: {
         hideOnScroll: true,  // исчезает при прокрутке вниз
         title: 'Обо мне',
-        logo: {
-          alt: 'Stavis logo',
-          src: 'img/logo.svg',
-        },
+        // logo: {
+        //   alt: 'Stavis logo',
+        //   src: 'img/logo.svg',
+        // },
         items: [
           {
             type: 'docSidebar',
