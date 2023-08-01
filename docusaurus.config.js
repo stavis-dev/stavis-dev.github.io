@@ -79,8 +79,8 @@ const config = {
             'https://github.com/stavis-dev/stavis-dev.github.io/tree/main/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-          //customCss: require.resolve('./src/css/custom-orig.css'),
+          // customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom-orig.css'),
         },
         gtag: {
           trackingID: 'G-5EZH6Q0C8W',
@@ -109,10 +109,10 @@ const config = {
       navbar: {
         hideOnScroll: true,  // исчезает при прокрутке вниз
         title: 'Обо мне',
-        // logo: {
-        //   alt: 'Логотип сайта',
-        //   src: 'img/logo.svg',
-        // },
+        logo: {
+          alt: 'Stavis logo',
+          src: 'img/logo.svg',
+        },
         items: [
           {
             type: 'docSidebar',
