@@ -22,6 +22,69 @@ image: 'https://www.hwlibre.com/wp-content/uploads/2021/11/google-colaboratory.j
 Этот сервис особенно полезен для разработчиков новичков, и студентов, которые изучают программирование на `Python`.
 :::
 
+Подробно описывать работу там я пока не буду, просто запишу тут пару полезных для меня фишек.
+
+## Полезности
+
+### Shell комманды
+
+Очевидность скажу: перед коммандой ставим `!` восклицательный знак.
+
+```sh
+!pip install aiohttp
+!pip install nest_asyncio
+!pip install aiofiles
+```
+
+### Отключение консоли
+
+Чтобы в консоль не сыпался процесс выполнения кода достаточно добавить вверху блокнота с кодом
+
+```js
+%%capture
+```
+
+### Сворачивание участка кода
+
+Шебанг `#@title` и далее описание блока:
+
+```sh
+#@title Install requirements
+%%capture
+
+!pip install requests
+!pip install beautifulsoup4
+
+```
+
+Этот шебанг `#@title` в начале блокнота добавить заголовок "Install requirements" (можно написать любой).
+И кнопку ниже `Show code` свернутая панель не будет постоянно раскрываться, что временами бесит.
+
+### Environment
+
+Переменные среды внутрь машины Google Colab передаются `%env <имя_переменой>`
+
+```sh
+%env zip_file=videos_dir.zip
+%env dest=/content/from_colab
+```
+
+Передаются соответсвенно:
+
+```sh
+!mv "$zip_file" "$dest"
+```
+
+### Примонтировать Google Drive
+
+Скачивание файлов с колаба очень медленное, лучше примонтировать гугл диск и скопировав файлы на него, уже после скачать от туда.
+
+```python
+#@title mount Google Drive
+
+from google.colab import drive
+drive.mount('/content/drive')
+```
 
 ## Ссылки 
 
