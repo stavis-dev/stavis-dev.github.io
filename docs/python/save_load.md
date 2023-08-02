@@ -26,7 +26,7 @@ with open('pased_site.csv', 'w', encoding="utf-8:") as f:
             continue
 ```
 
-## Запись / Чтение в json файл
+## json файлы
 
 Запись данных в  json файл:
 
@@ -48,10 +48,13 @@ with open('file_name.json', 'r') as f:
     serieses = json.load(f)
 ```
 
-## Запись / Чтение в обыкновенные файлы
+## Плоские файлы
+.
+Чтение и запись данных из обыкновенных (плоских) файлов `txt`, `html` и т.д.:
 
-Обыкновенные файлы я называю файлы, которые требуется просто прочиать построчно.
-Чтение данных из обыкновенных файлов (например html):
+### Сохранение в файл
+
+Простое сохранение в файл
 
 ```python
 # Save data to file
@@ -59,13 +62,47 @@ with open('index.html', 'w') as f:
     f.write(res.text)
 ```
 
-Чтение из файла:
+Сохранинение [list](./types/python-types-list.md) или [dict](./types/python-types-dict.md) в плоский файл построчно:
+
+```python
+# Save list to file
+myList = [1,2,3,4]
+
+with open('output.txt', 'w') as f:
+  f.write('\n'.join(str(i) for i in myList))
+```
+
+### Чтение из файла:
 
 ```python
 # Load data from file
 with open('index.html', 'r') as f:
     html = f.read()
 ```
+
+## Асинхронный доступ
+
+Для асинхронного доступа к файловой системе есть модуль [aiofiles](https://github.com/Tinche/aiofiles)
+
+модуль предварительно установить: КЭП?
+
+```sh
+pip install aiofiles
+```
+
+Пример сохранения в файл:
+
+```python
+import asyncio
+import aiofiles  # pip install aiofiles
+
+async def saver():
+  async with aiofiles.open('test.txt', 'a') as f:
+    await f.write("Ole ole")
+
+asyncio.run(saver())
+```
+
 
 ## Пути
 

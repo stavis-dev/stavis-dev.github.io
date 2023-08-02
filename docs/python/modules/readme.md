@@ -29,12 +29,15 @@ tags: ["python", "modules"]
 - http запросы
     - [requests](https://github.com/psf/requests) - без комментариев
     - [requests-html](https://github.com/psf/requests-html) - модуль `requests` с поддержкой `JavaScript`. [doc-eng](https://requests-html.kennethreitz.org/)
-    - [aiohttp](https://github.com/aio-libs/aiohttp) [docs.aiohttp.org](https://docs.aiohttp.org/en/latest/index.html) - для асинхронных запросов
+    - [aiohttp](https://github.com/aio-libs/aiohttp), [docs.aiohttp.org](https://docs.aiohttp.org/en/latest/index.html) - для асинхронных запросов
+    - [nest_asyncio](https://github.com/erdewit/nest_asyncio) - решает проблему асинхронных запросов в `Google Colab`
 
 - транситерация текста
     - [transliterate](https://github.com/barseghyanartur/transliterate) - транслитератор текста заточенный под славянские языки, [русс док](https://docs-python.ru/packages/modul-transliterate-python/)
     - [unidecode](https://github.com/avian2/unidecode) **Не использовал** - принимает строки в Юникоде и пытается представить их в символах ASCII. [русс док](https://docs-python.ru/packages/unicode-to-ascii/).
 
+- Асинхронность
+    - [aiofiles](https://github.com/Tinche/aiofiles) - Асинхронный доступ к файловой системе.
 
 ## Пакеты
 Специализированные пакеты, выполняющие как правило одну функцию.
