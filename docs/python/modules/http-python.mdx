@@ -1,0 +1,69 @@
+---
+sidebar_label: "http запросы"
+
+author: Stavis
+title: "http запросы в python"
+description: "как производить http запросы в python, модули urllib"
+tags: ["best", "python"]
+
+---
+
+import CodeBlock from '@theme/CodeBlock';
+
+В python обычно используют несколько способов:
+
+```mdx-code-block
+<Tabs>
+<TabItem value="urllib.request">
+```
+
+```python
+from urllib.request import urlopen
+with urlopen("https://www.example.com") as response:
+    body = response.read()
+
+body[:15]
+# b'<!doctype html>'
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="requests">
+```
+
+```python
+>>> import requests
+>>> r = requests.get('https://httpbin.org/basic-auth/user/pass', auth=('user', 'pass'))
+>>> r.status_code
+200
+>>> r.headers['content-type']
+'application/json; charset=utf8'
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="aiohttp">
+```
+
+```python
+import aiohttp
+import asyncio
+
+async def main():
+
+    async with aiohttp.ClientSession() as session:
+        async with session.get('http://python.org') as response:
+
+            print("Status:", response.status)
+            print("Content-type:", response.headers['content-type'])
+
+            html = await response.text()
+            print("Body:", html[:15], "...")
+
+asyncio.run(main())
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+```
