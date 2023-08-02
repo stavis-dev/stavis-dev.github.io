@@ -1,10 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-// const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const darkCodeTheme = require('prism-react-renderer/themes/okaidia');
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Шпаргалка по знаниям',
@@ -25,6 +21,8 @@ const config = {
   organizationName: 'stavis-dev', // Usually your GitHub org/user name.
   projectName: 'stavis-dev.github.io', // Usually your repo name.
 
+  themes: ['@docusaurus/theme-live-codeblock'],
+  
   // https://github.com/sgromkov/docusaurus-plugin-yandex-metrica
   // https://github.com/sgromkov/gromkov.me/blob/main/docusaurus.config.js
   plugins: [
@@ -209,9 +207,11 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
+      // https://docusaurus.io/docs/api/themes/configuration#codeblock-theme
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        additionalLanguages: ["python", "py", "json"],
+        theme: require('prism-react-renderer/themes/github'),
+        darkTheme: require('prism-react-renderer/themes/okaidia'),
       },
       // prism: {
       //   additionalLanguages: ['java', 'latex'],

@@ -66,3 +66,5 @@ module.exports = {
 - Сайдбары
   - [sidebars.js](https://github.com/facebook/docusaurus/blob/main/website/sidebars.js) сайдбар docusaurus
   - [sidebars.js](https://github.com/venom-blockchain/venom-blockchain.github.io/blob/main/sidebars.js) сайдбар venom
+
+- [Блоки кода](https://docusaurus.io/docs/markdown-features/code-blocks)

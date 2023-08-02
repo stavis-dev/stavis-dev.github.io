@@ -26,6 +26,8 @@ jobs:
         run: npm install --save @docusaurus/plugin-ideal-image
       - name: Add gist embed
         run: npm install --save react-gist
+      - name: Add live code block
+        run: npm install --save @docusaurus/theme-live-codeblock
       - name: Build website
         run: npm run build
 
