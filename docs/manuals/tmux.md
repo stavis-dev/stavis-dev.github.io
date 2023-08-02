@@ -1,4 +1,6 @@
 ---
+sidebar_label: "Команды tmux"
+
 author: Stavis
 title: "Памятка по tmux"
 description: "Шпаргалка памятка по приложению tmux"

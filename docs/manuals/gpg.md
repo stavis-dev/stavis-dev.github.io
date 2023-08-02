@@ -1,4 +1,6 @@
 ---
+sidebar_label: "Команды GPG"
+
 author: Stavis
 title: "Шифруем с GPG"
 description: "Шифрование программой gpg"
