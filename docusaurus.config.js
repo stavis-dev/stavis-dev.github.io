@@ -22,7 +22,7 @@ const config = {
   projectName: 'stavis-dev.github.io', // Usually your repo name.
 
   themes: ['@docusaurus/theme-live-codeblock'],
-  
+
   // https://github.com/sgromkov/docusaurus-plugin-yandex-metrica
   // https://github.com/sgromkov/gromkov.me/blob/main/docusaurus.config.js
   plugins: [
@@ -209,7 +209,6 @@ const config = {
       },
       // https://docusaurus.io/docs/api/themes/configuration#codeblock-theme
       prism: {
-        additionalLanguages: ["python", "py", "json"],
         theme: require('prism-react-renderer/themes/github'),
         darkTheme: require('prism-react-renderer/themes/okaidia'),
       },
