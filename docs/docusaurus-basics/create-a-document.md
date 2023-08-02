@@ -55,3 +55,14 @@ module.exports = {
   ],
 };
 ```
+
+## Настройки
+
+### Примеры настроек
+
+- Настройки `docusaurus.config.js`
+  - [docusaurus.config.js](https://github.com/facebook/docusaurus/blob/main/website/docusaurus.config.js) - официальной документации `docusaurus`
+  - Проект `venom` [docusaurus.config.js](https://github.com/venom-blockchain/venom-blockchain.github.io/blob/main/docusaurus.config.js)
+- Сайдбары
+  - [sidebars.js](https://github.com/facebook/docusaurus/blob/main/website/sidebars.js) сайдбар docusaurus
+  - [sidebars.js](https://github.com/venom-blockchain/venom-blockchain.github.io/blob/main/sidebars.js) сайдбар venom
