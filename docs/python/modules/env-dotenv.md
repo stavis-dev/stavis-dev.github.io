@@ -2,7 +2,7 @@
 author: stavis
 title: Использование .env
 description: "Работа с .env файлами. Храним переменные правильно"
-tags: ["modules"]
+tags: ["modules", "dotenv", "decouple"]
 
 ---
 
