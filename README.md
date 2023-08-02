@@ -4,22 +4,26 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 
 ### Установка
 
-```
-$ yarn
-```
+```sh
+npm install
 
+npm install --save docusaurus-plugin-yandex-metrica
+npm install --save @docusaurus/plugin-ideal-image
+npm install --save react-gist
+npm install --save @docusaurus/theme-live-codeblock
+```
 ### Local Development
 
-```
-$ npm run start
+```sh
+npm run start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+This command starts a [local](http://localhost:3000.) development server and opens up a browser window. Most changes are reflected live without having to restart the server. 
 
 ### Build
 
-```
-$ npm run build
+```sh
+npm run build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.

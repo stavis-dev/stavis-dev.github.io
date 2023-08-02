@@ -13,7 +13,7 @@ image: 'https://www.hwlibre.com/wp-content/uploads/2021/11/google-colaboratory.j
 
 # Google Colab
 
-:::note
+:::info
 [Google Colab](https://colab.research.google.com/)  — сервис, созданный Google, который позволяет работать с кодом на языке `Python` через `Jupyter Notebook`.
 
 Работает прямо в браузере, исполняется в Google облаке.  

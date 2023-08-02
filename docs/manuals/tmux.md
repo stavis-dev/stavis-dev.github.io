@@ -2,9 +2,9 @@
 author: Stavis
 title: "Памятка по tmux"
 description: "Шпаргалка памятка по приложению tmux"
-tags: ["tmux"]
-categories: ["devops", "linux"]
+tags: ["tmux", "devops", "linux"]
 image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flightrains.com%2Fassets%2Fimg%2Fblog%2Ftmux-tips.png"
+
 ---
 
 # Шпаргалка по tmux
@@ -13,7 +13,7 @@ image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flightrains.c
 
 ## Установка
 
-```sh
+```bash
 # mac
 brew install tmux
 

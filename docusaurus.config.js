@@ -2,7 +2,8 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 
 /** @type {import('@docusaurus/types').Config} */
-const config = {
+module.exports = async function createConfigAsync() {
+  return {
   title: 'Шпаргалка по знаниям',
   tagline: 'Записки о том, что я знаю.',
   favicon: 'img/favicon.ico',
@@ -229,6 +230,6 @@ const config = {
       //   darkTheme: (await import('./src/utils/prismDark.mjs')).default,
       // },
     }),
+  };
 };
 
-module.exports = config;

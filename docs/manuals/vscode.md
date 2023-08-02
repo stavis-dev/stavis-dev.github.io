@@ -1,9 +1,9 @@
 ---
+
 author: Stavis
 title: "Полезные настройки VsCode"
 description: "Полезные настройки VsCode"
 tags: ["vscode"]
-categories: ["soft", "linux"]
 ---
 # VsCode
 

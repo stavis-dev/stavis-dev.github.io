@@ -61,6 +61,7 @@ module.exports = {
 ### Примеры настроек
 
 - Настройки `docusaurus.config.js`
+  - [docusaurus.config.js](https://github.com/facebookresearch/hydra/blob/main/website/docusaurus.config.js) сайта https://hydra.cc/
   - [docusaurus.config.js](https://github.com/facebook/docusaurus/blob/main/website/docusaurus.config.js) - официальной документации `docusaurus`
   - Проект `venom` [docusaurus.config.js](https://github.com/venom-blockchain/venom-blockchain.github.io/blob/main/docusaurus.config.js)
 - Сайдбары

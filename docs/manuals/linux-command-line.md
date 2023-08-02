@@ -11,7 +11,7 @@ tags: ["command line", "linux"]
 
 Команда wc выводит количество строк, слов и символов в файле:
 
-```sh
+```bash
 wc animals.txt
 # 7 51 325 animals.txt
 ```
@@ -67,7 +67,7 @@ head -n3 animals.txt
 
 Выведем на экран только первые три строки:
 
-```sh
+```bash
 cut -f2 animals.txt | head -n3
 # Programming Python
 # SSH, The Secure Shell
@@ -76,7 +76,7 @@ cut -f2 animals.txt | head -n3
 
 Вы также можете вырезать несколько полей, разделив их номера запятыми:
 
-```sh
+```bash
 cut -f1,3 animals.txt | head -n3
 # python 2010
 # snail 2005
@@ -85,7 +85,7 @@ cut -f1,3 animals.txt | head -n3
 
 или указав диапазон значений:
 
-```sh
+```bash
 cut -f2-4 animals.txt | head -n3
 # Programming Python 2010 Lutz, Mark
 # SSH, The Secure Shell 2005 Barrett, Daniel
@@ -104,7 +104,7 @@ cut -f2-4 animals.txt | head -n3
 чтобы изменить символ-разделитель на запятую вместо табуляции.
 Это позволит выделить только фамилии авторов:
 
-```sh
+```bash
 cut -f4 animals.txt | cut -d, -f1
 # Lutz
 # Barrett
@@ -114,7 +114,7 @@ cut -f4 animals.txt | cut -d, -f1
 ## sort
 Команда sort сортирует строки файла в порядке возрастания (по умолчанию):
 
-```sh
+```bash
 sort
 ```
 
@@ -125,7 +125,7 @@ sort
 
 Пример:
 
-```sh
+```bash
 cut -f3 animals.txt | sort -n | head -n3
 # 1999
 # 2005
@@ -148,7 +148,7 @@ cut -f3 animals.txt | sort -n | head -n3
 
 Я создам стек из четырех каталогов, добавляя их по одному:
 
-```sh
+```bash
 pwd
 # /home/smith/Work/Projects/Web/src
 pushd /var/www/html
@@ -167,7 +167,7 @@ pwd
 
 Выведите на экран стек каталогов текущего экземпляра оболочки с помощью команды dirs. Она не изменяет стек:
 
-```sh
+```bash
 dirs
 # /etc/ssl/certs /etc/apache2 /var/www/html ~/Work/Projects/Web/src
 ```
@@ -175,7 +175,7 @@ dirs
 Если вы предпочитаете печатать стек сверху вниз, используйте параметр -p:
 
 
-```sh
+```bash
 dirs -p
 # /etc/ssl/certs
 # /etc/apache2
@@ -189,7 +189,7 @@ dirs -p
 Этот параметр выводит на экран стек с пронумерованными строками:
 
 
-```sh
+```bash
 dirs -v
 # 0 /etc/ssl/certs
 # 1 /etc/apache2
@@ -258,7 +258,7 @@ popd +N
 Для вывода на экран значений переменных HOME и USER запустите команду
 printenv:
 
-```sh
+```bash
 printenv HOME
 # /home/smith
 printenv USER
@@ -269,13 +269,13 @@ printenv USER
 
 Отобразить список всех алиасов:
 
-```sh
+```bash
 alias
 ```
 
 Создать алиас
 
-```sh
+```bash
 alias ll="ls -l"
 ```
 
