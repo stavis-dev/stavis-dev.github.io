@@ -4,7 +4,7 @@ sidebar_label: 'Строки (str)'
 title: "Строки (str) в python"
 author: stavis
 description: "Тип данных string в Питоне, описание, методы"
-tags: ["functions", "string", "python"]
+tags: ["types", "string", "python"]
 
 ---
 
@@ -28,14 +28,14 @@ str_one =  'Hello'
 str_two = "Hello"
 # 'Hello'
 
-In [11]: tunnel = """
-   ....: interface Tunnel0
-   ....:  ip address 10.10.10.1 255.255.255.0
-   ....:  ip mtu 1416
-   ....:  ip ospf hello-interval 5
-   ....:  tunnel source FastEthernet1/0
-   ....:  tunnel protection ipsec profile DMVPN
-   ....: """
+tunnel = """
+          interface Tunnel0
+          ip address 10.10.10.1 255.255.255.0
+          ip mtu 1416
+          ip ospf hello-interval 5
+          tunnel source FastEthernet1/0
+          tunnel protection ipsec profile DMVPN
+          """
 ```
 
 
@@ -48,38 +48,30 @@ In [11]: tunnel = """
 удобства восприятия.
 
 ```python
+s = ('Test' 'String')
+# 'TestString'
 
-    In [1]: s = ('Test' 'String')
-
-    In [2]: s
-    Out[2]: 'TestString'
-
-    In [3]: s = 'Test' 'String'
-
-    In [4]: s
-    Out[4]: 'TestString'
+s = 'Test' 'String'
+# 'TestString'
 ```
 
 Можно переносить составляющие строки на разные строки, но только
 если они в скобках:
 
 ```python
+s = ('Test'
+     'String')
 
-    In [5]: s = ('Test'
-       ...: 'String')
-
-    In [6]: s
-    Out[6]: 'TestString'
+# 'TestString'
 ```
 
 Этим очень удобно пользоваться в регулярных выражениях:
 
 ```python
-
-    regex = ('(\S+) +(\S+) +'
-             '\w+ +\w+ +'
-             '(up|down|administratively down) +'
-             '(\w+)')
+regex = ('(\S+) +(\S+) +'
+          '\w+ +\w+ +'
+          '(up|down|administratively down) +'
+          '(\w+)')
 ```
 
 Так регулярное выражение можно разбивать на части и его будет проще
@@ -87,10 +79,10 @@ In [11]: tunnel = """
 
 ```python
 
-    regex = ('(\S+) +(\S+) +' # interface and IP
-             '\w+ +\w+ +'
-             '(up|down|administratively down) +' # Status
-             '(\w+)') # Protocol
+regex = ('(\S+) +(\S+) +' # interface and IP
+         '\w+ +\w+ +'
+         '(up|down|administratively down) +' # Status
+         '(\w+)') # Protocol
 ```
 
 Также этим приемом удобно пользоваться, когда надо написать длинное
@@ -121,15 +113,16 @@ In [11]: tunnel = """
 
 ### Метод join
 
+_eng: join - присоединиться_
+
 Метод `join` собирает список строк в одну строку с разделителем,
 который указан перед join:
 
 ```python
+vlans = ['10', '20', '30']
 
-    In [16]: vlans = ['10', '20', '30']
-
-    In [17]: ','.join(vlans)
-    Out[17]: '10,20,30'
+vlans_str = ','.join(vlans)
+# '10,20,30'
 ```
 
 ### Методы upper, lower, swapcase, capitalize
@@ -138,22 +131,21 @@ In [11]: tunnel = """
 `capitalize()` выполняют преобразование регистра строки:
 
 ```python
+string1 = 'FastEthernet'
 
-    In [25]: string1 = 'FastEthernet'
+string1.upper()
+# 'FASTETHERNET'
 
-    In [26]: string1.upper()
-    Out[26]: 'FASTETHERNET'
+string1.lower()
+# 'fastethernet'
 
-    In [27]: string1.lower()
-    Out[27]: 'fastethernet'
+string1.swapcase()
+# 'fASTeTHERNET'
 
-    In [28]: string1.swapcase()
-    Out[28]: 'fASTeTHERNET'
+string2 = 'tunnel 0'
 
-    In [29]: string2 = 'tunnel 0'
-
-    In [30]: string2.capitalize()
-    Out[30]: 'Tunnel 0'
+string2.capitalize()
+# 'Tunnel 0'
 ```
 
 Очень важно обращать внимание на то, что часто методы возвращают
@@ -161,11 +153,9 @@ In [11]: tunnel = """
 переменной (можно той же).
 
 ```python
-
-    In [31]: string1 = string1.upper()
-
-    In [32]: print(string1)
-    FASTETHERNET
+string1 = string1.upper()
+print(string1)
+# FASTETHERNET
 ```
 
 ### Метод count
@@ -174,37 +164,36 @@ In [11]: tunnel = """
 или подстрока встречаются в строке:
 
 ```python
+string1 = 'Hello, hello, hello, hello'
 
-    In [33]: string1 = 'Hello, hello, hello, hello'
+string1.count('hello')
+# 3
 
-    In [34]: string1.count('hello')
-    Out[34]: 3
+string1.count('ello')
+# 4
 
-    In [35]: string1.count('ello')
-    Out[35]: 4
-
-    In [36]: string1.count('l')
-    Out[36]: 8
+string1.count('l')
+# 8
 ```
 
-### Метод find
+### Метод find {#str-find}
 
 Методу `find()` можно передать подстроку или символ, и он покажет,
 на какой позиции находится первый символ подстроки (для первого
 совпадения):
 
 ```python
+string1 = 'interface FastEthernet0/1'
+string1.find('Fast')
+# 10
 
-    In [37]: string1 = 'interface FastEthernet0/1'
-
-    In [38]: string1.find('Fast')
-    Out[38]: 10
-
-    In [39]: string1[string1.find('Fast')::]
-    Out[39]: 'FastEthernet0/1'
+string1[string1.find('Fast')::]
+# 'FastEthernet0/1'
 ```
 
-Если совпадение не найдено, метод find возвращает `-1`.
+### Метод rfind {#str-rfind}
+
+Метод `rfind()` похож на [find()](#str-find), за исключением того, что поиск выполняется справа налево.
 
 ### Методы startswith, endswith
 
@@ -212,20 +201,19 @@ In [11]: tunnel = """
 символы (методы `startswith()`, `endswith()`):
 
 ```python
+string1 = 'FastEthernet0/1'
 
-    In [40]: string1 = 'FastEthernet0/1'
+string1.startswith('Fast')
+# True
 
-    In [41]: string1.startswith('Fast')
-    Out[41]: True
+string1.startswith('fast')
+# False
 
-    In [42]: string1.startswith('fast')
-    Out[42]: False
+string1.endswith('0/1')
+# True
 
-    In [43]: string1.endswith('0/1')
-    Out[43]: True
-
-    In [44]: string1.endswith('0/2')
-    Out[44]: False
+string1.endswith('0/2')
+# False
 ```
 
 Методам `startswith()` и `endswith()` можно передавать несколько значений
@@ -233,37 +221,36 @@ In [11]: tunnel = """
 
 ```python
 
-    In [1]: "test".startswith(("r", "t"))
-    Out[1]: True
+chk = "test".startswith(("r", "t"))
+# True
 
-    In [2]: "test".startswith(("r", "a"))
-    Out[2]: False
+chk = "test".startswith(("r", "a"))
+# False
 
-    In [3]: "rtest".startswith(("r", "a"))
-    Out[3]: True
+chk = "rtest".startswith(("r", "a"))
+# True
 
-    In [4]: "rtest".endswith(("r", "a"))
-    Out[4]: False
+chk = "rtest".endswith(("r", "a"))
+# False
 
-    In [5]: "rtest".endswith(("r", "t"))
-    Out[5]: True
+chk = "rtest".endswith(("r", "t"))
+# True
 ```
 
 
-### Метод replace
+### Метод replace {#str-replace}
 
 Замена последовательности символов в строке на другую последовательность
 (метод `replace()`):
 
 ```python
+string1 = 'FastEthernet0/1'
 
-    In [45]: string1 = 'FastEthernet0/1'
-
-    In [46]: string1.replace('Fast', 'Gigabit')
-    Out[46]: 'GigabitEthernet0/1'
+string1.replace('Fast', 'Gigabit')
+# 'GigabitEthernet0/1'
 ```
 
-### Метод strip
+### Метод strip {#str-strip}
 
 Часто при обработке файла файл открывается построчно. Но в конце каждой
 строки, как правило, есть какие-то спецсимволы (а могут быть и в
@@ -273,53 +260,42 @@ In [11]: tunnel = """
 `strip()`:
 
 ```python
+string1 = '\n\tinterface FastEthernet0/1\n'
+print(string1)  # print не отображает
+# interface FastEthernet0/1
 
-    In [47]: string1 = '\n\tinterface FastEthernet0/1\n'
+string1
+# '\n\tinterface FastEthernet0/1\n'
 
-    In [48]: print(string1)
-
-        interface FastEthernet0/1
-
-
-    In [49]: string1
-    Out[49]: '\n\tinterface FastEthernet0/1\n'
-
-    In [50]: string1.strip()
-    Out[50]: 'interface FastEthernet0/1'
+string1.strip()
+# 'interface FastEthernet0/1'
 ```
 
-По умолчанию метод strip() убирает пробельные символы. В этот набор
-символов входят: `\t\n\r\f\v`
+По умолчанию метод `strip()` убирает пробельные символы.  
+В этот набор символов входят: `\t\n\r\f\v`
 
-Методу strip можно передать как аргумент любые символы. Тогда в начале и
-в конце строки будут удалены все символы, которые были указаны в строке:
+Методу `strip` можно передать как аргумент любые символы. Тогда в начале и в конце строки будут удалены все символы, которые были указаны в строке:
 
 ```python
+ad_metric = '[110/1045]'
 
-    In [51]: ad_metric = '[110/1045]'
-
-    In [52]: ad_metric.strip('[]')
-    Out[52]: '110/1045'
+ad_metric.strip('[]')
+# '110/1045'
 ```
 
-Метод strip() убирает спецсимволы и в начале, и в конце строки. Если
-необходимо убрать символы только слева или только справа, можно
-использовать, соответственно, методы `lstrip()` и
+Метод `strip()` убирает спецсимволы и в начале, и в конце строки. Если необходимо убрать символы только слева или только справа, можно использовать, соответственно, методы `lstrip()` и
 `rstrip()`.
 
-### Метод split
+### Метод split {#str-split}
 
 Метод `split()` разбивает строку на части, используя как
 разделитель какой-то символ (или символы) и возвращает список строк:
 
 ```python
-
-    In [53]: string1 = 'switchport trunk allowed vlan 10,20,30,100-200'
-
-    In [54]: commands = string1.split()
-
-    In [55]: print(commands)
-    ['switchport', 'trunk', 'allowed', 'vlan', '10,20,30,100-200']
+string1 = 'switchport trunk allowed vlan 10,20,30,100-200'
+commands = string1.split()
+print(commands)
+# ['switchport', 'trunk', 'allowed', 'vlan', '10,20,30,100-200']
 ```
 
 В примере выше `string1.split()` разбивает строку по пробельным символам
@@ -329,11 +305,9 @@ In [11]: tunnel = """
 (пробелы, табы, перевод строки), но в скобках можно указать любой разделитель:
 
 ```python
-
-    In [56]: vlans = commands[-1].split(',')
-
-    In [57]: print(vlans)
-    ['10', '20', '30', '100-200']
+vlans = commands[-1].split(',')
+print(vlans)
+# ['10', '20', '30', '100-200']
 ```
 
 В списке commands последний элемент это строка с вланами, поэтому используется индекс -1.
@@ -343,11 +317,9 @@ In [11]: tunnel = """
 Пример разделения адреса на октеты:
 
 ```python
-
-    In [10]: ip = "192.168.100.1"
-
-    In [11]: ip.split(".")
-    Out[11]: ['192', '168', '100', '1']
+ip = "192.168.100.1"
+ip.split(".")
+# ['192', '168', '100', '1']
 ```
 
 Полезная особенность метода split с разделителем по умолчанию — строка не только разделяется
@@ -355,11 +327,9 @@ In [11]: tunnel = """
 в конце строки:
 
 ```python
-
-    In [58]: string1 = '  switchport trunk allowed vlan 10,20,30,100-200\n\n'
-
-    In [59]: string1.split()
-    Out[59]: ['switchport', 'trunk', 'allowed', 'vlan', '10,20,30,100-200']
+string1 = '  switchport trunk allowed vlan 10,20,30,100-200\n\n'
+string1.split()
+# ['switchport', 'trunk', 'allowed', 'vlan', '10,20,30,100-200']
 ```
 
 У метода `split()` есть ещё одна хорошая особенность: по умолчанию
@@ -367,22 +337,70 @@ In [11]: tunnel = """
 Это будет, например, очень полезным при обработке команд show:
 
 ```python
-
-    In [60]: sh_ip_int_br = "FastEthernet0/0       15.0.15.1    YES manual up         up"
-
-    In [61]: sh_ip_int_br.split()
-    Out[61]: ['FastEthernet0/0', '15.0.15.1', 'YES', 'manual', 'up', 'up']
+sh_ip_int_br = "FastEthernet0/0       15.0.15.1    YES manual up         up"
+sh_ip_int_br.split()
+# ['FastEthernet0/0', '15.0.15.1', 'YES', 'manual', 'up', 'up']
 ```
 
-А вот так выглядит разделение той же строки, когда один пробел
+А вот так выглядит разделение той же строки, когда один пробел `" "`
 используется как разделитель:
 
 ```python
+sh_ip_int_br.split(' ')
+# ['FastEthernet0/0', '', '', '', '', '', '', '', '', '', '', '', '15.0.15.1', '', '', '', '', '', '', 'YES', 'manual', 'up', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'up']
+```
 
+### str.partition() {#str-partition}
 
-    In [62]: sh_ip_int_br.split(' ')
-    Out[62]:
-    ['FastEthernet0/0', '', '', '', '', '', '', '', '', '', '', '', '15.0.15.1', '', '', '', '', '', '', 'YES', 'manual', 'up', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'up']
+```py
+str.partition(sep)
+
+str.rpartition(sep)
+```
+Метод `str.partition(sep)` разбивает строку при первом появлении разделителя sep и вернет кортеж, содержащий часть строки str перед разделителем, сам разделитель sep и часть строки str после разделителя.
+
+- Разделитель `sep` может содержать как один, так и несколько символов.
+- Если разделитель не найден, возвращает [кортежи](./python-types-tuple.md), содержащий саму строку `str`
+  - `partition` - за которой следуют две пустые строки `(str, '', '')`.
+  - `rpartition` - перед которой следуют две пустые строки `('', '', str)`.
+- При вызове метода без аргументов поднимается исключение:
+  - `TypeError: partition() takes exactly one argument (0 given)`
+
+- В случаях, когда требуется, чтобы деление строки происходило при последнем появлении разделителя, используйте [str.rpartition()](#str-rpartition). 
+ - Когда требуется разделить строку на список строк по определенному разделителю, используйте [str.split()](#str-split).
+
+- судя по ответу на [stackoverflow.com](https://stackoverflow.com/a/29995164/15960848), является самым быстрым методоб разбиения строки.
+
+#### str.partition
+
+```python
+x = 'один два три раз два три раз два три'
+sep = 'раз'
+
+x.partition(sep)
+# ('один два три ', 'раз', ' два три раз два три')
+
+x.partition(' ')
+# ('один', ' ', 'два три раз два три раз два три')
+
+x.partition('четыре')
+# ('один два три раз два три раз два три', '', '')
+```
+
+#### str.rpartition() {#str-rpartition}
+
+```py
+x = 'один два три раз, два три раз два три'
+sep = 'раз'
+
+x.rpartition(sep)
+# ('один два три раз два три ', 'раз', ' два три')
+
+x.partition(' ')
+# ('один два три раз два три раз два', ' ', 'три')
+
+x.partition('четыре')
+# ('', '', 'один два три раз два три раз два три')
 ```
 
 ## Дополнительные материалы
@@ -399,3 +417,115 @@ In [11]: tunnel = """
 - [Синтаксис](https://docs.python.org/3/library/string.html#format-string-syntax) форматирования строк
 - Python 3s [f-Strings](https://realpython.com/python-f-strings/): An Improved String Formatting Syntax (Guide)
 - Python String Formatting Best [Practices](https://realpython.com/python-string-formatting/)
+
+## Упражнения
+
+### Смещение строк
+
+- Есть строка `sr = "I Me You"` содержащая 3 слова.
+- Вернуть строку так, чтобы последнее слово оказалось первым `"You I Me"`
+
+<details>
+<summary>
+Решение через str.rpartition()
+</summary>
+
+```py
+def rpart(s):
+    part = s.rpartition(' ')
+    return part[-1] + part[1] + part[0]
+```
+
+</details>
+
+<details>
+<summary>
+Решения
+</summary>
+
+```py
+from collections import deque
+import timeit
+
+def trivial(s):
+    l = s.split()
+    return ' '.join(l[-1:] + l[:-1])
+
+def more_split(s):
+    return ' '.join([s.split()[-1]] + s.split()[:-1])
+
+def dq(s):
+    s_deq = deque(s.split())
+    s_deq.rotate(1)
+    return ' '.join(s_deq)
+
+def find_and_slice(s):
+    lsi = s.rfind(' ')
+    return s[lsi+1:] + ' ' + s[:lsi]
+
+def rs_lazy(s):
+    return ' '.join(reversed(s.rsplit(maxsplit=1)))
+
+def rs_smart(s):
+    rs = s.rsplit(maxsplit=1)
+    return rs[1] + ' ' + rs[0]
+
+def rpart(s):
+    part = s.rpartition(' ')
+    return part[-1] + part[1] + part[0]
+
+def time_a_method(m, s):
+    c_arg = "('{}')".format(s)
+    t = timeit.timeit(m + c_arg, setup="from __main__ import " + m , number=100000)
+    print( m + " "*(15-len(m)) + "----> {}".format(t))
+
+
+if __name__ == '__main__':
+    print(trivial("I Me You"))
+    print(more_split("I Me You"))
+    print(dq("I Me You"))
+    print(find_and_slice("I Me You"))
+    print(rs_lazy("I Me You"))
+    print(rs_smart("I Me You"))
+    print(rpart("I Me You"))
+    print("######## USE: 'I Me You'")
+    for m in ["trivial", "more_split", "dq", "find_and_slice", "rs_lazy", "rs_smart", "rpart"]:
+        time_a_method(m, "I Me You")
+
+    print("######## USE: 'a b c d e f '*100")
+    s = 'a b c d e f '*100
+    for m in ["trivial", "more_split", "dq", "find_and_slice", "rs_lazy", "rs_smart", "rpart"]:
+        time_a_method(m, s)
+```
+
+Результаты выполнения:
+
+
+```bash
+You I Me
+You I Me
+You I Me
+You I Me
+You I Me
+You I Me
+You I Me
+######## USE: 'I Me You'
+trivial        ----> 0.1339518820000194
+more_split     ----> 0.1532761280000159
+dq             ----> 0.182199565000019
+find_and_slice ----> 0.07563322400005745
+rs_lazy        ----> 0.23457759100006115
+rs_smart       ----> 0.1615759960000105
+rpart          ----> 0.06102836100001241
+######## USE: 'a b c d e f '*100
+trivial        ----> 3.2239098259999537
+more_split     ----> 4.6946649449999995
+dq             ----> 3.991058845999987
+find_and_slice ----> 0.15106809200005955
+rs_lazy        ----> 0.32278001499992115
+rs_smart       ----> 0.22939544400003342
+rpart          ----> 0.10590313199998036
+```
+
+[stackoverflow.com](https://stackoverflow.com/questions/29977868/how-to-shift-a-string-to-right-in-python#29995164)
+</details>
