@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Команды tmux"
+sidebar_label: "Утилита tmux"
 
 author: Stavis
 title: "Памятка по tmux"

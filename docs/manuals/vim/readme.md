@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Команды vim"
+sidebar_label: "Утилита vim"
 
 author: stavis
 title: "Vim: режимы, хоткейсы, команды"

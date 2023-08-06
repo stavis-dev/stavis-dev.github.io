@@ -39,6 +39,9 @@ tags: ["python", "modules"]
 - Асинхронность
     - [aiofiles](https://github.com/Tinche/aiofiles) - Асинхронный доступ к файловой системе.
 
+- Видео
+    - [ffmpeg-python](https://github.com/kkroening/ffmpeg-python/tree/master) - Обертка Python для FFmpeg — с поддержкой сложной фильтрации
+
 ## Пакеты
 Специализированные пакеты, выполняющие как правило одну функцию.
 Полезно для изучения. Перенять практику.

@@ -60,12 +60,17 @@ module.exports = {
 
 ### Примеры настроек
 
-- Настройки `docusaurus.config.js`
-  - [docusaurus.config.js](https://github.com/facebookresearch/hydra/blob/main/website/docusaurus.config.js) сайта https://hydra.cc/
-  - [docusaurus.config.js](https://github.com/facebook/docusaurus/blob/main/website/docusaurus.config.js) - официальной документации `docusaurus`
-  - Проект `venom` [docusaurus.config.js](https://github.com/venom-blockchain/venom-blockchain.github.io/blob/main/docusaurus.config.js)
-- Сайдбары
-  - [sidebars.js](https://github.com/facebook/docusaurus/blob/main/website/sidebars.js) сайдбар docusaurus
-  - [sidebars.js](https://github.com/venom-blockchain/venom-blockchain.github.io/blob/main/sidebars.js) сайдбар venom
+- Сайт [hydra.cc](https://hydra.cc/)
+  - файл [docusaurus.config.js](https://github.com/facebookresearch/hydra/blob/main/website/docusaurus.config.js)
+
+- Проект [docusaurus](https://docusaurus.io/)
+  - файл [docusaurus.config.js](https://github.com/facebook/docusaurus/blob/main/website/docusaurus.config.js)
+
+- Проект [venom](https://docs.venom.foundation/) 
+  - файл [docusaurus.config.js](https://github.com/venom-blockchain/venom-blockchain.github.io/blob/main/docusaurus.config.js)
+  
+- Проект [lazyvim](https://www.lazyvim.org/) 
+  - файл - [docusaurus.config.js](https://github.com/LazyVim/lazyvim.github.io/blob/main/docusaurus.config.js)
+  
 
 - [Блоки кода](https://docusaurus.io/docs/markdown-features/code-blocks)

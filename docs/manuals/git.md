@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Команды git"
+sidebar_label: "Утилита git"
 
 author: stavis
 title: "Работаем с git"

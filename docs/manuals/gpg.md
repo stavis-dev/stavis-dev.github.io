@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Команды GPG"
+sidebar_label: "Утилита GPG"
 
 author: Stavis
 title: "Шифруем с GPG"
