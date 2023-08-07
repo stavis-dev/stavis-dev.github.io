@@ -132,7 +132,7 @@ ffmpeg -y -i $input -i palette.png -filter_complex paletteuse -r 10 out.gif
  ffmpeg -ss 00:01:00 -to 00:02:00  -i input.mp4 -c copy output.mp4
 ```
 
-### Объяснение команды
+#### Объяснение команды
 
 | Опции | Описание |
 | --- | --- |
