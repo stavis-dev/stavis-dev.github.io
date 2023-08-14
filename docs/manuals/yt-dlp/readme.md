@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Утилита yt-dlp"
+sidebar_label: "Команды yt-dlp"
 
 author: Stavis
 date: "2022-12-24"
@@ -15,61 +15,47 @@ image: "yt-dlp-header.webp"
 ![TDD Banner](yt-dlp-header.webp)
 
 
-#### Options {#options}
+## Опции {#options}
 
 Настройки: ключей. Полный список в [реозитории](https://github.com/yt-dlp/yt-dlp#general-options). 
 
 | Name | Short | Description |
 | --- | --- | --- |
-| `--list-formats` | `-F` |  List available formats of each video. |
-| `--format` | `-f` | Video format code |
-
+| `--list-formats` | `-F` |  Отобразить список доступных форматов медиа фалов. |
+| `--format` | `-f` | Указать необходимый формат ролика |
+| `--write-link` | | Сохранит ссылку на источник |
 Со сторонних сайтов искать плейлисты в формате `m3u8`.
 
-Со временем пользования программой понял, что лучше всего
-скачивать ролики в формате **mp4**. Так как они понимаются
-наибольшим числом плееров.
+### Форматы видео 
 
-Для этого добавлять в команду ключи:
+Установка формата медиа файла производится ключом `-f` или `--format`.
+
+Как я понял, самый универсальный формат это **mp4**. Так как он понимаются
+наибольшим числом плееров. 
+
+Выбрать лучший **mp4** формат.
 
 ```bash
---format "bestvideo+bestaudio[ext=m4a]/bestvideo+bestaudio/best" --merge-output-format mp4
+-f 22/bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best
 ```
+
+> [Примеры](https://github.com/yt-dlp/yt-dlp#format-selection-examples) установки форматов видео в репозитории.
 
 А так же, что при скачивании с `youtube` не обязательно сохранять номер видеоролика. Достаточно названия файла и его расширения.
-
-```bash
--o '%(title)s.%(ext)s'
-```
-
-Для плейлиста, иногда имеет смысл скачивать так же и номер ролика.
-Например если это какая то лекция
-
-```bash
--o '%(playlist_index)s.%(title)s.%(ext)s'
-```
-
-## скачивание плейлистов с youtube
-
-Пример с линуксами.
-
-```bash
-youtube-dl -o '%(title)s.%(ext)s' --format "bestvideo+bestaudio[ext=m4a]/bestvideo+bestaudio/best" --merge-output-format mp4 --yes-playlist https://youtube.com/playlist?list=PLisqB92_b4TlQH3jVGf6lrFMVqalCTjAQ
-```
 
 ## Одиночное видео
 
 ```bash
 
-film='linc'
-youtube-dl -o '%(title)s.%(ext)s' --format "bestvideo+bestaudio[ext=m4a]/bestvideo+bestaudio/best" --merge-output-format mp4 $film
+film='link'
+yt-dlp -o '%(title)s.%(ext)s' --format "bestvideo+bestaudio[ext=m4a]/bestvideo+bestaudio/best" --merge-output-format mp4 $film
 
 ```
 
 Пример с машей и медведем.
 
 ```bash
-yd -o '%(title)s.%(ext)s' --yes-playlist https://youtube.com/playlist?list=PLXnIohISHNIur5SkRfvOLo1YJjw7NwQx6
+yt-dlp -o '%(title)s.%(ext)s' --yes-playlist https://youtube.com/playlist?list=PLXnIohISHNIur5SkRfvOLo1YJjw7NwQx6
 ```
 
 Команды которые я часто использую.
@@ -77,18 +63,25 @@ yd -o '%(title)s.%(ext)s' --yes-playlist https://youtube.com/playlist?list=PLXnI
 Загрузка видеороликов из списка в файле
 
 ```bash
-youtube-dl -f best -a list.txt
+yt-dlp -f best -a list.txt
 ```
-
-для скачивания плейлиста [youtube](https://youtube.com)
 
 ```bash
---yes-playlist
+youtube-dl -ct --simulate --batch-file='/path/to/batch-file.txt'
 ```
 
-youtube-dl -ct --simulate --batch-file='/path/to/batch-file.txt'
+## Плейлисты
 
-### Thumbnails
+Программа поддерживает автоматическое скачивание плейлистов, с youtube во всяком случае. И при передаче ссылки на него начнет скачивать все ролики.
+
+Для плейлиста, иногда имеет смысл скачивать так же и номер ролика.  
+Делается это добавлением параметра:
+
+```bash
+-o '%(playlist_index)s.%(title)s.%(ext)s'
+```
+
+## Thumbnails
 
 Изображения заставки.
 Изображения скачиваются флагом `--write-thumbnail`
@@ -97,7 +90,7 @@ youtube-dl -ct --simulate --batch-file='/path/to/batch-file.txt'
 yt-dlp --skip-download --write-thumbnail --convert-thumbnails jpg 
 ```
 
-### Файл конфигурации
+## Файл конфигурации
 
 В случае регулярного использования команд можно задать файл конфигурации`yt-dlp.conf`
 
@@ -138,8 +131,6 @@ Use this awesome feature option
 # - [yt-dlp - опции](https://github.com/yt-dlp/yt-dlp#usage-and-options)
 # - [yt-dlp - примеры](https://github.com/yt-dlp/yt-dlp#output-template-examples)
 ```
-
-
 
 ## links
 

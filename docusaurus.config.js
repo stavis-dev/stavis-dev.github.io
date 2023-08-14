@@ -210,8 +210,10 @@ module.exports = async function createConfigAsync() {
       },
       // https://docusaurus.io/docs/api/themes/configuration#codeblock-theme
       prism: {
-        theme: require('prism-react-renderer/themes/github'),
-        darkTheme: require('prism-react-renderer/themes/okaidia'),
+        // theme: require('prism-react-renderer/themes/github'),
+        // darkTheme: require('prism-react-renderer/themes/okaidia'),
+        theme: (await import('./src/theme/prismLight.mjs')).default,
+        darkTheme: (await import('./src/theme/prismDark.mjs')).default,
       },
       // prism: {
       //   additionalLanguages: ['java', 'latex'],
