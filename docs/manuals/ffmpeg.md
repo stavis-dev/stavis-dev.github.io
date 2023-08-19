@@ -128,7 +128,11 @@ ffmpeg -y -i $input -i palette.png -filter_complex paletteuse -r 10 out.gif
 
 Пример обрезки видеоролика (trims video)
 
-```sh
+```bash
+ffmpeg -ss 38:19 -to 41:03 -i "Моана.(2016).webm" -c copy "You're Welcome.ru.webm"
+```
+
+```bash
  ffmpeg -ss 00:01:00 -to 00:02:00  -i input.mp4 -c copy output.mp4
 ```
 
@@ -162,10 +166,16 @@ ffmpeg -i input.mp4 -vf scale=960:-1 scale-960.mp4
 
 ### title
 
-Подписи, маркировка к видео, внутри файла.
+Простая подпись всего файла, **контейнера** `webm` или `mp4`
 
 ```bash
-ffmpeg -i Input.mkv -metadata:s:v:0 title="H264 Video" -c:v copy -c:a copy -c:s copy Output.mkv
+ffmpeg -i input.mp4 -metadata title="The video film" -c copy output.mp4
+```
+
+Подписи, же к отдельным дорожкам "стримам" внутри файла. Производится добавлением тайтла конкретно к стриму
+
+```bash
+ffmpeg -i input.mkv -metadata:s:v:0 title="H264 Video" -c:v copy -c:a copy -c:s copy Output.mkv
 ```
 
 ### lang
@@ -174,13 +184,25 @@ ffmpeg -i Input.mkv -metadata:s:v:0 title="H264 Video" -c:v copy -c:a copy -c:s 
 
 I think `:s:v:0` some of the comments stands for:
 
-`:v` = Video stream `:0` = Use first video stream
+- `:v` = Video stream
+- `:0` = Use first video stream
 
 ```bash
 ffmpeg -i input.mp4 -map 0 -c copy -metadata:s:a:0 language=pol output.mp4
 ```
 
+## Склеить аудио и видео вместе
+
+Существует возможность собрать видео и звуковой файл в один с помощью команды:
+
+```bash
+ffmpeg -i audio.opus -i video.webm  -c copy mix_video.webm
+```
+
+Если при этом не будет происходить конвертации форматов следует добавить опцию `-c copy`, так склейка будет проходить быстрей.
+
 ## Ссылки
 
 - [Как пользоваться ffmpeg](https://losst.pro/poleznye-komandy-ffmpeg)
 - [Python обертка для ffmpeg](https://github.com/kkroening/ffmpeg-python)
+- [Как работает -map в ffmpeg](https://write.corbpie.com/understanding-ffmpeg-map-with-examples/)

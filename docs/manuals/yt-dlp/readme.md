@@ -81,6 +81,23 @@ youtube-dl -ct --simulate --batch-file='/path/to/batch-file.txt'
 -o '%(playlist_index)s.%(title)s.%(ext)s'
 ```
 
+## Скачивание аудио
+
+С кодеком [Youtube VP9](https://en.wikipedia.org/wiki/VP9) этот файл, скорее всего, будет расширение `.webm` или `.opus`.
+
+Первый спороб это скачать нужный формат. Выбрав его после получения всего списка форматов `-F`.  
+Предположим аудиострим находится под `ID 2`
+
+```bash
+yt-dlp -f 2 -o 'songname.%(ext)s'
+```
+
+Второй способ, доверится автоматическому определению. Выбрав опцию `-x`
+
+```bash
+yt-dlp -f 'ba' -x --audio-format mp3 https://www.youtube.com/watch?v=dQw4w9WgXcQ  -o '%(id)s.%(ext)s'
+```
+
 ## Thumbnails
 
 Изображения заставки.
