@@ -39,6 +39,13 @@ image: "yt-dlp-header.webp"
 -f 22/bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best
 ```
 
+Так же хорош формат **webm**, позволяет сильно сжимать файлы. Правда сам контейнер чуть менее понятен для
+некоторых проигрывателей. Пока имеет смысл видео формата `webm` упаковывать в `mp4` контейнер.
+
+```bash
+-f bestvideo[height<=720]+bestaudio[ext=webm] --merge-output-format mp4
+```
+
 > [Примеры](https://github.com/yt-dlp/yt-dlp#format-selection-examples) установки форматов видео в репозитории.
 
 А так же, что при скачивании с `youtube` не обязательно сохранять номер видеоролика. Достаточно названия файла и его расширения.
@@ -79,6 +86,27 @@ youtube-dl -ct --simulate --batch-file='/path/to/batch-file.txt'
 
 ```bash
 -o '%(playlist_index)s.%(title)s.%(ext)s'
+```
+
+Полезная опция при скачивании плейлистов
+Установка начала и конца плейлиста, или шаг для скачки. Опция похожа на слайсы в питоне.
+
+```bash
+-I, --playlist-items ITEM_SPEC  Comma separated playlist_index of the items
+                                to download. You can specify a range using
+                                "[START]:[STOP][:STEP]". For backward
+                                compatibility, START-STOP is also supported.
+                                Use negative indices to count from the right
+                                and negative STEP to download in reverse
+                                order. E.g. "-I 1:3,7,-5::2" used on a
+                                playlist of size 15 will download the items
+                                at index 1,2,3,7,11,13,15
+```
+Если работа со слайсами не понятна, можно делать по старинке
+
+```bash
+--playlist-start NUMBER          -I NUMBER:
+--playlist-end NUMBER            -I :NUMBER
 ```
 
 ## Скачивание аудио
