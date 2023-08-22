@@ -79,8 +79,7 @@ import list_comp_dark from 'https://raw.githubusercontent.com/natenka/pyneng-boo
 <ImageSwitcher
     lightImageSrc={list_comp_light}
     darkImageSrc={list_comp_dark}
-    alt="Developer Program Logo"
-    width="400px"
+    alt="list comprehension"
 />
 
 ```md
