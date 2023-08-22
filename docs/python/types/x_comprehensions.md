@@ -298,7 +298,14 @@ print(result)
 
 Соответствие между двумя вложенными циклами и генератором списка с двумя циклами:
 
-![image](https://raw.githubusercontent.com/natenka/pyneng-book/master/images/08_list_comp_for_for.png)
+import list_comp_for_for from './img/list_comp_for_for.png';
+import list_comp_for_for_dark from './img/list_comp_for_for_dark.png';
+
+<ImageSwitcher
+    lightImageSrc={list_comp_for_for}
+    darkImageSrc={list_comp_for_for_dark}
+    alt="list comprehension"
+/>
 
 Можно одновременно проходиться по двум последовательностям, используя
 `zip`:
@@ -582,10 +589,4 @@ print(d)
 
     In [51]: unique_vlans
     Out[51]: {10, 30, 56}
-```
-
-```html
-image:: https://raw.githubusercontent.com/natenka/pyneng-book/master/images/08_list_comp_if_dark.png
-image:: https://raw.githubusercontent.com/natenka/pyneng-book/master/images/08_list_comp_dark.png
-image:: https://raw.githubusercontent.com/natenka/pyneng-book/master/images/08_list_comp_for_for_dark.png
 ```
