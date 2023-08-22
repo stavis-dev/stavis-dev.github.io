@@ -73,18 +73,14 @@ print(vlans)
 
 Соответствие между обычным циклом и генератором списка:
 
-import list_comp_light from './img/list_comp.png';
-import list_comp_dark from './img/ist_comp_dark.png';
+import list_comp from './img/list_comp.png';
+import list_comp_dark from './img/list_comp_dark.png';
 
 <ImageSwitcher
-    lightImageSrc={list_comp_light}
+    lightImageSrc={list_comp}
     darkImageSrc={list_comp_dark}
     alt="list comprehension"
 />
-
-```md
-![image](https://raw.githubusercontent.com/natenka/pyneng-book/master/images/08_list_comp.png)
-```
 
 ### if list comprehensions
 
@@ -119,7 +115,14 @@ print(only_digits)
 
 Соответствие между циклом с условием и генератором списка с условием:
 
-![image](https://raw.githubusercontent.com/natenka/pyneng-book/master/images/08_list_comp_if.png)
+import list_comp_if from './img/list_comp_if.png';
+import list_comp_if_dark from './img/list_comp_if_dark.png';
+
+<ImageSwitcher
+    lightImageSrc={list_comp_if}
+    darkImageSrc={list_comp_if_dark}
+    alt="list comprehension"
+/>
 
 Конечно, далеко не все циклы можно переписать как генератор списка, но
 когда это можно сделать, и при этом выражение не усложняется, лучше
