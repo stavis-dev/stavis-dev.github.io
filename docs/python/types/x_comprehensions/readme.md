@@ -73,8 +73,8 @@ print(vlans)
 
 Соответствие между обычным циклом и генератором списка:
 
-import list_comp_light from 'https://raw.githubusercontent.com/natenka/pyneng-book/master/images/08_list_comp.png';
-import list_comp_dark from 'https://raw.githubusercontent.com/natenka/pyneng-book/master/images/08_list_comp_dark.png';
+import list_comp_light from './list_comp.png';
+import list_comp_dark from './ist_comp_dark.png';
 
 <ImageSwitcher
     lightImageSrc={list_comp_light}
