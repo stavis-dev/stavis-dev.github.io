@@ -94,7 +94,7 @@ systemctl status wg-quick@wg0.service
 ### Создаём ключи клиента:
 
 ```bash
-wg genkey | tee /etc/wireguard/goloburdin_privatekey | wg pubkey | tee /etc/wireguard/goloburdin_publickey
+wg genkey | tee /etc/wireguard/user_privatekey | wg pubkey | tee /etc/wireguard/user_publickey
 ```
 
 Добавляем в конфиг сервера клиента:
@@ -105,12 +105,12 @@ vim /etc/wireguard/wg0.conf
 
 ```conf title="wg0.conf"
 [Peer]
-PublicKey = <goloburdin_publickey>
+PublicKey = <user_publickey>
 AllowedIPs = 10.0.0.2/32
 ```
 
 
-Вместо `<goloburdin_publickey>` — заменяем на содержимое файла `/etc/wireguard/goloburdin_publickey`
+Вместо `<user_publickey>` — заменяем на содержимое файла `/etc/wireguard/user_publickey`
 
 Перезагружаем systemd сервис с wireguard:
 
@@ -122,8 +122,8 @@ systemctl status wg-quick@wg0
 На локальной машине (например, на ноутбуке) создаём текстовый файл с конфигом клиента:
 
 ```bash
-vim goloburdin_wb.conf
-```bash
+vim user_wb.conf
+```
 
 ```conf 
 [Interface]
@@ -139,7 +139,7 @@ PersistentKeepalive = 20
 ```
 
 
-Здесь `<CLIENT-PRIVATE-KEY> `заменяем на приватный ключ клиента, то есть содержимое файла `/etc/wireguard/`goloburdin_privatekey на сервере. `<SERVER-PUBKEY>` заменяем на публичный ключ сервера, то есть на содержимое файла `/etc/wireguard/publickey `на сервере. `<SERVER-IP>` заменяем на IP сервера.
+Здесь `<CLIENT-PRIVATE-KEY> `заменяем на приватный ключ клиента, то есть содержимое файла `/etc/wireguard/`user_privatekey на сервере. `<SERVER-PUBKEY>` заменяем на публичный ключ сервера, то есть на содержимое файла `/etc/wireguard/publickey `на сервере. `<SERVER-IP>` заменяем на IP сервера.
 
 Этот файл открываем в Wireguard клиенте (есть для всех операционных систем, в том числе мобильных) — и жмем в клиенте кнопку подключения.
 
