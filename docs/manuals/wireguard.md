@@ -74,7 +74,7 @@ PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -t nat -D POSTROUTING -
 Обратите внимание — в строках `PostUp` и `PostDown` использован как раз сетевой интерфейс `eth0`.
 Если у вас другой — замените `eth0` на ваш.
 
-Вставляем вместо <privatekey> содержимое файла `/etc/wireguard/privatekey`
+Вставляем вместо `<privatekey>` содержимое файла `/etc/wireguard/privatekey`
 
 Настраиваем IP форвардинг:
 
