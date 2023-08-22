@@ -36,8 +36,8 @@ module.exports = async function createConfigAsync() {
         ({
           quality: 70,
           max: 1030,
-          min: 780,
-          steps: 2,
+          min: 360,
+          steps: 4,
           // Use false to debug, but it incurs huge perf costs
           disableInDev: true,
         }),
