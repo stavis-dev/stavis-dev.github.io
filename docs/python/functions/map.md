@@ -63,7 +63,7 @@ list(map(lambda x, y: x*y, nums, nums2))
 
 ## List comprehension вместо map
 
-Как правило, вместо map можно использовать [list comprehension](./x_comprehensions.md). Чаще
+Как правило, вместо map можно использовать [list comprehension](../types/x_comprehensions.md). Чаще
 всего, вариант с `list comprehension` более понятный, а в некоторых
 случаях даже быстрее.
 
