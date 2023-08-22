@@ -110,7 +110,7 @@ AllowedIPs = 10.0.0.2/32
 ```
 
 
-Вместо <goloburdin_publickey> — заменяем на содержимое файла `/etc/wireguard/goloburdin_publickey`
+Вместо `<goloburdin_publickey>` — заменяем на содержимое файла `/etc/wireguard/goloburdin_publickey`
 
 Перезагружаем systemd сервис с wireguard:
 
@@ -139,7 +139,7 @@ PersistentKeepalive = 20
 ```
 
 
-Здесь <CLIENT-PRIVATE-KEY> заменяем на приватный ключ клиента, то есть содержимое файла /etc/wireguard/goloburdin_privatekey на сервере. <SERVER-PUBKEY> заменяем на публичный ключ сервера, то есть на содержимое файла /etc/wireguard/publickey на сервере. <SERVER-IP> заменяем на IP сервера.
+Здесь `<CLIENT-PRIVATE-KEY> `заменяем на приватный ключ клиента, то есть содержимое файла `/etc/wireguard/`goloburdin_privatekey на сервере. `<SERVER-PUBKEY>` заменяем на публичный ключ сервера, то есть на содержимое файла `/etc/wireguard/publickey `на сервере. `<SERVER-IP>` заменяем на IP сервера.
 
 Этот файл открываем в Wireguard клиенте (есть для всех операционных систем, в том числе мобильных) — и жмем в клиенте кнопку подключения.
 
