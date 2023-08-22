@@ -8,6 +8,8 @@ tags: ["python", "programing", "iterators", "comprehensions"]
 
 ---
 
+import ImageSwitcher from './../../../src/components/ImageSwitcher';
+
 # List, dict, set comprehensions
 
 Python поддерживает специальные выражения, которые позволяют компактно
@@ -71,7 +73,19 @@ print(vlans)
 
 Соответствие между обычным циклом и генератором списка:
 
+import 08_list_comp_light from 'https://raw.githubusercontent.com/natenka/pyneng-book/master/images/08_list_comp.png';
+import 08_list_comp_dark from 'https://raw.githubusercontent.com/natenka/pyneng-book/master/images/08_list_comp_dark.png';
+
+<ImageSwitcher
+    lightImageSrc={08_list_comp_light}
+    darkImageSrc={08_list_comp_dark}
+    alt="Developer Program Logo"
+    width="400px"
+/>
+
+```md
 ![image](https://raw.githubusercontent.com/natenka/pyneng-book/master/images/08_list_comp.png)
+```
 
 ### if list comprehensions
 
