@@ -79,7 +79,8 @@ import list_comp_dark from './img/list_comp_dark.png';
 <ImageSwitcher
     lightImageSrc={list_comp}
     darkImageSrc={list_comp_dark}
-    alt="list comprehension"
+    alt="генератор списка"
+    width="780px"
 />
 
 ### if list comprehensions
@@ -121,7 +122,8 @@ import list_comp_if_dark from './img/list_comp_if_dark.png';
 <ImageSwitcher
     lightImageSrc={list_comp_if}
     darkImageSrc={list_comp_if_dark}
-    alt="list comprehension"
+    alt="генератор списка с условием"
+    width="780px"
 />
 
 Конечно, далеко не все циклы можно переписать как генератор списка, но
@@ -304,7 +306,8 @@ import list_comp_for_for_dark from './img/list_comp_for_for_dark.png';
 <ImageSwitcher
     lightImageSrc={list_comp_for_for}
     darkImageSrc={list_comp_for_for_dark}
-    alt="list comprehension"
+    alt="генератор списка с двумя циклами"
+    width="780px"
 />
 
 Можно одновременно проходиться по двум последовательностям, используя
