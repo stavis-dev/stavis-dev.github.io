@@ -14,13 +14,13 @@ image: "yt-dlp-header.webp"
 
 ![TDD Banner](yt-dlp-header.webp)
 
-
 ## Опции {#options}
 
 Настройки: ключей. Полный список в [реозитории](https://github.com/yt-dlp/yt-dlp#general-options). 
 
 | Name | Short | Description |
 | --- | --- | --- |
+| `--skip-download` | ` |  Полезный ключ, для тестирования набора ключей. |
 | `--list-formats` | `-F` |  Отобразить список доступных форматов медиа фалов. |
 | `--format` | `-f` | Указать необходимый формат ролика |
 | `--write-link` | | Сохранит ссылку на источник |
@@ -53,10 +53,8 @@ image: "yt-dlp-header.webp"
 ## Одиночное видео
 
 ```bash
-
 film='link'
 yt-dlp -o '%(title)s.%(ext)s' --format "bestvideo+bestaudio[ext=m4a]/bestvideo+bestaudio/best" --merge-output-format mp4 $film
-
 ```
 
 Пример с машей и медведем.
@@ -74,7 +72,7 @@ yt-dlp -f best -a list.txt
 ```
 
 ```bash
-youtube-dl -ct --simulate --batch-file='/path/to/batch-file.txt'
+yt-dlp -ct --simulate --batch-file='/path/to/batch-file.txt'
 ```
 
 ## Плейлисты
@@ -130,9 +128,14 @@ yt-dlp -f 'ba' -x --audio-format mp3 https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
 Изображения заставки.
 Изображения скачиваются флагом `--write-thumbnail`
+Для сохранения изображения определенным именем исользуется шаблон сохранения
 
-```sh
-yt-dlp --skip-download --write-thumbnail --convert-thumbnails jpg 
+```bash
+yt-dlp --write-thumbnail --convert-thumbnails jpg 
+```
+
+```bash
+--write-thumbnail -o "thumbnail:%(title)s/folder.%(ext)s"
 ```
 
 ## Файл конфигурации

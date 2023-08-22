@@ -34,12 +34,11 @@ module.exports = async function createConfigAsync() {
         'ideal-image',
         /** @type {import('@docusaurus/plugin-ideal-image').PluginOptions} */
         ({
-          quality: 70,
-          max: 1030,
-          min: 360,
-          steps: 4,
-          // Use false to debug, but it incurs huge perf costs
-          disableInDev: true,
+          quality: 100,
+          max: 1480, // max resized image's size.
+          min: 780, // min resized image's size. if original is lower, use that size.
+          steps: 2, // the max number of images generated between min and max (inclusive)
+          disableInDev: false,
         }),
       ],
     ],
