@@ -4,10 +4,19 @@
         <title>Шпаргалка по знаниям Blog</title>
         <link>https://stavis-dev.github.io/blog</link>
         <description>Шпаргалка по знаниям Blog</description>
-        <lastBuildDate>Fri, 07 Jul 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 22 Aug 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ru</language>
+        <item>
+            <title><![CDATA[Концепция первого шага]]></title>
+            <link>https://stavis-dev.github.io/blog/2023/08/22/first-step</link>
+            <guid>https://stavis-dev.github.io/blog/2023/08/22/first-step</guid>
+            <pubDate>Tue, 22 Aug 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Концепция Первого Шага: Как решать проблемы ]]></description>
+            <content:encoded><![CDATA[<p><img loading="lazy" src="https://d66cvws976y93.cloudfront.net/media/uploads/zinnia/2016/11/21/first_step.jpg" class="img_ev3q"></p><p>СНАЧАЛА: убедитесь, что вы решаете ненадуманные проблемы.</p><p>Концепция Первого шага: </p><blockquote><p>если вы не знаете, как решить что-то, просто сделайте первый шаг. Вы не должны знать все о проблеме, чтобы начать решать ее, не так ли?</p></blockquote><p>Например, вы получили задание, с которым вы раньше не имели дела. Вместо того чтобы медлить, начните сбор информации о ньом в Интернете.</p><p>Заметил, что слишком много думаю, прежде чем сделать что-нибудь. Мой разум хочет знать ответы на все вопросы еще до того, как я что-то сделаю. Это своего рода безумие smiley.</p><p>Разум не может принять неопределенность, но я верю, что мы можем сделать это.</p><p>СОВЕТ: Если первый шаг не является очевидным, попробуйте подумать на бумаге.</p>]]></content:encoded>
+            <category>мотивация</category>
+        </item>
         <item>
             <title><![CDATA[Адаптация изображений под цвет темы сайта]]></title>
             <link>https://stavis-dev.github.io/blog/2023/07/07/imageswitcher</link>
