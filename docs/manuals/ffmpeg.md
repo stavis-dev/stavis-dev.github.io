@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Утилита ffmpeg"
+sidebar_label: "ffmpeg - видео-фабрика"
 
 author: stavis
 title: "Как пользоваться ffmpeg"

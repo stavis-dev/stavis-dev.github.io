@@ -1,7 +1,7 @@
 ---
 draft: false
 author: Stavis
-title: "Демон systemd"
+title: "systemd - демон автозапуска"
 date: "2022-04-15"
 description: "Systemd демон которого легко приручить, systemctl как справится в linux"
 tags: ["systemctl", "автозапуск линукс", "autostart"]

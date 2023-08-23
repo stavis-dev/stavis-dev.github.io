@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Утилита tmux"
+sidebar_label: "tmux - мультиплексор"
 
 author: Stavis
 title: "Памятка по tmux"

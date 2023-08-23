@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Утилита wireguard"
+sidebar_label: "wireguard - vpn тунель"
 
 author: Stavis
 title: "Памятка по wireguard"
@@ -135,7 +135,7 @@ systemctl status wg-quick@wg0
 vim user_wb.conf
 ```
 
-```conf 
+```conf title="user_wb.conf"
 [Interface]
 PrivateKey = <CLIENT-PRIVATE-KEY>
 Address = 10.0.0.2/32

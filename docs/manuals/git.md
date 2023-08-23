@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Утилита git"
+sidebar_label: "git - порядок в коде"
 
 author: stavis
 title: "Работаем с git"

@@ -1,5 +1,5 @@
 ---
-
+sidebar_label: "VsCode - шпаргалка"
 author: Stavis
 title: "Полезные настройки VsCode"
 description: "Полезные настройки VsCode"
