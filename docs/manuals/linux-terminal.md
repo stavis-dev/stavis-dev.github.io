@@ -4,7 +4,7 @@ author: Stavis
 description: "Управление косколью, быстрые комманды терминала 
     и лайфхаки, которые могут пригодиться"
 tags: ["terminal", "ssh"]
-categories: ["devops", "linux"]
+categories: ["devops", "linux", "mac"]
 image: "https://miro.medium.com/max/1400/1*7pr8EL8EDsP296pxL7Wz_g.png"
 
 ---
@@ -153,6 +153,22 @@ nohup nautilus -w . &
 ```sh
 chsh -s $(which zsh)
 ```
+
+### получить расширение и имя файла
+
+```bash
+#!/bin/bash
+FILE="bashdays.gzip"
+
+FIRST="${FILE%.*}"
+SECOND="${FILE##*.}"
+
+echo $FIRST
+echo $SECOND
+```
+
+- Символы `%.*` означает отсекание всего после точки.
+- Символы `##*.` ну а тут наоборот, отсекание всего до точки.
 
 ## Ссылки по теме
 
