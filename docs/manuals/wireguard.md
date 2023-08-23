@@ -47,6 +47,11 @@ wg genkey | tee /etc/wireguard/privatekey | wg pubkey | tee /etc/wireguard/publi
 chmod 600 /etc/wireguard/privatekey
 ```
 
+Или еще вариант. Команда удаляет все разрешения к файлу для пользователей и групп, кроме пользователя `root`, чтобы гарантировать, что только он может получить доступ к закрытому ключу.
+
+```bash
+chmod go= /etc/wireguard/private.key
+```
 
 Проверим, как у вас называется сетевой интерфейс:
 
@@ -83,12 +88,18 @@ echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf
 sysctl -p
 ```
 
-Включаем systemd демон с wireguard:
+Включаем `systemd` демон с `wireguard`:
 
 ```bash
 systemctl enable wg-quick@wg0.service
 systemctl start wg-quick@wg0.service
 systemctl status wg-quick@wg0.service
+```
+
+Можно посмотреть монитор подключенных клиентов
+
+```bash
+wg
 ```
 
 ### Создаём ключи клиента:
@@ -109,10 +120,9 @@ PublicKey = <user_publickey>
 AllowedIPs = 10.0.0.2/32
 ```
 
-
 Вместо `<user_publickey>` — заменяем на содержимое файла `/etc/wireguard/user_publickey`
 
-Перезагружаем systemd сервис с wireguard:
+Перезагружаем `systemd` сервис с `wireguard`:
 
 ```bash
 systemctl restart wg-quick@wg0
@@ -138,11 +148,11 @@ AllowedIPs = 0.0.0.0/0
 PersistentKeepalive = 20
 ```
 
-
-Здесь `<CLIENT-PRIVATE-KEY> `заменяем на приватный ключ клиента, то есть содержимое файла `/etc/wireguard/`user_privatekey на сервере. `<SERVER-PUBKEY>` заменяем на публичный ключ сервера, то есть на содержимое файла `/etc/wireguard/publickey `на сервере. `<SERVER-IP>` заменяем на IP сервера.
+Здесь `<CLIENT-PRIVATE-KEY> `заменяем на приватный ключ клиента, то есть содержимое файла `/etc/wireguard/user_privatekey` на сервере. `<SERVER-PUBKEY>` заменяем на публичный ключ сервера, то есть на содержимое файла `/etc/wireguard/publickey `на сервере. `<SERVER-IP>` заменяем на IP сервера.
 
 Этот файл открываем в Wireguard клиенте (есть для всех операционных систем, в том числе мобильных) — и жмем в клиенте кнопку подключения.
 
 ## Links
 
 - по мотивам видео [видео](https://youtu.be/5Aql0V-ta8A)
+- продвинутая [инструкция](https://www.digitalocean.com/community/tutorials/how-to-set-up-wireguard-on-ubuntu-22-04) на digitalocean

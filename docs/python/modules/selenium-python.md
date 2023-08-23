@@ -31,6 +31,9 @@ from selenium.webdriver.common.keys import Keys
 
 ### Chrome
 
+> Тут можно [скачать](https://googlechromelabs.github.io/chrome-for-testing/) chrome для тестирования ее можно испльзвать локально.
+
+> Свободный браузер Chromium можно скачать [тут](https://download-chromium.appspot.com) или его [варианты](https://www.chromium.org/getting-involved/download-chromium/)
 Создание драйвера
 
 ```py
@@ -105,3 +108,4 @@ print(driver.execute_script("return navigator.userAgent;"))
 |**Dev**:|[https://github.com/SeleniumHQ/Selenium](https://github.com/SeleniumHQ/Selenium)|
 |**PyPI**:|[https://pypi.org/project/selenium/](https://pypi.org/project/selenium/)|
 |**IRC**:|**#selenium** channel on LiberaChat|
+|**Docs**:|[selenium-python.readthedocs.io](https://selenium-python.readthedocs.io/) - Неплохой док от индуса|

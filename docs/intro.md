@@ -22,3 +22,15 @@ sidebar_position: 1
 ## Книги
 
 - Русский перевод книги [Изучаем Monero](https://github.com/monerobook/monerobook/tree/master/translations/ru)
+
+## Документация
+
+- [Шпаргалка Backend-разработки](https://github.com/cheatsnake/backend-cheats/blob/master/README_RUS.md) - [eng](https://github.com/cheatsnake/backend-cheats/blob/master/README.md)
+- [Регулярные выражения на примерах](https://github.com/cheatsnake/regex-by-example/blob/master/README_RUS.md)
+- [Bash скрипты на примерах](https://github.com/cheatsnake/bash-scripts-by-example/blob/master/README_RUS.md)
+- [SQL на примерах](https://github.com/cheatsnake/sql-by-example/blob/master/README_RUS.md)
+- [Список](https://github.com/cheatsnake/awesome-examples#readme) ресурсов, на которых можно научиться программированию на примерах.
+
+## Android
+
+- [Эмулятор](https://github.com/budtmo/docker-android) Android в docker образе.
