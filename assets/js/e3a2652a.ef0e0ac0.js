@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[6599],{9456:s=>{s.exports=JSON.parse('{"label":"bashdays","permalink":"/blog/tags/bashdays","allTagsPath":"/blog/tags","count":1}')}}]);
