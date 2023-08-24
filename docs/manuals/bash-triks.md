@@ -196,9 +196,13 @@ dnf install xclip
 Вставляем `alias` в `~/.bash_aliases`
 
 ```bash title="~/.bash_aliases"
-alias pbcopy="xclip -selection c"
-alias pbpaste="xclip -selection clipboard -o"
-
+# Alias for xcopy
+if [ -n "$(type -p xclip)" ]
+then
+  alias pbcopy='xclip -selection clipboard'
+  alias pbpaste="xclip -selection clipboard -o"
+  alias clipboard='if [ -p /dev/stdin ]; then xclip -in; fi; xclip -out'
+fi
 ```
 
 Ну или сразу в `.bashrc` или `.zshrc`,
@@ -212,6 +216,18 @@ alias pbpaste="xclip -selection clipboard -o"
 $ echo foo | pbcopy
 $ pbpaste
 foo
+
+# Copy
+$ date | clipboard
+Sat Dec 29 14:12:57 PST 2018
+
+# Paste
+$ date
+Sat Dec 29 14:12:57 PST 2018
+
+# Chain
+$ date | clipboard | wc
+   1       6      29
 ```
 
 ### Функия помощник
