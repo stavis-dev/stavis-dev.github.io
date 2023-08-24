@@ -74,6 +74,96 @@ image: "https://miro.medium.com/max/1400/1*7pr8EL8EDsP296pxL7Wz_g.png"
 Полный список команд можно посмотреть нажав по очереди:  
 `Enter`, `~`, `?`
 
+## Буфер обмена
+
+Работа с буфером обмена производится утилитой [xclip](https://github.com/astrand/xclip).
+Так то таких утилит много, но гугление говорит, что чаше всего используют эту.
+
+### Установка
+
+```bash
+# You can install xclip using `apt-get`
+apt-get install xclip
+
+# or `pacman`
+pacman -S xclip
+
+# or `dnf`
+dnf install xclip
+```
+
+### Настройка alias
+
+Я использую алиасы из аналогичной програмы под MacOs `pbcopy` и `pbpaste`.
+Это я делаю чтобы не заучивать касномный `alias`.
+
+Вставляем `alias` в `~/.bash_aliases`
+
+```bash title="~/.bash_aliases"
+# Alias for xcopy
+if [ -n "$(type -p xclip)" ]
+then
+  alias pbcopy='xclip -selection clipboard'
+  alias pbpaste="xclip -selection clipboard -o"
+  alias clipboard='if [ -p /dev/stdin ]; then xclip -in; fi; xclip -out'
+fi
+```
+
+Ну или сразу в `.bashrc` или `.zshrc`,
+но для кастомных алиасов рекомендуется подключать свой файл `~/.bash_aliases`
+
+### Использование
+
+Пример использвания:
+
+```bash
+$ echo foo | pbcopy
+$ pbpaste
+foo
+
+# Copy
+$ date | clipboard
+Sat Dec 29 14:12:57 PST 2018
+
+# Paste
+$ date
+Sat Dec 29 14:12:57 PST 2018
+
+# Chain
+$ date | clipboard | wc
+   1       6      29
+```
+
+### Функия помощник
+
+уже по желанию
+
+```bash
+_copy(){
+    cat | xclip -selection clipboard
+}
+
+_paste(){
+    xclip -selection clipboard -o
+}
+```
+
+- Хороший файлик помощник для копирования вставки [cb](https://gist.github.com/RichardBronosky/56d8f614fab2bacdd8b048fb58d0c0c7)
+
+
+## alacritty
+
+Если терминал не пробрасывает цвет по `ssh` можно добавить на сервер в файл `rc` шелла.
+
+```bash title="~/.bashrc"
+# try export xterm for alacritty
+# https://stackoverflow.com/questions/12345675/screen-cannot-find-terminfo-entry-for-xterm-256color
+export TERM=xterm-xfree86
+```
+
+
+
+
 ## Shell скрипты удобства
 
 Ниже всякие удобности, которые иногда пригождаются.
@@ -170,94 +260,8 @@ echo $SECOND
 - Символы `%.*` означает отсекание всего после точки.
 - Символы `##*.` ну а тут наоборот, отсекание всего до точки.
 
-## Буфер обмена
-
-Работа с буфером обмена производится утилитой [xclip](https://github.com/astrand/xclip).
-Так то таких утилит много, но гугление говорит, что чаше всего используют эту.
-
-### Установка
-
-```bash
-# You can install xclip using `apt-get`
-apt-get install xclip
-
-# or `pacman`
-pacman -S xclip
-
-# or `dnf`
-dnf install xclip
-```
-
-### Настройка alias
-
-Я использую алиасы из аналогичной програмы под MacOs `pbcopy` и `pbpaste`.
-Это я делаю чтобы не заучивать касномный `alias`.
-
-Вставляем `alias` в `~/.bash_aliases`
-
-```bash title="~/.bash_aliases"
-# Alias for xcopy
-if [ -n "$(type -p xclip)" ]
-then
-  alias pbcopy='xclip -selection clipboard'
-  alias pbpaste="xclip -selection clipboard -o"
-  alias clipboard='if [ -p /dev/stdin ]; then xclip -in; fi; xclip -out'
-fi
-```
-
-Ну или сразу в `.bashrc` или `.zshrc`,
-но для кастомных алиасов рекомендуется подключать свой файл `~/.bash_aliases`
-
-### Использование
-
-Пример использвания:
-
-```bash
-$ echo foo | pbcopy
-$ pbpaste
-foo
-
-# Copy
-$ date | clipboard
-Sat Dec 29 14:12:57 PST 2018
-
-# Paste
-$ date
-Sat Dec 29 14:12:57 PST 2018
-
-# Chain
-$ date | clipboard | wc
-   1       6      29
-```
-
-### Функия помощник
-
-уже по желанию
-
-```bash
-_copy(){
-    cat | xclip -selection clipboard
-}
-
-_paste(){
-    xclip -selection clipboard -o
-}
-```
-
-- Хороший файлик помощник для копирования вставки [cb](https://gist.github.com/RichardBronosky/56d8f614fab2bacdd8b048fb58d0c0c7)
-
-
-## alacritty
-
-Если терминал не пробрасывает цвет по `ssh` можно добавить на сервер в файл `rc` шелла.
-
-```bash title="~/.bashrc"
-# try export xterm for alacritty
-# https://stackoverflow.com/questions/12345675/screen-cannot-find-terminfo-entry-for-xterm-256color
-export TERM=xterm-xfree86
-```
-
 ## Ссылки по теме
 
 - [Репа](https://github.com/jlevy/the-art-of-command-line/blob/master/README-ru.md) "Искусство командной строки", советы по прокачке скила
 - [The Book of Secret Knowledge](https://github.com/trimstray/the-book-of-secret-knowledge)
+- [repo](https://github.com/javier-lopez/learn/tree/master/sh) со всякими примерчиками shell скриптов
