@@ -26,10 +26,11 @@ sudo vim /etc/ssh/sshd_config
 Нужный параметр:
 
 ```cfg
-PasswordAuthentication no
+PasswordAuthentication yes
 ```
 
 - Находим строчку `PasswordAuthentication`
+- Расскоментировать, если `#`
 - Прописываем `no`
 
 ## Меняем стандартный порт

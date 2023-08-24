@@ -170,6 +170,77 @@ echo $SECOND
 - Символы `%.*` означает отсекание всего после точки.
 - Символы `##*.` ну а тут наоборот, отсекание всего до точки.
 
+## Буфер обмена
+
+Работа с буфером обмена производится утилитой [xclip](https://github.com/astrand/xclip).
+Так то таких утилит много, но гугление говорит, что чаше всего используют эту.
+
+### Установка
+
+```bash
+# You can install xclip using `apt-get`
+apt-get install xclip
+
+# or `pacman`
+pacman -S xclip
+
+# or `dnf`
+dnf install xclip
+```
+
+### Настройка alias
+
+Я использую алиасы из аналогичной програмы под MacOs `pbcopy` и `pbpaste`.
+Это я делаю чтобы не заучивать касномный `alias`.
+
+Вставляем `alias` в `~/.bash_aliases`
+
+```bash title="~/.bash_aliases"
+alias pbcopy="xclip -selection c"
+alias pbpaste="xclip -selection clipboard -o"
+
+```
+
+Ну или сразу в `.bashrc` или `.zshrc`,
+но для кастомных алиасов рекомендуется подключать свой файл `~/.bash_aliases`
+
+### Использование
+
+Пример использвания:
+
+```bash
+$ echo foo | pbcopy
+$ pbpaste
+foo
+```
+
+### Функия помощник
+
+уже по желанию
+
+```bash
+_copy(){
+    cat | xclip -selection clipboard
+}
+
+_paste(){
+    xclip -selection clipboard -o
+}
+```
+
+- Хороший файлик помощник для копирования вставки [cb](https://gist.github.com/RichardBronosky/56d8f614fab2bacdd8b048fb58d0c0c7)
+
+
+## alacritty
+
+Если терминал не пробрасывает цвет по `ssh` можно добавить на сервер в файл `rc` шелла.
+
+```bash title="~/.bashrc"
+# try export xterm for alacritty
+# https://stackoverflow.com/questions/12345675/screen-cannot-find-terminfo-entry-for-xterm-256color
+export TERM=xterm-xfree86
+```
+
 ## Ссылки по теме
 
 - [Репа](https://github.com/jlevy/the-art-of-command-line/blob/master/README-ru.md) "Искусство командной строки", советы по прокачке скила
