@@ -74,6 +74,8 @@ module.exports = async function createConfigAsync() {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
+          blogSidebarCount: 'ALL',
+          blogSidebarTitle: 'All our posts',
           editUrl:
             'https://github.com/stavis-dev/stavis-dev.github.io/tree/main/',
         },

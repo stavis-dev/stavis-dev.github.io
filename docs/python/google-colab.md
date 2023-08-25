@@ -5,7 +5,7 @@ title: "Google Colaboratory работаем в python на удаленной �
 author: stavis
 date: "2023-07-02"
 description: "Google Colab то же что и Jupyter только от Гугл бесплатно. Работаем в питоне удаленно."
-tags: ["Google Colab", "pyhton"]
+tags: ["Google Colab", "python"]
 
 image: 'https://www.hwlibre.com/wp-content/uploads/2021/11/google-colaboratory.jpg'
 
