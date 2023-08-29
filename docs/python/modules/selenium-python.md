@@ -34,6 +34,7 @@ from selenium.webdriver.common.keys import Keys
 > Тут можно [скачать](https://googlechromelabs.github.io/chrome-for-testing/) chrome для тестирования ее можно испльзвать локально.
 
 > Свободный браузер Chromium можно скачать [тут](https://download-chromium.appspot.com) или его [варианты](https://www.chromium.org/getting-involved/download-chromium/)
+
 Создание драйвера
 
 ```py
@@ -64,6 +65,7 @@ driver = webdriver.Firefox(options=firefox_options)
 - [Посмотреть](https://antoinevastel.com/bots/) свой `fingetprint`
 - Тест на бота [antoinevastel.com](https://antoinevastel.com/bots/datadome)
 - еще тест на бота [bot.sannysoft.com](https://bot.sannysoft.com/)
+- [Проверить][chk-ip-blacklist] свой IP адрес на присутствие в черных списках
 
 В некоторых случаях полезно препятствовать обнаружению.
 
@@ -109,3 +111,6 @@ print(driver.execute_script("return navigator.userAgent;"))
 |**PyPI**:|[https://pypi.org/project/selenium/](https://pypi.org/project/selenium/)|
 |**IRC**:|**#selenium** channel on LiberaChat|
 |**Docs**:|[selenium-python.readthedocs.io](https://selenium-python.readthedocs.io/) - Неплохой док от индуса|
+
+
+- [chk-ip-blacklist]: <https://www.simply.com/en/rbl/?> (Проверить свой IP адрес на присутствие в blok листах)

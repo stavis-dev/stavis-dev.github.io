@@ -6,6 +6,55 @@ description: Синтаксис markdown, как фаорматировать м
 
 # Markdown синтаксис
 
+## Ссылки
+
+Простые ссылки делаются обычным образом
+
+
+```md
+[Duck Duck Go](https://duckduckgo.com "The best search engine for privacy")
+```
+
+Где текст в:
+
+ - `[Duck Duck Go]` - Текст ссылки
+ - `(https://duckduckgo.com)` - URL
+ - `"The best search engine for privacy"` - Title - Необязательный параметр
+
+В принципе это понятный синтаксис, больший интерес и мое постоянное забывания вызывает референс-ссылки
+
+### Референс ссылки
+
+Ссылки в референс стиле - это особый вид ссылок, которые упрощают отображение и чтение URL-адресов в Markdown. 
+Очень удобно использовать для структурирования и в случае если в тексте делаются несколько ссылко на один рессурс в разных
+частях текста.
+
+Ссылки в референс стиле состоят из двух частей: 
+
+1. видимой части, которую вы размещаете рядом с вашим текстом,
+2. и скрытой части, которую вы сохраняете где-то еще в файле, чтобы текст было легко читать.
+
+#### Видимая часть ссылки
+
+```md
+[hobbit-hole][1]
+```
+
+#### Скрытая часть ссылки
+
+Скрытая часть ссылки обычно не отображается в тексте.
+Вариантов ее испольнения может быть множество. Вот некоторые:
+
+```md
+[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle
+[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle "Hobbit lifestyles"
+[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle 'Hobbit lifestyles'
+[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle (Hobbit lifestyles)
+[1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> "Hobbit lifestyles"
+[1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> 'Hobbit lifestyles'
+[1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> (Hobbit lifestyles)
+```
+
 ## Изображения
 
 Чтобы добавить изображение, добавьте восклицательный знак (`!`),
@@ -69,3 +118,6 @@ Markdown изначально не поддерживает подписи к и
 *Подпись к зеленому плейсхолдеру*
 
 
+## Ссылки
+
+- [Синтаксис markdown](https://www.markdownguide.org/basic-syntax)

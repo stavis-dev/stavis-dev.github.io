@@ -9,8 +9,105 @@ last_update:
   author: stavis
 
 ---
-
 Юниттесты в python примеры взятые со всяких форумов.
+
+## Unittest
+
+Основные понятия в unittest
+
+```python
+import unittest
+
+
+def setUpModule():
+    """Вызывается один раз перед всеми классами, которые есть в файле."""
+    print('> setUpModule')
+
+
+def tearDownModule():
+    """Вызывается один раз после всех классов, которые есть в файле."""
+    print('> tearDownModule')
+
+
+class TestExample(unittest.TestCase):
+    """Демонстрирует принцип работы тестов."""
+
+    @classmethod
+    def setUpClass(cls):
+        """Вызывается один раз перед запуском всех тестов класса."""
+        print('>> setUpClass')
+
+    @classmethod
+    def tearDownClass(cls):
+        """Вызывается один раз после запуска всех тестов класса."""
+        print('>> tearDownClass')
+
+    def setUp(self):
+        """Подготовка прогона теста. Вызывается перед каждым тестом."""
+        print('>>> setUp')
+
+    def tearDown(self):
+        """Вызывается после каждого теста."""
+        print('>>> tearDown')
+
+    def test_one(self): # это -- test case 
+        print('>>>> test_simple')
+
+    def test_one_more(self): # это -- еще один test case
+        print('>>>> test_simple')
+
+
+if __name__ == '__main__':
+    unittest.main()
+```
+
+## Методика TDD
+
+Методика TDD подразумевает, что сначала пишутся тесты, а потом код.
+Например с программой калькулятором.
+
+```python
+import unittest
+
+'''В коде задания описан метод summ.
+Если вызвать этот метод без аргументов, он вернёт ноль, а если передать в метод summ один аргумент — он вернёт значение этого аргумента.
+Это не лучшее поведение для калькулятора, надо его изменить. Методика TDD подразумевает, что сначала пишутся тесты, а потом код.
+В этом задании напишите тесты, которые проверяют, что summ возвращает None, если количество переданных аргументов меньше двух.'''
+class Calculator:
+    def summ(self, *args):
+        """Возвращает сумму принятых аргументов."""
+        sum = 0
+        if len(args) <= 1: #проверка кол-ва подаваемых аргументов
+            return None
+        for i in args:
+            sum += i
+        return sum
+
+
+class TestCalc(unittest.TestCase):
+    """Тестируем Calculator."""
+    @classmethod
+    def setUpClass(cls):
+        """Вызывается однажды перед запуском всех тестов класса."""
+        cls.calc = Calculator()
+
+    def test_summ(self):
+        act = TestCalc.calc.summ(3, -3, 5)
+        self.assertEqual(act, 5, 'summ работает неправильно')
+
+    '''В Unittest есть встроенный метод для проверки на None: assertIsNone(x)
+Маленькие тесты — это всегда хорошо. Одна проверка — один тест:
+test_summ_no_argument — что будет, если функция вызвана без аргументов
+test_summ_one_argument — что будет, если функция вызвана с одним аргументом.'''
+
+    def test_summ_no_argument(self):
+        act = TestCalc.calc.summ()
+        self.assertIsNone(act)
+
+    def test_summ_one_argument(self):
+        act = TestCalc.calc.summ(1)
+        self.assertIsNone(act)
+```
 
 ## Mock
 
@@ -73,3 +170,6 @@ def test_get_posts():
         assert get_posts() == {"id": 123}
 ```
 
+## Ссылки
+
+- [unittest.mock](https://docs.python.org/3/library/unittest.mock.html) -  на сайте docs.python.org
