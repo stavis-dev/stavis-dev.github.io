@@ -1,12 +1,9 @@
 ---
 sidebar_label: "Рeгулярные выражения в Pyhton"
 
-draft: true
 author: stavis
 title: Рeгулярные выражения в Pyhton
-date: "2022-02-07"
 description: "Работаем с регулярными выражениями. Шпаргалка для всевозможных случаяв."
-math: true
 tags: ["python", "re", "regex"]
 ---
 # Регулярные выражения

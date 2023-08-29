@@ -172,4 +172,5 @@ def test_get_posts():
 
 ## Ссылки
 
+- [unittest](https://docs.python.org/3/library/unittest.html) - в официально документации
 - [unittest.mock](https://docs.python.org/3/library/unittest.mock.html) -  на сайте docs.python.org
