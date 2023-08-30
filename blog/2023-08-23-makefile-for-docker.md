@@ -37,3 +37,9 @@ stop:
 ```
 
 Соответственно `make` или `make start` запустит контейнер, а `make stop` остановит.
+
+
+
+## Ссылки
+
+- [Туториал](https://makefiletutorial.com/) по файлу makefile
