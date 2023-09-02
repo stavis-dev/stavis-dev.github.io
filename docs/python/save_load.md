@@ -1,13 +1,46 @@
 ---
 author: Stavis Vega
 title: Работа с файлами Pyhton
-date: 2019-03-08
-description: Пару шорткодов для экономии времени при написании python скриптов
-math: true
-ShowBreadCrumbs: false
-tags: ["python", "programing", "shortcodes"]
+description: Операции с файлами на питоне. Чтение, сохранение, csv и json файлов.
+tags: ["python", "csv", "json", "save", "load", "files"]
+
 ---
 ## csv файлы
+
+> подробнее про [csv](https://docs.python.org/3/library/csv.html) модуль
+
+CSV файлы, предпочтительно хранить в формате, (dialect) - excel. С разделителем столбцов табуляцией `\t`.
+
+Потому, что такие файлы:
+
+- проще понимается `xls` читалками.
+- легче читается человеком
+- проще ичпользовать [cut]() в `unix` ситемах и администрировать логи девопсам. Чеее?
+
+В общем, раз у пошла такая практика, то
+
+### Чтение csv
+
+```python
+import csv
+
+with open('log_ip.csv') as f:
+    tab_reader = csv.reader(f, dialect='excel-tab')
+    for row in tab_reader:
+        print(row)
+```
+
+Если файл в `excel` формате, когда колонки разделены не запятыми а символами `TAB`, в обьект `reader`, можно добавить [dialect](https://docs.python.org/3/library/csv.html#csv.Dialect) `'excel-tab'`
+
+При чтении:
+
+```python
+# tab delimiter excet_tab
+tab_reader = csv.reader(f, dialect='excel-tab')
+
+# or tab delimiter
+tab_reader = csv.reader(f, delimiter="\t")
+```
 
 ### Запись в csv
 
@@ -25,6 +58,19 @@ with open('pased_site.csv', 'w', encoding="utf-8:") as f:
         except Exception:
             continue
 ```
+
+Для записи в в `excel` формате `'excel-tab'` добавляем в обьект `writer`
+
+```python
+# tab delimiter excet_tab
+a_pen = csv.writer(f, dialect='excel-tab')
+
+# or tab delimiter
+a_pen = csv.writer(f, delimiter="\t")
+```
+
+
+> [Примеры](https://docs.python.org/3/library/csv.html#examples) работы с csv файлами в официальной документации.
 
 ## json файлы
 
