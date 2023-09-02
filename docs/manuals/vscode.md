@@ -11,13 +11,15 @@ tags: ["vscode"]
 
 ## Управление
 
-### Перемещение вкладоки в отдельном окне
+### Перемещение вкладок в отдельное окно
 
-Удобно если нужно передвинуть одну из вкладок куда-нибудь в отдельное место.  
+Если нужно передвинуть одну из вкладок из приложения, куда-нибудь в отдельное место.  
 Например на 2й монитор.
 
-A solution is to press `CTRL+K` and after releasing `CTRL, press O`.
-This will open the current file in a new window.
+- нажать комбинацию `CTRL+K`
+- и после `CTRL, press O`.
+
+Вскладка откроется в новом окне.
 
 ## Конфигурация
 
@@ -25,13 +27,14 @@ This will open the current file in a new window.
 
 You can change the `settings.json` from your user preferences. 
 This changes are global. Therefore it will affect all of your projects. 
-Here are 2 ways to reach that global settings.json file.
+Here are 2 ways to reach that global `settings.json` file.
 
-* `File -> Preferences -> Settings -> Extensions` -> Scroll down and find "Edit in settings.json"
-  * Or in these paths in your OS
-  * Windows %APPDATA%\Code\User\settings.json
-  * macOS `$HOME/Library/Application\ Support/Code/User/settings.json`
-  * Linux `$HOME/.config/Code/User/settings.json`
+- `File` -> `Preferences` -> `Settings` -> `Extensions` 
+  - Scroll down and find `Edit in settings.json`
+
+- Windows - `%APPDATA%\Code\User\settings.json`
+- macOS   - `$HOME/Library/Application\ Support/Code/User/settings.json`
+- Linux   - `$HOME/.config/Code/User/settings.json`
 
 You can add the settings to this file (may be given by a extension) and make all of these settings global.
 For exemple edit file:
@@ -55,7 +58,7 @@ nvim $HOME/Library/Application\ Support/Code/User/settings.json
 
 ### Снипет ifmain
 
-In vscode, `File->Preferences->User Snippets`.  
+In vscode, `File` -> `Preferences` -> `User Snippets`.  
 Type python and choose python. A json file will open
 
 Paste all or the specific snippets you want in the file and save
