@@ -58,7 +58,7 @@ module.exports = {
 
 ## Настройки
 
-### Примеры настроек
+### Примеры файлов настроек
 
 - Сайт [hydra.cc](https://hydra.cc/)
   - файл [docusaurus.config.js](https://github.com/facebookresearch/hydra/blob/main/website/docusaurus.config.js)
@@ -74,3 +74,8 @@ module.exports = {
   
 
 - [Блоки кода](https://docusaurus.io/docs/markdown-features/code-blocks)
+
+
+## Ссылки
+
+- Настройки [документа](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs) официальная инструкция.

@@ -32,3 +32,18 @@ Feel free to play around and edit this post as much you like.
 ```
 
 A new blog post is now available at [http://localhost:3000/blog/greetings](http://localhost:3000/blog/greetings).
+
+## Обрезка текста
+
+Чтобы не заполнять постами блока всю страницу сводки. Для блога предусмотрен маркер `truncate`,
+который сгенерирует на странице ссылку "Читать дальше"
+
+Просто в том месте где заканчивается самери, вставляется маркер.
+
+```md
+<!--truncate-->
+```
+
+## Ссылки
+
+- Настройки [блога](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog) официальная инструкция.

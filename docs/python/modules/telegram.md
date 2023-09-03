@@ -2,10 +2,12 @@
 author: stavis
 title: "telegram userbots"
 description: "Чатботы telegram в python управляем группами, постами"
-tags: ["modules", "telegram", "bot"]
+tags: ["modules", "telegram", "bot", "python"]
 draft: true
 
 ---
+
+
 
 [мастер-класс](https://www.youtube.com/watch?v=4rUnffXeoUA)
 
@@ -18,3 +20,4 @@ draft: true
 - Отвечаем на возникшие вопросы и рефлексируем.
 
 - Telegram Django Bot за пару строк [статья](https://habr.com/ru/articles/734786/) на хабре
+

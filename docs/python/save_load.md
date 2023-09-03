@@ -44,7 +44,7 @@ tab_reader = csv.reader(f, delimiter="\t")
 
 ### Запись в csv
 
-```python
+```python {4}
 import csv
 
 with open('pased_site.csv', 'w', encoding="utf-8:") as f:
@@ -148,7 +148,6 @@ async def saver():
 
 asyncio.run(saver())
 ```
-
 
 ## Пути
 
