@@ -556,13 +556,18 @@ image: "https://media.proglib.io/wp-uploads/2018/01/45675477bb165f999.jpg"
 
 ## Ссылки
 
-[Логические ошибки](https://ru.rationalwiki.org/wiki/%D0%9B%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0) на РациоВики
+- [Логические ошибки](https://ru.rationalwiki.org/wiki/%D0%9B%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0) на РациоВики
+- [Логические ошибки в виде карточек](https://obraz.io/dt_gallery/lf_slices/)
 
-[Логические ошибки в виде карточек](https://obraz.io/dt_gallery/lf_slices/)
+### Теории заговоров
 
-Листы для распечаток A4
-* [1й](https://obraz.io/wp-content/uploads/2017/10/logical-fallacies-1-ru.png) лист для распечатки
-* [2й](https://obraz.io/wp-content/uploads/2017/10/logical-fallacies-2-ru.png) лист для распечатки
+- [План Даллеса](https://ru.wikipedia.org/wiki/%D0%9F%D0%BB%D0%B0%D0%BD_%D0%94%D0%B0%D0%BB%D0%BB%D0%B5%D1%81%D0%B0)
+
+### Листы для распечаток A4
+
+-  [1й](https://obraz.io/wp-content/uploads/2017/10/logical-fallacies-1-ru.png) лист для распечатки
+-  [2й](https://obraz.io/wp-content/uploads/2017/10/logical-fallacies-2-ru.png) лист для распечатки
+
 
 [Fallacy]: https://ru.wikipedia.org/wiki/%D0%9B%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0
 [No_true_Scotsman]: https://ru.wikipedia.org/wiki/%D0%9D%D0%B8_%D0%BE%D0%B4%D0%B8%D0%BD_%D0%B8%D1%81%D1%82%D0%B8%D0%BD%D0%BD%D1%8B%D0%B9_%D1%88%D0%BE%D1%82%D0%BB%D0%B0%D0%BD%D0%B4%D0%B5%D1%86
