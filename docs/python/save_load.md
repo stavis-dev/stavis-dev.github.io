@@ -74,17 +74,9 @@ a_pen = csv.writer(f, delimiter="\t")
 
 ## json файлы
 
-Запись данных в  json файл:
+### Чтение json
 
-```python
-import json
-
-# Save data to json file
-with open('file_name.json', 'a') as f:
-    json.dump(res, f, indent=4, ensure_ascii=False)
-```
-
-Чтение данных из json файла:
+Чтение данных из `json` файла:
 
 ```python
 import json
@@ -94,9 +86,32 @@ with open('file_name.json', 'r') as f:
     serieses = json.load(f)
 ```
 
+### Запись в json
+
+Запись данных в  `json` файл:
+
+```python
+import json
+
+# Save data to json file
+with open('file_name.json', 'a') as f:
+    json.dump(res, f, indent=4, ensure_ascii=False)
+```
+
+- `indent=4` - делать отступы (4 пробела). Для понятного форматирования
+- `ensure_ascii=False` - писать в человекочитаемом формате.
+
 ## Плоские файлы
-.
+
 Чтение и запись данных из обыкновенных (плоских) файлов `txt`, `html` и т.д.:
+
+### Чтение из файла:
+
+```python
+# Load data from file
+with open('index.html', 'r') as f:
+    html = f.read()
+```
 
 ### Сохранение в файл
 
@@ -116,14 +131,6 @@ myList = [1,2,3,4]
 
 with open('output.txt', 'w') as f:
   f.write('\n'.join(str(i) for i in myList))
-```
-
-### Чтение из файла:
-
-```python
-# Load data from file
-with open('index.html', 'r') as f:
-    html = f.read()
 ```
 
 ## Асинхронный доступ
