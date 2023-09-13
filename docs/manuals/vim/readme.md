@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Утилита vim"
+sidebar_label: "vim утилита"
 
 author: stavis
 title: "Vim: режимы, хоткейсы, команды"
@@ -175,12 +175,17 @@ image: "nvim.webp"
 
 `Esc` - _выход_ из режима редактирования
 
+## Выделение
+
 ### Выделение текста (Visual mode)
 
 > (`visual mode`) - режим выделения текста
 
 `v` - посимвольное выделение текста (visual)  
-`V` - построчное выделение текста  
+`V` - построчное выделение текста 
+`v + hjkl` - выделение текста
+`SHIFT + v` - выделить строку
+`CTR + v` - выделение прямоугольника 
 `Esc` - _выход_ из режима выделения
 
 ### Продвинутое выдедение
@@ -272,21 +277,10 @@ image: "nvim.webp"
 
 ## Макросы
 
-qa записать макрос с именем a
-q в режиме записи макроса: закончить запись
-@a выполнить макрос с именем a
-@@ повторить последний макрос
-
-## Выделение
-
-v + hjkl выделение текста
-SHIFT + v выделить строку
-CTR + v выделение прямоугольника
-p вставить
-y копировать
-d удалить
-gu к нижнему регистру
-gU к верхнему регистру
+`qa` - записать макрос с именем `a`
+`q` - в режиме записи макроса: *закончить запись*
+`@a` - выполнить макрос с именем `a`
+`@@` - повторить последний макрос
 
 ## Отступы
 
@@ -303,21 +297,23 @@ gU к верхнему регистру
 
 ## Проверка орфографии
 
-    mkdir -p ~/.vim/spell
-    cd ~/.vim/spell
-    wget http://ftp.vim.org/vim/runtime/spell/ru.koi8-r.sug
-    wget http://ftp.vim.org/vim/runtime/spell/ru.koi8-r.spl
-    wget http://ftp.vim.org/vim/runtime/spell/en.ascii.sug
-    wget http://ftp.vim.org/vim/runtime/spell/en.ascii.spl
+```bash
+mkdir -p ~/.vim/spell
+cd ~/.vim/spell
+wget http://ftp.vim.org/vim/runtime/spell/ru.koi8-r.sug
+wget http://ftp.vim.org/vim/runtime/spell/ru.koi8-r.spl
+wget http://ftp.vim.org/vim/runtime/spell/en.ascii.sug
+wget http://ftp.vim.org/vim/runtime/spell/en.ascii.spl
+```
 
-:set spell spelllang=ru,en включить проверку орфографии
-:set nospell выключить проверку орфографии
-]s следующее слово с ошибкой
-[s предыдущее слово с ошибкой
-z= замена слова на альтернативу из списка
-zg good word
-zw wrong word
-zG ignore word
+`:set spell spelllang=ru,en` - включить проверку орфографии
+`:set nospell` - выключить проверку орфографии
+`]s` - следующее слово с ошибкой
+`[s` - предыдущее слово с ошибкой
+`z=` - замена слова на альтернативу из списка
+`zg` - good word
+`zw` - wrong word
+`zG` - ignore word
 
 ### Работа с кодировкой
 
