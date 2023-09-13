@@ -18,7 +18,10 @@ tags: ["dotfiles", "linux", "chezmoi"]
         - обхяснение работы программы на [youtube](https://youtu.be/JrCMCdvoMAw?si=6YCD5Tn5LaioGnko) канале автора.
     - [dotbot](https://github.com/anishathalye/dotbot) - python - 6k звезд
 
-не смотря на то, что я предпочитаю python, все же думаю поработать с `chezmoi`
+не смотря на то, что я предпочитаю python, все же думаю поработать с `chezmoi`  
+С ней и будем работать.
+
+<!--truncate-->
 
 ## Установка
 

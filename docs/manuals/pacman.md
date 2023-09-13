@@ -11,10 +11,19 @@ tags: ["pacman", "linux"]
 
 ## Установка пакетов
 
-### Установка пакетов из репозиториев
+Установка пакетов из репозиториев
 
 ```bash
 sudo pacman -S package_name
+```
+
+Установка пакетов с автоматическим подтверждением в теории выолняется с `--noconfirm`  
+Но он не всегда срабатывает как `yes`. Если по какой то причине `pacman`у не нравится пакет,  он все равно остановится.
+
+Так что практичнее использовать утилиту `yes`
+
+```bash
+yes | sudo pacman -S package_name
 ```
 
 ### Установить пакет хранящийся локально
@@ -31,6 +40,12 @@ sudo pacman -U http://www.example.com/repo/example.pkg.tar.zst
 
 
 ## Удаление приложений
+
+Удалить пакет и те его *зависимости*, которые не нужны никаким другим пакетам: 
+
+```bash
+sudo pacman -Rs package_name
+```
 
 ### Пакеты-сироты
 
@@ -99,3 +114,4 @@ Server = https://mirror.yandex.ru/mirrors/manjaro/stable/$repo/$arch
 - док по [Официальные репозитории](https://wiki.archlinux.org/title/Official_repositories_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9))
 - документация по [зеркалам](https://wiki.archlinux.org/title/Mirrors_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9))
 - [зеркала](https://mirror.yandex.ru/) яндекс
+- документация по [pamac](https://wiki.manjaro.org/index.php/Pamac/ru) на Manjaro
