@@ -4,7 +4,6 @@ author: Stavis
 description: "Управление косколью, быстрые комманды терминала 
     и лайфхаки, которые могут пригодиться"
 tags: ["terminal", "ssh"]
-categories: ["devops", "linux", "mac"]
 image: "https://miro.medium.com/max/1400/1*7pr8EL8EDsP296pxL7Wz_g.png"
 
 ---
