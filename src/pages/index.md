@@ -6,7 +6,11 @@ sidebar_position: 1
 
 ---
 
-# Hi there, I'm Stanislav Mikhailov 👋
+# Привет 👋
+
+Всем привет. Меня зовут Стас. Мне нравится Dev-Ops и Питон.  
+Это мой фриланс, работа и мое хобби.
+
 
 ## Чем я занимаюсь
 
@@ -14,14 +18,7 @@ sidebar_position: 1
 
 ### Языки инструменты
 
-- Javascript, React, Redux, MobX, Video.js
-- Node.js, Next.js, Koa, Express
-- Jest, Hermione
-- Webpack, Gulp
-- Eleventy, Symfony, 1c-Bitrix
-- HTML5, Twig, JSX, Nunjucks
-- CSS3, Sass, Less
-- PHP
+- Pyhton, Dev-Ops
 - MongoDB, MySql
 - Git, Git-flow
 - Docker

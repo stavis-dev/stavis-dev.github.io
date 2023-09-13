@@ -212,9 +212,13 @@ print(a)
 # >>> []
 ```
 
-### list.index(x[, start[, end]])
+### list.index() {#list-index}
 
 Возвращает индекс элемента.
+
+```python
+list.index(x[, start[, end]])
+```
 
 ```python
 a = [1, 2, 3, 4, 5]
@@ -222,9 +226,13 @@ a.index(4)
 # >>> 3
 ```
 
-### list.count(x)
+### list.count() {#list-coint}
 
 Возвращает количество вхождений элемента x в список.
+
+```python
+list.count(x)
+```
 
 ```python
 a=[1, 2, 2, 3, 3]
@@ -232,7 +240,11 @@ print(a.count(2))
 # >>> 2
 ```
 
-### list.sort(key=None, reverse=False) {#list-sort}
+### list.sort() {#list-sort}
+
+```python
+list.sort(key=None, reverse=False)
+```
 
 Сортирует элементы в списке по возрастанию. Для сортировки в обратном порядке используйте флаг `reverse=True`. Дополнительные возможности открывает параметр `key`, за более подробной информацией обратитесь к документации.
 
