@@ -23,8 +23,6 @@ tags: ["python", "programing"]
     - [Big-Data](https://github.com/bitcoineazy/Big_Data) - шпаргалки по большим данным
 
 
-* [Stavis-dev Codewars](https://www.codewars.com/kata/556deca17c58da83c00002db/train/python)  
-* [Replit Codewars](https://replit.com/@StavisViegha/CodeWars#main.py)  
 * [Классы в гугл колаб](https://colab.research.google.com/drive/1vSmI7E49MBA4kA38B_MT6mgWvBKgEorC)  
 
 

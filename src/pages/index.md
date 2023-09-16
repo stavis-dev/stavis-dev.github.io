@@ -28,9 +28,12 @@ sidebar_position: 1
 - [solidjs](https://www.solidjs.com/)
 
 ### Мои контакты
+
 * In Telegram: [@stavis](https://t.me/stavis)
 * By mail [stavis.vega@gmail.com](mailto:stavis.vega@gmail.com)
 * In social networks: [LinkedIn](https://ru.linkedin.com/in/stavis-vega/)
+* [Stavis-dev Codewars](https://www.codewars.com/users/stavis-dev)
+* [Replit Codewars](https://replit.com/@StavisViegha/CodeWars#main.py)
 
 
 ## Литература
