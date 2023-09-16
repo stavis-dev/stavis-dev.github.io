@@ -515,6 +515,12 @@ nvim pyrightconfig.json
 }
 ```
 
+или скачать этот:
+
+```bash
+wget https://github.com/stavis-dev/nvim-config/blob/edb34e075e01e92d5bc2b99a7177c5363b466a53/pyrightconfig.json
+```
+
 ### Особенности конфига
 
 - `Ctrl + h` - запуск `py` скрипта  
