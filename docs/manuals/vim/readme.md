@@ -515,16 +515,16 @@ nvim pyrightconfig.json
 }
 ```
 
-или скачать этот:
+или скачать от сюда:
 
 ```bash
-wget https://raw.githubusercontent.com/stavis-dev/nvim-config/edb34e075e01e92d5bc2b99a7177c5363b466a53/pyrightconfig.json
+wget https://stavis-dev.github.io/f/pyrightconfig.json
 ```
 
-или
+Так же полезным будет добавить себе файл `.editorconfig`. Если начинаете новый проект.
 
 ```bash
-wget https://stavis-dev.github.io/manuals/vim/pyrightconfig.json
+wget https://stavis-dev.github.io/f/.editorconfig
 ```
 
 ### Особенности конфига
