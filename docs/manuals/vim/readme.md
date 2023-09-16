@@ -502,9 +502,13 @@ vim -p file1.txt file2.txt
 git clone https://github.com/alexey-goloburdin/nvim-config.git ~/.config/nvim
 ```
 
-Создать файл конфига `nvim pyrightconfig.json`
+Создать файл конфига:
 
-```json
+```bash
+nvim pyrightconfig.json
+```
+
+```json title="pyrightconfig.json"
 {
   "venv": "env",
   "venvPath": "."
@@ -514,6 +518,11 @@ git clone https://github.com/alexey-goloburdin/nvim-config.git ~/.config/nvim
 ### Особенности конфига
 
 - `Ctrl + h` - запуск `py` скрипта  
+- `gd` - перейти к телу выделенной функции
+  - если функция имортированна из модуля, то модуль откроется в отдельном буфере.
+  - `gp` - previos перейти в предыдущий буфер (обратно на страницу)
+  - `gn` - next перейти на следующий буфер
+  - `gw` - закрыть буфер
 
 #### Файловый менеджер
 
