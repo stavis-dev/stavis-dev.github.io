@@ -14,10 +14,10 @@
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@docusaurus/core": "latest",
-    "@docusaurus/preset-classic": "latest",
-    "@docusaurus/theme-live-codeblock": "latest",
-    "@docusaurus/plugin-ideal-image": "latest",
+    "@docusaurus/core": "2.4.1",
+    "@docusaurus/preset-classic": "2.4.1",
+    "@docusaurus/theme-live-codeblock": "2.4.1",
+    "@docusaurus/plugin-ideal-image": "2.4.1",
     "docusaurus-plugin-yandex-metrica": "latest",
     "react-gist": "latest",
     "@mdx-js/react": "^1.6.22",
