@@ -20,14 +20,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-      - name: Add yandex metrika
-        run: npm install --save docusaurus-plugin-yandex-metrica
-      - name: Add ideal image plugin
-        run: npm install --save @docusaurus/plugin-ideal-image
-      - name: Add gist embed
-        run: npm install --save react-gist
-      - name: Add live code block
-        run: npm install --save @docusaurus/theme-live-codeblock
       - name: Build website
         run: npm run build
 
