@@ -163,6 +163,26 @@ systemctl start mnt-storage.timer
 
 > Подпишись: [@bashdays](https://t.me/bashdays)
 
+## Дополнительно
+
+Посмотреть подключенные машины по `sshfs`
+
+```bash
+cat /etc/mtab
+```
+
+или в современных системах 2020г и выше - использовать утилиту  `findmnt`
+
+```bash
+findmnt -t fuse.sshfs
+```
+
+В ручную отмонтировать диск
+
+```bash
+fusermount -u /temp/user/harddrive
+```
+
 ## Ссылки
 
 - оригинальный [пост](https://t.me/bashdays/41)
