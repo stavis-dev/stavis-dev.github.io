@@ -23,7 +23,8 @@ jobs:
       - name: Add yandex metrika
         run: npm install --save docusaurus-plugin-yandex-metrica
       - name: Add ideal image plugin
-        run: npm install --save @docusaurus/plugin-ideal-image
+        #run: npm install --save @docusaurus/plugin-ideal-image
+        run: npm install --save @docusaurus/plugin-ideal-image@next
       - name: Add gist embed
         run: npm install --save react-gist
       - name: Add live code block
