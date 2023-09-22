@@ -182,7 +182,7 @@ findmnt -t fuse.sshfs
 ```bash
 fusermount -u /temp/user/harddrive
 ```
-
+ 
 ## Ссылки
 
 - оригинальный [пост](https://t.me/bashdays/41)
