@@ -185,3 +185,5 @@ Use this awesome feature option
 - [yt-dlp - репа](https://github.com/yt-dlp/yt-dlp)
 - [yt-dlp - опции](https://github.com/yt-dlp/yt-dlp#usage-and-options)
 - [yt-dlp - примеры](https://github.com/yt-dlp/yt-dlp#output-template-examples)
+- Коллекция [скриптов](https://github.com/TheFrenchGhosty/TheFrenchGhostys-Ultimate-YouTube-DL-Scripts-Collection) для yt-dlp
+- [плагин](https://github.com/ankenyr/jellyfin-youtube-metadata-plugin) для jellyfin
