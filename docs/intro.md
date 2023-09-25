@@ -12,6 +12,7 @@ sidebar_position: 1
 Бесплатные версии GPT чатов.
 - [freegpt-webui](https://freegpt-webui.ramonvc.repl.co/chat/) чат, или [repo](https://github.com/ramonvc/freegpt-webui/tree/main)
 - [you.com](https://you.com/) - требуется регистрация
+- [поиск](https://search4faces.com/search.html) по лицам, сайт поищит их во Вконтакте и Одноклассниках
 
 ### Остальное
 
