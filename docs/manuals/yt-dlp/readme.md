@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Команды yt-dlp"
+sidebar_label: "yt-dlp - утилита"
 
 author: Stavis
 date: "2022-12-24"
