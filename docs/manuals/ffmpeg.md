@@ -61,8 +61,6 @@ Input #0, avi, from 'Rick.and.Morty.S06E01.avi':
 | `-map_chapters -1` | не копировать части (главы). |
 | `-disposition:s default` | отключить дорожку по умолчанию. |
 
-
-
 ## Конвертация форматов
 
 ### H.264
@@ -70,11 +68,19 @@ Input #0, avi, from 'Rick.and.Morty.S06E01.avi':
 Самый популярный, `mpeg` контейнер, поддерживается большинством устройств.
 Иногда большие файлы.
 
-[H.264 - wiki](https://ru.wikipedia.org/wiki/H.264)
+> [H.264 - wiki](https://ru.wikipedia.org/wiki/H.264)
+
+Чаще всего в mp4 кодируются старые форматы файлов `avi`, `mov`, `asf`
 
 ```bash
-
+ffmpeg -i input.mov -c:v libx264 -c:a aac -vf format=yuv420p -movflags +faststart output.mp4
 ```
+
+- `-c:v libx264` choose encoder `libx264` to output `H.264` video.
+- `-c:a aac` choose encoder aac to output AAC audio.
+- `-vf format=yuv420p` chooses YUV 4:2:0 pixel format. libx264 supports many pixel formats and by default will choose a pixel format that most resembles the input. But not all pixel formats are supported by all players. yuv420p is the most compatible and universally supported.
+- `-movflags +faststart` same as the Web Optimized option in Handbrake. After encoding completes it moves a chunk of info from the end of file to the beginning so it can start playing faster when viewing via download.
+
 
 ### VP9
 
@@ -206,3 +212,5 @@ ffmpeg -i audio.opus -i video.webm  -c copy mix_video.webm
 - [Как пользоваться ffmpeg](https://losst.pro/poleznye-komandy-ffmpeg)
 - [Python обертка для ffmpeg](https://github.com/kkroening/ffmpeg-python)
 - [Как работает -map в ffmpeg](https://write.corbpie.com/understanding-ffmpeg-map-with-examples/)
+- GUI приложение для ffmpeg [handbrake](https://handbrake.fr/)
+- примеры [скриптов](https://ottverse.com/convert-all-files-inside-folder-ffmpeg-batch-convert/) для конвертации всех файлов в папке.

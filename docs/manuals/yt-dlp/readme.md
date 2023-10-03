@@ -124,7 +124,7 @@ yt-dlp -f 2 -o 'songname.%(ext)s'
 yt-dlp -f 'ba' -x --audio-format mp3 https://www.youtube.com/watch?v=dQw4w9WgXcQ  -o '%(id)s.%(ext)s'
 ```
 
-## Thumbnails
+## Обложка
 
 Изображения заставки.
 Изображения скачиваются флагом `--write-thumbnail`
@@ -136,6 +136,37 @@ yt-dlp --write-thumbnail --convert-thumbnails jpg
 
 ```bash
 --write-thumbnail -o "thumbnail:%(title)s/folder.%(ext)s"
+```
+
+## Cубтитры
+
+Опции субтитров:
+
+```bash
+--write-sub                      Write subtitle file
+--write-auto-sub                 Write automatic subtitle file (YouTube only)
+--all-subs                       Download all the available subtitles of the video
+--list-subs                      List all available subtitles for the video
+--sub-format FORMAT              Subtitle format, accepts formats preference, for example: "srt" or "ass/srt/best"
+--sub-lang LANGS                 Languages of the subtitles to download (optional) separated by commas, use IETF language tags like 'en,pt'
+```
+
+So for example, to list all subs for a video:
+
+```bash
+yt-dlp --list-subs https://www.youtube.com/watch?v=Ye8mB6VsUHw
+```
+
+To download all subs, but not the video:
+
+```bash
+yt-dlp --all-subs --skip-download https://www.youtube.com/watch?v=Ye8mB6VsUHw
+```
+
+If a video only has auto generated subtitles, then `--all-subs` still won't download it, instead use:
+
+```bash
+yt-dlp --write-auto-sub --skip-download https://www.youtube.com/watch?v=Ye8mB6VsUHw
 ```
 
 ## Файл конфигурации
