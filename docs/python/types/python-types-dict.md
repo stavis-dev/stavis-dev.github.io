@@ -423,28 +423,48 @@ for key in story_count:
 В примере кода ниже ниже цикл `for` использует метод `items()` для получения пары «ключ — значение» на каждую итерацию.
 
 ```py
-for key, value in dictionary.items():
+for key, value in story_count.items():
     print(key, value)
 
-# >>> ('персона', 'человек')
-# >>> ('бежать', 'двигаться со скоростью')
-# >>> ('туфля', 'род обуви, закрывающей ногу не выше щиколотки')
-# >>> ('бежал', 'бежать в прошедшем времени')
-# >>> ('марафон', 'гонка бегунов длиной около 26 миль')
-# >>> ('туфли', 'туфля во множественном числе')
+# сто 100
+# девяносто 90
+# двенадцать 12
+# пять
 ```
 
 ### Сортировка словаря
 
 Сотритовка может производиться разными способами.
-Пример сортировки по ключу с помощью генератора
+Пример сортировки с помощью генератора
 
 ```py
-my_dict = {'сто': 100, 'девяносто': 90, 'двенадцать': 12, 'пять': 5}
-result = {key: val for key, val in sorted(my_dict.items(), key = lambda ele: ele[0])}
+people = {3: "Jim", 2: "Jack", 4: "Jane", 1: "Jill"}
 
-# result -> {'двенадцать': 12, 'девяносто': 90, 'пять': 5, 'сто': 100}
+# Sort by key
+dict(sorted(people.items()))
+# {1: 'Jill', 2: 'Jack', 3: 'Jim', 4: 'Jane'}
+
+# Sort by value
+dict(sorted(people.items(), key=lambda item: item[1]))
+# {2: 'Jack', 4: 'Jane', 1: 'Jill', 3: 'Jim'}
 ```
+
+### Обрезка словаря
+
+Если из большого словаря необходимо получить, только его чать. (например 10 самых частых элементов).
+Можно использовать метод [islice](https://docs.python.org/3/library/itertools.html#itertools.islice)  
+из `itertools`
+
+```py
+from itertools import islice
+
+story_count = {'сто': 100, 'девяносто': 90, 'двенадцать': 12, 'пять': 5, 'семь': 7}
+nd = dict(islice(story_count.items(), 0, 3))
+# {'сто': 100, 'девяносто': 90, 'двенадцать': 12, 'пять': 5, 'семь': 7}
+
+```
+
+> [islice](https://docs.python.org/3/library/itertools.html#itertools.islice)
 
 ### dict to list
 
