@@ -10,6 +10,20 @@ tags: ["python", "programing"]
 
 ---
 
+## Мои настройки для python
+
+Для проектов файлы `pyrightconfig` и `.editorconfig`:
+
+```bash
+wget https://stavis-dev.github.io/f/pyrightconfig.json
+```
+
+Так же полезным будет добавить себе файл `.editorconfig`. Если начинаете новый проект.
+
+```bash
+wget https://stavis-dev.github.io/f/.editorconfig
+```
+
 ## Документация по Python
 
 - pyneng-book: [Python для сетевых инженеров](https://pyneng.readthedocs.io/ru/latest/) - вспомнить почитать, [repo](https://github.com/natenka/pyneng-book/tree/master)
