@@ -20,6 +20,11 @@ tags: ["python", "modules"]
 ## Основные 
 Универсальные модули, пакеты используемые в коде python
 
+- парсинг html страниц
+  - модуль [Beautiful Soup](https://pypi.org/project/beautifulsoup4/)
+    - [Beautiful Soup Documentation oficial(https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+    - [Beautiful Soup Documentation 02](https://beautiful-soup-4.readthedocs.io/en/latest/)
+  
 - автоматизация действий в браузере.
     - [selenium](./selenium-python.md) - пока базовый.
 
