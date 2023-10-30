@@ -3,7 +3,7 @@ sidebar_label: "функция sorted()"
 
 title: "Функция sorted в python"
 author: stavis
-description: "Обзор sorted() стандартной функции Python"
+description: "Обзор sorted() стандартной функции Python и методы сортировки последовательностей"
 tags: ["functions", "sorted"]
 
 ---
@@ -232,4 +232,52 @@ sorted(list_of_words)
 по десятичному значению.
 
 :::
-    
+
+### Сортировки с исключением
+
+Если необходима сортировка списка в котором есть элементы которые нужно пропустить, (исключить).
+
+Например есть список `nums` чисел. В котором нужно отсортировать только нечетные элементы,
+четные же оставить на своем месте. Так чтобы получился список `result_nums`
+
+```py
+nums = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+result_nums = [1, 8, 3, 6, 5, 4, 7, 2, 9, 0]
+```
+
+В таких случаях применяют следующий паттерн:
+
+- с начала сортируются только те элементы которые необходимы. Во временный список.
+
+```py
+temp_list = sorted([n for n in nums if n % 2])
+```
+
+- Далее изначальный список вливается в отсортированный с условием.
+- после чего временный список возвращается он и будет `result_nums`
+
+```py
+for index, item in enumerate(nums):
+        if item % 2 == 0:
+            temp_list.insert(index, item)
+```
+
+Код полностью:
+
+```py
+def sort_array(source_array):
+    sorted_array = [i for i in source_array if i % 2]
+    sorted_array.sort()
+    for index, item in enumerate(source_array):
+        if item % 2 == 0:
+            sorted_array.insert(index, item)
+    return sorted_array
+```
+
+Более продвинутое решение с генератором:
+
+```py
+def sort_array(nums: list) -> list:
+    odds = iter(sorted((el for el in nums if el % 2)))
+    return [next(odds) if el % 2 else el for el in nums]
+```
