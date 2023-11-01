@@ -126,8 +126,7 @@ AllowedIPs = 10.0.0.2/32
 Перезагружаем `systemd` сервис с `wireguard`:
 
 ```bash
-systemctl restart wg-quick@wg0
-systemctl status wg-quick@wg0
+systemctl restart wg-quick@wg0 && systemctl status wg-quick@wg0
 ```
 ## Дополнения
 
