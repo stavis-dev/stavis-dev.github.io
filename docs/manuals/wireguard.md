@@ -116,6 +116,7 @@ vim /etc/wireguard/wg0.conf
 
 ```conf title="wg0.conf"
 [Peer]
+# Name = user ivan
 PublicKey = <user_publickey>
 AllowedIPs = 10.0.0.2/32
 ```
@@ -128,6 +129,38 @@ AllowedIPs = 10.0.0.2/32
 systemctl restart wg-quick@wg0
 systemctl status wg-quick@wg0
 ```
+## Дополнения
+
+### lswg
+
+У сервера `wireguard` есть совсем небольшой недостаток. 
+В нем нет отображения имет клиентов (peers)
+Во время выводы команды `wg` или `wg show` пиры отображаются только хешами.
+
+От этого не удобно и муторно понимать, какой хеш, к какому пользователю относится.  
+
+Решением позволяющим показывать имя пользователя является `python` скрипт [lswg](https://gist.github.com/stavis-dev/9537cd4f9bf34a7b57fe698d4e4b780c)
+
+Он отображает имена `Name` прописаные в файле `wg0.conf`
+
+```conf title="wg0.conf"
+[Peer]
+// highlight-next-line
+# Name = user ivan
+PublicKey = <user_publickey>
+AllowedIPs = 10.0.0.2/32
+```
+
+#### Скачать и установить lswg
+
+Предполагается что на сервере вы как `root`
+
+```bash
+wget https://gist.githubusercontent.com/stavis-dev/9537cd4f9bf34a7b57fe698d4e4b780c/raw/lswg && \
+chmod +x lswg && \
+mv lswg /usr/bin/
+```
+
 ## Настройка клиентов
 
 > Первым делом, само собой, следует установить клиенскую программу на локальный комп.
@@ -156,7 +189,11 @@ AllowedIPs = 0.0.0.0/0
 PersistentKeepalive = 20
 ```
 
-Здесь `<CLIENT-PRIVATE-KEY> `заменяем на приватный ключ клиента, то есть содержимое файла `/etc/wireguard/user_privatekey` на сервере. `<SERVER-PUBKEY>` заменяем на публичный ключ сервера, то есть на содержимое файла `/etc/wireguard/publickey `на сервере. `<SERVER-IP>` заменяем на IP сервера.
+**Здесь:**
+
+- `<CLIENT-PRIVATE-KEY> `заменяем на приватный ключ клиента, то есть содержимое файла `/etc/wireguard/user_privatekey` на сервере.
+- `<SERVER-PUBKEY>` заменяем на публичный ключ сервера, то есть на содержимое файла `/etc/wireguard/publickey `на сервере.
+- `<SERVER-IP>` заменяем на IP сервера.
 
 Этот файл открываем в Wireguard клиенте (есть для всех операционных систем, в том числе мобильных) — и жмем в клиенте кнопку подключения.
 
@@ -164,3 +201,4 @@ PersistentKeepalive = 20
 
 - по мотивам видео [видео](https://youtu.be/5Aql0V-ta8A)
 - продвинутая [инструкция](https://www.digitalocean.com/community/tutorials/how-to-set-up-wireguard-on-ubuntu-22-04) на digitalocean
+- официальный сайт [wireguard.com](https://www.wireguard.com/)
