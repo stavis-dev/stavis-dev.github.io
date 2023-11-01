@@ -27,7 +27,7 @@ apt update && apt upgrade -y
 apt install -y wireguard
 ```
 
-## Настройка
+## Настройка сервера
 
 Файлы настроек находятся в
 
@@ -128,6 +128,14 @@ AllowedIPs = 10.0.0.2/32
 systemctl restart wg-quick@wg0
 systemctl status wg-quick@wg0
 ```
+## Настройка клиентов
+
+> Первым делом, само собой, следует установить клиенскую программу на локальный комп.
+> - Для windows - [Download Windows Installer](https://download.wireguard.com/windows-client/wireguard-installer.exe)
+> - Для android - [Download from Play Store](https://play.google.com/store/apps/details?id=com.wireguard.android)
+> - Arch linux - `sudo pacman -S wireguard-tools`
+> - Ubuntu - `sudo apt install wireguard`
+> - Остальные версии можно глянуть на [официальной странице](https://www.wireguard.com/install/)
 
 На локальной машине (например, на ноутбуке) создаём текстовый файл с конфигом клиента:
 
