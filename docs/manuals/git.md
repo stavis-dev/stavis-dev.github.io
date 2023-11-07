@@ -173,6 +173,28 @@ git submodule update --init
 # переключить все подмодули на ветку feature
 git submodule foreach 'git checkout -b feature'
 ```
+## Сервера git
+
+... или работа с удаленными репозиториями, тут не имеется в виду понятие "удалить". Правильно понимать слово как "находящийся на удалении" от пользователя.
+
+> **Удалённые репозитории** представляют собой версии вашего проекта, сохранённые в интернете или ещё где-то в сети.
+
+
+### Посмотреть url сервера
+
+```bash
+git remote -v
+# View existing remotes
+# origin  https://github.com/user/repo.git (fetch)
+# origin  https://github.com/user/repo.git (push)
+```
+
+### Смена удаленного репозитория
+
+```bash
+git remote set-url origin https://github.com/user/repo2.git
+# Change the 'origin' remote's URL
+```
 
 ## Фишки
 
