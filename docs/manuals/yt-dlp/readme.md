@@ -126,6 +126,8 @@ yt-dlp -f 'ba' -x --audio-format mp3 https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
 ## Обложка
 
+### Сохранение обложки
+
 Изображения заставки.
 Изображения скачиваются флагом `--write-thumbnail`
 Для сохранения изображения определенным именем исользуется шаблон сохранения
@@ -133,9 +135,30 @@ yt-dlp -f 'ba' -x --audio-format mp3 https://www.youtube.com/watch?v=dQw4w9WgXcQ
 ```bash
 yt-dlp --write-thumbnail --convert-thumbnails jpg 
 ```
+где:
+
+- `--convert-thumbnails jpg` - конвертировать изображение в формат `jpg`
+
+Путь для сохранения
 
 ```bash
 --write-thumbnail -o "thumbnail:%(title)s/folder.%(ext)s"
+```
+
+### Вставка обложки в файл
+
+Втавить обложку в файл можно ключем `--embed-thumbnail`
+- Поддерживаются контейнеры `mp4`, `mkv`.
+- `webm` вставку обложки не поддерживает.
+
+Для вставки изображений в файлы `yt-dlp` требует модуль [mutagen](https://mutagen.readthedocs.io/en/latest/)
+
+```bash
+python3 -m pip install mutagen
+```
+
+```bash
+sudo pacman -S python-mutagen
 ```
 
 ## Cубтитры
