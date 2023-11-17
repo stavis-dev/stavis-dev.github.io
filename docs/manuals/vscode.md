@@ -59,7 +59,14 @@ nvim $HOME/Library/Application\ Support/Code/User/settings.json
 ### Снипет ifmain
 
 In vscode, `File` -> `Preferences` -> `User Snippets`.  
-Type python and choose python. A json file will open
+Type `py` and choose **python**. A json file will open
+
+or open file directly
+on Unix sistems:
+
+```bash
+nvim $HOME/.config/Code/User/snippets/python.json
+```
 
 Paste all or the specific snippets you want in the file and save
 `Ctrl+Shift+P`
@@ -68,7 +75,7 @@ Reload Window, to activate the changes
 
 This is the default main snippet:
 
-```js
+```js title="~/.config/Code/User/snippets/python.json"
  "if(main)": {
         // "prefix": "__main__",
         "prefix": ["__main__", "ifmain", "main", "ifm", "if m"],
