@@ -13,6 +13,7 @@ sidebar_position: 1
 - [freegpt-webui](https://freegpt-webui.ramonvc.repl.co/chat/) чат, или [repo](https://github.com/ramonvc/freegpt-webui/tree/main)
 - [you.com](https://you.com/) - требуется регистрация
 - [поиск](https://search4faces.com/search.html) по лицам, сайт поищит их во Вконтакте и Одноклассниках
+- Похожий на чат GPT сервис [deepai.org](https://deepai.org)
 
 ### Остальное
 
