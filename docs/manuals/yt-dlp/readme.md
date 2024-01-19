@@ -174,6 +174,8 @@ sudo pacman -S python-mutagen
 --sub-lang LANGS                 Languages of the subtitles to download (optional) separated by commas, use IETF language tags like 'en,pt'
 ```
 
+### Examples download subtitles
+
 So for example, to list all subs for a video:
 
 ```bash
@@ -191,6 +193,18 @@ If a video only has auto generated subtitles, then `--all-subs` still won't down
 ```bash
 yt-dlp --write-auto-sub --skip-download https://www.youtube.com/watch?v=Ye8mB6VsUHw
 ```
+
+Download **en** subtitles
+
+```bash
+yt-dlp --write-sub --sub-lang en --skip-download "URL"
+```
+or autogenerate subtitles  **en**
+
+```bash
+yt-dlp --write-auto-sub --skip-download --sub-lang en "URL"
+```
+
 
 ## Файл конфигурации
 
