@@ -206,6 +206,7 @@ com.android.dreams.phototable
 ```bash
 com.miui.analytics
 com.xiaomi.mipicks
+com.miui.translation.youdao
 ```
 
 ## Ссылки
