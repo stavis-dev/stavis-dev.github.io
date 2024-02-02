@@ -49,6 +49,18 @@ words = ['hello', 'daddy', 'hello', 'mum']
 - set.issubset(other) или set <= other - все элементы set принадлежат other.
 - set.issuperset(other) или set >= other - аналогично.
 - set.union(other, ...) или set | other | ... - объединение нескольких множеств.
+
+```python
+sets = {0, 1, 2, 3}
+fset = frozenset({2, 3, 4})
+lists = [5, 6, 7]
+tuples = (7, 8, 9)
+
+# Использование метода
+new_set = sets.union(lists, tuples, fset)
+# {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+```
+
 - set.intersection(other, ...) или set & other & ... - пересечение.
 - set.difference(other, ...) или set - other - ... - множество из всех элементов set, не принадлежащие ни одному из other.
 - set.symmetric_difference(other); set ^ other - множество из элементов, встречающихся в одном множестве, но не встречающиеся в обоих.
