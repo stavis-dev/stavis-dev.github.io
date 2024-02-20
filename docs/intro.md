@@ -32,6 +32,10 @@ sidebar_position: 1
 - [Bash скрипты на примерах](https://github.com/cheatsnake/bash-scripts-by-example/blob/master/README_RUS.md)
 - [SQL на примерах](https://github.com/cheatsnake/sql-by-example/blob/master/README_RUS.md)
 
+## Статьи
+
+- [Шпаргалка алгоритмов](https://habr.com/ru/articles/794556/) - алгоритмическая сложность, структуры данных, методы сортировки и Дейкстра
+
 
 ## Android
 
