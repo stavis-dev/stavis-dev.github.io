@@ -57,6 +57,15 @@ git commit -m "remove file1.txt"
 
 ### Удаление ветки
 
+Удаление ветки удобнее выполнять коммандой `git branch -d <ветка>`
+Например удалить ветку с названием `dev`:
+
+```bash
+git branch -d dev
+```
+
+Удаление ветки из удаленого (remote) репозитория
+
 ```bash
 # Удалить из remote гита ветки dev
 git push origin --delete dev
