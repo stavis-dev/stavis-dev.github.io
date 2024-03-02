@@ -45,3 +45,4 @@ sidebar_position: 1
 
 - [repo](https://github.com/javier-lopez/learn/tree/master) со всякими примерчиками на разных языка программирования
 - [Список](https://github.com/cheatsnake/awesome-examples#readme) ресурсов, на которых можно научиться программированию на примерах.
+- [ebookfoundation.github.io](https://ebookfoundation.github.io/free-programming-books/books/free-programming-books-ru.html) - сборник IT литературы на Русском языке.
