@@ -15,6 +15,7 @@ sidebar_position: 1
 - [поиск](https://search4faces.com/search.html) по лицам, сайт поищит их во Вконтакте и Одноклассниках
 - [deepai.org](https://deepai.org) - Похожий на чат GPT сервис
 - [jan.ai](https://jan.ai/) - GUI работы с ИИ моделями локальными и Онлайн.
+- [AI генераторы текста](https://huggingface.co/tasks/text-generation)
 
 ### Остальное
 
