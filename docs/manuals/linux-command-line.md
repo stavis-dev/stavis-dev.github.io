@@ -1,11 +1,68 @@
 ---
 author: Stavis
 title: "Linux command line"
-description: "Памятка Linux. Командная строка"
+description: "Памятка Linux. Командная строка список основных комманд"
 tags: ["command line", "linux"]
 
 ---
-# Коммандная строка Linux
+# Список комманд Linux
+
+## type
+## which
+## whereis
+
+Общие команды для нахождения местоположения файла в системе.
+
+```bash
+type ls
+# ls is aliased to `ls --color=auto'
+```
+Ключ `-P` отображает только путь к файлу, без его описания.  
+Удобно использовать для копирования файлов с длинными путями.
+
+```bash
+type -P ls
+# /usr/bin/ls
+```
+
+Для показа всех возможных путей (если файлов несколько) используем ключ `-a`
+
+```bash
+type -a ls
+# ls is aliased to `ls --color=auto'
+# ls is /usr/bin/ls
+# ls is /bin/ls
+```
+
+Мы также можем использовать тип `-t` для отображения типа исполняемого файла:
+
+```bash
+type -t which
+# file
+type -t command
+# builtin
+type -t type
+# builtin
+type -t whereis
+# file
+type -t ls
+# alias
+type -t docker
+# file
+```
+
+иногда вы получаете путь к символической ссылке; 
+если вы хотите отследить эту ссылку до того, где находится фактический исполняемый файл, 
+вы можете использовать `readlink` и передать ему выходные данные:
+
+```bash
+which firefox
+# /usr/bin/firefox
+
+readlink -f $(which firefox)
+# /usr/lib/firefox-3.6.3/firefox.sh
+```
+
 
 Посмотреть весь список UNIX команд можно [тут](https://en.wikipedia.org/wiki/List_of_Unix_commands)
 ## du
@@ -309,12 +366,18 @@ popd +N
 Для вывода на экран значений переменных HOME и USER запустите команду
 printenv:
 
+### printenv
+
 ```bash
 printenv HOME
 # /home/smith
 printenv USER
 # smith
 ```
+
+### env
+
+команда `env` выведет на экран все Переменные окружения
 
 ## alias
 
