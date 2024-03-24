@@ -1,6 +1,6 @@
 ---
 author: Stavis
-title: "Linux command line"
+title: "Список комманд Linux"
 description: "Памятка Linux. Командная строка список основных комманд"
 tags: ["command line", "linux"]
 
@@ -8,8 +8,8 @@ tags: ["command line", "linux"]
 # Список комманд Linux
 
 ## type
-## which
-## whereis
+
+> which, whereis
 
 Общие команды для нахождения местоположения файла в системе.
 
