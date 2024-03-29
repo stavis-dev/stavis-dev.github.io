@@ -322,3 +322,18 @@ Use this awesome feature option
 - [yt-dlp - примеры](https://github.com/yt-dlp/yt-dlp#output-template-examples)
 - Коллекция [скриптов](https://github.com/TheFrenchGhosty/TheFrenchGhostys-Ultimate-YouTube-DL-Scripts-Collection) для yt-dlp
 - [плагин](https://github.com/ankenyr/jellyfin-youtube-metadata-plugin) для jellyfin
+
+## Обновление
+
+Через `wget`
+
+```bash
+wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O ~/.local/bin/yt-dlp
+chmod a+rx ~/.local/bin/yt-dlp  # Make executable
+```
+Через `curl`
+
+```bash
+curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o ~/.local/bin/yt-dlp
+chmod a+rx ~/.local/bin/yt-dlp  # Make executable
+```
