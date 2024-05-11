@@ -73,12 +73,21 @@ wifi
 wifi-disable
 ```
 
-### Настройка Watchdogs
+### Watchdogs
+
+Важная штука, как оказалось. 
+Используются [OpenDev Watchdog](https://open-dev.ru/watchdog),
+а конкретно [USB WatchDog Lite](https://open-dev.ru/mining/tproduct/230408497-351859668740-usb-watchdog-lite).  
+Риг может завистнуть по разным причинам, да еще так, что никакая команда
+на перезагрузку не помогает. Только с помощью ватчдога, коммандой
+
+```bash
+/hive/opt/opendev/watchdog-opendev reset
+```
+
+#### Настройка Watchdog
 
 Настройка USB вотчдогов.
-
-Важная штука, как оказалось. Используются [OpenDev Watchdog](https://open-dev.ru/watchdog),
-а конкретно [USB WatchDog Lite](https://open-dev.ru/mining/tproduct/230408497-351859668740-usb-watchdog-lite).
 
 Проверить обранужил ли риг вотчдог.
 
@@ -123,9 +132,20 @@ Usage: watchdog-opendev  ping|reset|power [port]
 # 1й терминал
 ping 192.168.1.10
 
-# 2й терминал
-ssh 10
+# 2й терминал ssh 10
 /hive/opt/opendev/watchdog-opendev reset
+```
+
+### Остальные комманды настроек
+
+Остальные страндартные команды на каждом риге:
+
+```bash
+# расширяем оставшееся свободное место на диске
+disk-expand
+
+# отключить wi-fi если не используется
+wifi-disable
 ```
 
 ## Полезные ссылки
@@ -144,5 +164,7 @@ ssh 10
 
 - [ВСЕ RTX 3080 10gb в майнинге](https://miningclub.info/threads/vse-rtx-3080-10gb-v-majninge.70017/)
 - [ВСЕ RTX 3060ti в майнинге][ВСЕ-RTX-3060ti-в-майнинге]
-- [ВСЕ-RTX-3060ti-в-майнинге]: https://miningclub.info/threads/vse-rtx-3060ti-v-majninge.72385/ "Ссылка на форум miningclub"
 - [Palit Dual 3060Ti](https://miningclub.info/threads/palit-dual-3060ti-xeshrejt-majnit-eth-kak-3070-63mh-na-130vatt-novyj-lider-v-linejke-rtx30.72834/)
+
+
+- [ВСЕ-RTX-3060ti-в-майнинге]: https://miningclub.info/threads/vse-rtx-3060ti-v-majninge.72385/ "Ссылка на форум miningclub"
