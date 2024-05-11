@@ -23,10 +23,9 @@ cat /hive-config/network/20-ethernet.network
 cat /hive-config/network/30-wireless.network
 ```
 
-Файл выглядит так:
+Файл по умолчанию выглядит так:
 
-```bash
-root@ssh:~# cat /hive-config/network/20-ethernet.network 
+```bash title="cat /hive-config/network/20-ethernet.network"
 [Match]
 #Match eth0, eth1, ... interfaces. Don't change it to other names
 Name=e*
@@ -39,9 +38,11 @@ DHCP=yes
 #Gateway=192.168.0.1
 #DNS=192.168.0.1
 
+
 #to disable IPV6 if it's not disabled in grub
 #LinkLocalAddressing=no
 #IPv6AcceptRA=no
+
 
 [DHCP]
 ClientIdentifier=mac
@@ -58,7 +59,7 @@ Gateway=192.168.1.1
 DNS=192.168.1.1
 ```
 
-### Watchdog 
+### Watchdogs
 
 Важная штука, как оказалось. 
 Используются [OpenDev Watchdog](https://open-dev.ru/watchdog),
@@ -77,17 +78,22 @@ DNS=192.168.1.1
 Проверить обранужил ли риг вотчдог.
 
 ```bash
-# команда
 journalctl -u hive -b0
+```
 
-# должно выдать что то типа
+Вывод должен показать что  то подобное: 
+
+```bash
 Oct 28 23:37:55 worker hive[861]: Watchdogs OpenDev found: 1
 ```
 
-```bash
-# получить список команд вотчдога:
-/hive/opt/opendev/watchdog-opendev
+Получить список команд ватчдога:
 
+```bash
+/hive/opt/opendev/watchdog-opendev
+```
+
+```bash
 # вывод
 Usage: watchdog-opendev  ping|reset|power [port]
        watchdog-opendev  fw|read|settings [port]
@@ -104,22 +110,10 @@ Usage: watchdog-opendev  ping|reset|power [port]
 
 Тест на правильную работу вотчдога можно следующим образом.
 Открываем 2 терминала. В первом пингуем нужную машину,
-во втором подключаемся по `ssh` к машине и выполняем команду:
+во втором подключаемся по `ssh` к машине и выполняем команду `reset`
 
-```bash
-/hive/opt/opendev/watchdog-opendev reset
-```
-
-Ну, в случае правильного подключения вотчдога, после выполнения команды перезагрузки,
+В случае правильного подключения вотчдога, после выполнения команды перезагрузки,
 пинг должен пропасть.
-
-```bash
-# 1й терминал
-ping 192.168.1.10
-
-# 2й терминал ssh 10
-/hive/opt/opendev/watchdog-opendev reset
-```
 
 ### Остальные комманды настроек
 
