@@ -15,14 +15,15 @@ tags: ["hiveos", "linux", "devops"]
 
 Конфигурационные файлы находятся тут:
 
-`/hive-config/network/20-ethernet.network`  
-`/hive-config/network/30-wireless.network`  
-
-Файл выглядит так:
-
 ```bash
 cat /hive-config/network/20-ethernet.network
 ```
+Для wireless сетей тут:
+```bash
+cat /hive-config/network/30-wireless.network
+```
+
+Файл выглядит так:
 
 ```bash
 root@ssh:~# cat /hive-config/network/20-ethernet.network 
@@ -38,11 +39,9 @@ DHCP=yes
 #Gateway=192.168.0.1
 #DNS=192.168.0.1
 
-
 #to disable IPV6 if it's not disabled in grub
 #LinkLocalAddressing=no
 #IPv6AcceptRA=no
-
 
 [DHCP]
 ClientIdentifier=mac
@@ -59,21 +58,7 @@ Gateway=192.168.1.1
 DNS=192.168.1.1
 ```
 
-### Настройка Wi-fi
-
-Команды wi-fi
-
-Начать настройку wi-fi на риге через консоль.
-
-```bash
-# начать настройку wi-fi
-wifi
-
-# отключить wi-fi если не используется
-wifi-disable
-```
-
-### Watchdogs
+### Watchdog 
 
 Важная штука, как оказалось. 
 Используются [OpenDev Watchdog](https://open-dev.ru/watchdog),
@@ -148,6 +133,53 @@ disk-expand
 wifi-disable
 ```
 
+## Логи
+
+Одной из важных навыков как в майнинге, так и вообще в администрировании линукс систем
+является анализ логов. Конкретно для майнинга это помогает отлавливать "больные" карты.
+Реджекты, невалидные шары и т. д.
+
+Итак.
+Логи, как известно в линукс системах находится в папке `/var/log`
+
+Логи майнеров в `hiveos` находятс в папке `/var/log/miner/` и далее название текущего майнера.
+
+Посмотреть текущие активные майнеры можно командой
+
+```bash
+ls /var/log/miner
+```
+
+Например: прочитать логи майнера `phoenix` можно командой.
+
+```bash
+# читаем лог феникс майнера
+less /var/log/miner/phoenixminer/phoenixminer.log
+
+# читаем лог nbminer
+less /var/log/miner/nbminer/nbminer.log
+```
+
+Однако эти команды нам покажут весь фай логов, который, обычно сложно разобрать.
+Попробуем сделать вывод информации чуть информативнее.
+
+Я хочу посмотреть все реджекты в феникс майнере. Для этого я буду использовать комманду `grep`
+
+```bash
+# -i - искать без учета регистра
+# -w - только точные слова без дополнений
+# -n - отображать номера строк.
+
+grep -iwn 'Share rejected' /var/log/miner/phoenixminer/phoenixminer.log
+
+# Очень удобно применить контекст 
+# -B # - Показать # строк ДО вхождения.
+# -А # - Показать # строк ПОСЛЕ вхождения.
+
+grep -iwn -B 2 'Share rejected' /var/log/miner/phoenixminer/phoenixminer.log
+
+```
+
 ## Полезные ссылки
 
 - [Гайды и руководства по Hive Os](https://hiveos.farm/guides_ru/)
@@ -165,6 +197,5 @@ wifi-disable
 - [ВСЕ RTX 3080 10gb в майнинге](https://miningclub.info/threads/vse-rtx-3080-10gb-v-majninge.70017/)
 - [ВСЕ RTX 3060ti в майнинге][ВСЕ-RTX-3060ti-в-майнинге]
 - [Palit Dual 3060Ti](https://miningclub.info/threads/palit-dual-3060ti-xeshrejt-majnit-eth-kak-3070-63mh-na-130vatt-novyj-lider-v-linejke-rtx30.72834/)
-
 
 - [ВСЕ-RTX-3060ti-в-майнинге]: https://miningclub.info/threads/vse-rtx-3060ti-v-majninge.72385/ "Ссылка на форум miningclub"
