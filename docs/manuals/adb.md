@@ -32,7 +32,7 @@ adb push somefile /sdcard/Downdload
 
 `pm` - _Package manager (package) commands:_ работающий в `shell` менеджер приложений `android` телефона.
 
-Инструкция по: [pm команде][package-manager]
+> Инструкция по: [pm команде][package-manager]
 
 ### pm list packages
 
@@ -211,6 +211,7 @@ com.miui.translation.youdao
 
 ## Ссылки
 
+- Официальный [хелп][package-manager] по ADB
 - Тема на `4pda` форуме, где собран [список](https://4pda.to/forum/index.php?showtopic=921645&st=0#entry77962469) приложений которые можно удалить в `MIUI`
 - Синтаксис команды [list packages](https://gist.github.com/davidnunez/1404789#gistcomment-3184514)
 - Хорошая [статья](https://selivan.github.io/2020/02/25/removing-bloatware-from-xiaomi-miui-android.html) в англ. интернете по `xiaomi` софту
