@@ -396,7 +396,7 @@ wget --save-cookies cookies.txt --post-data 'user=foo&password=bar' http://htmlw
 wget --load-cookies cookies.txt -p http://server.com/interesting/article.php
 ```
 
-## Конфигурирование WGET
+## Конфигурирование WGET {#wgetrc}
 
 Основные настроки, которые необходимо писать каждый раз, можно указать в конфигурационном файле программы. Для этого зайдите в рабочую директорию Wget, найдите там файл sample.wgetrc, переименуйте его в **.wgetrc** и редакторе пропишите необходимые конфигурационные параметры.
 
