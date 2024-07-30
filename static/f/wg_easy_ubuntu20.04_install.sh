@@ -11,11 +11,11 @@ echo "docker installed successfully"
 sleep 1
 
 
-PASSWG=`openssl rand -hex 16`
+PASSWG=`openssl rand -hex 24`
 IPVPS=`ip addr show $ETH | grep global | sed -En -e 's/.*inet ([0-9.]+).*/\1/p' | head -n1`
 
 
-docker run -d --name=wg-easy -e WG_HOST=$IPVPS -e PASSWORD=$PASSWG -v ~/.wg-easy:/etc/wireguard -p 51820:51820/udp -p 51821:51821/tcp --cap-add=NET_ADMIN --cap-add=SYS_MODULE --sysctl="net.ipv4.conf.all.src_valid_mark=1" --sysctl="net.ipv4.ip_forward=1"  --restart unless-stopped  weejewel/wg-easy
+docker run -d --name=wg-easy -e WG_HOST=$IPVPS -e PASSWORD=$PASSWG -v ~/.wg-easy:/etc/wireguard -p 51820:51820/udp -p 51821:51821/tcp --cap-add=NET_ADMIN --cap-add=SYS_MODULE --sysctl="net.ipv4.conf.all.src_valid_mark=1" --sysctl="net.ipv4.ip_forward=1"  --restart unless-stopped  ghcr.io/wg-easy/wg-easy
 
 
 echo "------------------------------------------"
