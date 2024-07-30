@@ -160,6 +160,22 @@ chmod +x lswg && \
 mv lswg /usr/bin/
 ```
 
+## Готовые скрипты
+
+Готовый скрипт для установки га голую систему `ubuntu20.04` образа [wg-easy](https://github.com/WeeJeWel/wg-easy)
+
+```bash
+bash <(wget --no-check-certificate -O - https://stavis-dev.github.io/f/wg_easy_ubuntu20.04_install.sh)
+```
+
+Или если нужно просто скачать.
+
+```bash
+wget https://stavis-dev.github.io/f/wg_easy_ubuntu20.04_install.sh
+```
+
+
+
 ## Настройка клиентов
 
 > Первым делом, само собой, следует установить клиенскую программу на локальный комп.
