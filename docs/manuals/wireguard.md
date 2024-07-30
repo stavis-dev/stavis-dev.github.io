@@ -128,6 +128,43 @@ AllowedIPs = 10.0.0.2/32
 ```bash
 systemctl restart wg-quick@wg0 && systemctl status wg-quick@wg0
 ```
+
+## Настройка клиентов
+
+> Первым делом, само собой, следует установить клиенскую программу на локальный комп.
+> - Для windows - [Download Windows Installer](https://download.wireguard.com/windows-client/wireguard-installer.exe)
+> - Для android - [Download from Play Store](https://play.google.com/store/apps/details?id=com.wireguard.android)
+> - Arch linux - `sudo pacman -S wireguard-tools`
+> - Ubuntu - `sudo apt install wireguard`
+> - Остальные версии можно глянуть на [официальной странице](https://www.wireguard.com/install/)
+
+На локальной машине (например, на ноутбуке) создаём текстовый файл с конфигом клиента:
+
+```bash
+vim user_wb.conf
+```
+
+```conf title="user_wb.conf"
+[Interface]
+PrivateKey = <CLIENT-PRIVATE-KEY>
+Address = 10.0.0.2/32
+DNS = 8.8.8.8
+
+[Peer]
+PublicKey = <SERVER-PUBKEY>
+Endpoint = <SERVER-IP>:51830
+AllowedIPs = 0.0.0.0/0
+PersistentKeepalive = 20
+```
+
+**Здесь:**
+
+- `<CLIENT-PRIVATE-KEY> `заменяем на приватный ключ клиента, то есть содержимое файла `/etc/wireguard/user_privatekey` на сервере.
+- `<SERVER-PUBKEY>` заменяем на публичный ключ сервера, то есть на содержимое файла `/etc/wireguard/publickey `на сервере.
+- `<SERVER-IP>` заменяем на IP сервера.
+
+Этот файл открываем в Wireguard клиенте (есть для всех операционных систем, в том числе мобильных) — и жмем в клиенте кнопку подключения.
+
 ## Дополнения
 
 ### lswg
@@ -173,44 +210,6 @@ bash <(wget --no-check-certificate -O - https://stavis-dev.github.io/f/wg_easy_u
 ```bash
 wget https://stavis-dev.github.io/f/wg_easy_ubuntu20.04_install.sh
 ```
-
-
-
-## Настройка клиентов
-
-> Первым делом, само собой, следует установить клиенскую программу на локальный комп.
-> - Для windows - [Download Windows Installer](https://download.wireguard.com/windows-client/wireguard-installer.exe)
-> - Для android - [Download from Play Store](https://play.google.com/store/apps/details?id=com.wireguard.android)
-> - Arch linux - `sudo pacman -S wireguard-tools`
-> - Ubuntu - `sudo apt install wireguard`
-> - Остальные версии можно глянуть на [официальной странице](https://www.wireguard.com/install/)
-
-На локальной машине (например, на ноутбуке) создаём текстовый файл с конфигом клиента:
-
-```bash
-vim user_wb.conf
-```
-
-```conf title="user_wb.conf"
-[Interface]
-PrivateKey = <CLIENT-PRIVATE-KEY>
-Address = 10.0.0.2/32
-DNS = 8.8.8.8
-
-[Peer]
-PublicKey = <SERVER-PUBKEY>
-Endpoint = <SERVER-IP>:51830
-AllowedIPs = 0.0.0.0/0
-PersistentKeepalive = 20
-```
-
-**Здесь:**
-
-- `<CLIENT-PRIVATE-KEY> `заменяем на приватный ключ клиента, то есть содержимое файла `/etc/wireguard/user_privatekey` на сервере.
-- `<SERVER-PUBKEY>` заменяем на публичный ключ сервера, то есть на содержимое файла `/etc/wireguard/publickey `на сервере.
-- `<SERVER-IP>` заменяем на IP сервера.
-
-Этот файл открываем в Wireguard клиенте (есть для всех операционных систем, в том числе мобильных) — и жмем в клиенте кнопку подключения.
 
 ## Links
 
