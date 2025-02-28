@@ -207,6 +207,14 @@ ffmpeg -i audio.opus -i video.webm  -c copy mix_video.webm
 
 Если при этом не будет происходить конвертации форматов следует добавить опцию `-c copy`, так склейка будет проходить быстрей.
 
+## Добавление субтитров
+
+Пример с добавлением нескольких субтитров в `mp4` файл. Следует добавить, что для файлов `mp4` для добавления подходят только субтитры в формате `srt`.
+
+```bash
+ffmpeg -i ./"$file".mp4 -f srt -i ./"$file".en.srt -f srt -i ./"$file".ru-en.srt -map 0:0 -map 0:1 -map 1:0 -map 2:0 -c:v copy -c:a copy -c:s mov_text -metadata:s:s:0 language=en -metadata:s:s:0 title="English" -metadata:s:s:1 language=ru -metadata:s:s:1 title="Русский" -metadata title="An English Lesson about tools" an-english-lesson-about-tools.subs.mp4
+```
+
 ## Ссылки
 
 - [Как пользоваться ffmpeg](https://losst.pro/poleznye-komandy-ffmpeg)
