@@ -68,17 +68,25 @@ image: 'https://www.hwlibre.com/wp-content/uploads/2021/11/google-colaboratory.j
 %env zip_file=videos_dir.zip
 %env dest=/content/from_colab
 ```
-из `python` соответственно:
+Объявить из `python` можно стандартно:
 
 ```py
 import os
-os.environ['folder_name'] = "hello"
+os.environ['zip_file'] = "videos_dir.zip"
 ```
 
-Передаются соответсвенно:
+Получить соответсвенно:
 
 ```sh
 !mv "$zip_file" "$dest"
+```
+
+Получить в скрипте `python`:
+
+```py
+import os
+
+my_var = os.getenv("zip_file")
 ```
 
 ### Примонтировать Google Drive
