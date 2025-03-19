@@ -62,11 +62,17 @@ image: 'https://www.hwlibre.com/wp-content/uploads/2021/11/google-colaboratory.j
 
 ### Environment
 
-Переменные среды внутрь машины Google Colab передаются `%env <имя_переменой>`
+Переменные среды внутрь машины Google Colab декларируются `%env <имя_переменой>`
 
 ```sh
 %env zip_file=videos_dir.zip
 %env dest=/content/from_colab
+```
+из `python` соответственно:
+
+```py
+import os
+os.environ['folder_name'] = "hello"
 ```
 
 Передаются соответсвенно:
