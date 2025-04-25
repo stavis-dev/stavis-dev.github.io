@@ -15,18 +15,17 @@ image: "https://blog.wtigga.com/wp-content/uploads/2021/03/wireguard_logo.png"
 
 ## Установка
 
-обновляем систему:
-
-```bash
-apt update && apt upgrade -y
-```
-
-установка
+**Debian / Ubuntu**
 
 ```bash
 apt install -y wireguard
 ```
 
+**Arch / Manjaro**
+
+```bash
+pacman -S wireguard-tools
+```
 ## Настройка сервера
 
 Файлы настроек находятся в
@@ -134,7 +133,7 @@ systemctl restart wg-quick@wg0 && systemctl status wg-quick@wg0
 > Первым делом, само собой, следует установить клиенскую программу на локальный комп.
 > - Для windows - [Download Windows Installer](https://download.wireguard.com/windows-client/wireguard-installer.exe)
 > - Для android - [Download from Play Store](https://play.google.com/store/apps/details?id=com.wireguard.android)
-> - Arch linux - `sudo pacman -S wireguard-tools`
+> - Arch \ Manjaro linux - `sudo pacman -S wireguard-tools`
 > - Ubuntu - `sudo apt install wireguard`
 > - Остальные версии можно глянуть на [официальной странице](https://www.wireguard.com/install/)
 
@@ -180,6 +179,27 @@ sudo wg-quick up wg0
 ```bash
 sudo wg-quick down wg0
 ```
+
+:::info
+
+Если в файле `wg0.conf` прописаны отличные от системных DNS, то wireguard будет использовать для его изменения приложение `resolvconf`.  
+Если в системе резолвер не установлен то вылетит сообщение 
+
+```bash
+/usr/bin/wg-quick: line 32: resolvconf: command not found
+[#] ip link delete dev wg0
+```
+Если такое произошло ствим резолвер.
+
+```bash
+pacman -S systemd-resolvconf
+```
+
+Пакейдж весит всего 3.2 KB и является простым линком в систем Д.
+
+Ну а если не хочется устанавливать можно просто закоментировать решеткой `#` строку с параметрами DNS. 
+
+:::
 
 ## Дополнения
 
