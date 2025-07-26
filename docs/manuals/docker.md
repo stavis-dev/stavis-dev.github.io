@@ -215,7 +215,7 @@ traceroute pypi.org
 # в моем случае вывод не радует...
 
 ```
-
+```bash
 bash-5.0# traceroute pypi.org
 traceroute to pypi.org (151.101.192.223), 30 hops max, 46 byte packets
  1  172.17.0.1 (172.17.0.1)  0.022 ms  0.027 ms  0.016 ms
@@ -224,7 +224,7 @@ traceroute to pypi.org (151.101.192.223), 30 hops max, 46 byte packets
  4  *  *  *
  5  *  *  *
  6  *  *  *
-
+```
 что интересно ping проходит.
 
 
