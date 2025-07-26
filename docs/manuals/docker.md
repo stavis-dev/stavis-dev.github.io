@@ -133,6 +133,24 @@ docker run -d --rm --name firefox -e DISPLAY=$DISPLAY \
 
 ## Проблемы
 
+### Ошибка логина
+
+Столкнулся при попытке установки на сервер docker образа [immich](https://immich.app/).  
+Выполняя установку по мануалу со страницы [immich-docker-compose](https://immich.app/docs/install/docker-compose), во время запуска вылетела ошибка
+
+```
+error getting credentials - err: exit status 1, out: `Cannot autolaunch D-Bus without X11 $DISPLAY`
+```
+
+Как показало гугление в [ишьюзах](https://github.com/immich-app/immich/issues/1012) - проблема в docker-credential.
+И как эта проблема решается? Ну конечно же [костылями](https://stackoverflow.com/questions/51222996/docker-login-fails-on-a-server-with-no-x11-installed/52251706#52251706). А именно удалением этого "гребанного" хелпера. Ну мы ведь продвинутые юзеры. Сможем и без помощников. Короче...
+
+```bash
+sudo apt remove golang-docker-credential-helpers
+```
+
+Сносим и радуемся. После этого образы пулятся `docker pull` нормально.
+
 ### Нет соединение с интернетом из докер контейнера.
 
 [статья](https://odino.org/cannot-connect-to-the-internet-from-your-docker-containers/)
