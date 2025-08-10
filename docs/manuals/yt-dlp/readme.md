@@ -283,7 +283,7 @@ Use this awesome feature option
 
 :::
 
-Пример для скачивания `youtube` роликов через сервис [colab](https://colab.research.google.com/drive/1VYZOzBjoacWr7s9Al-J932byqaylRunW)
+Пример для скачивания `youtube` роликов через сервис colab
 
 ```shell title="yt-dlp.conf"
 
@@ -291,28 +291,48 @@ Use this awesome feature option
 # Formats
 
 # Best "mp4"
--f 22/bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best
+-f "22/bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best"
+# -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best"
 
 # Templafe folder
--P "./videos/"
+# -P "./videos/"
 # Save all videos under YouTube directory in your home directory
 -o %(title)s/%(title)s.%(ext)s
 
-# Embed datas to video
+# Втавляем ништяки в видосы
 --embed-chapters 
 --embed-thumbnail 
 --add-metadata
 
+# Если нужны данные из куки файла
+# --cookies "./cookies.txt"
+# --cookies-from-browser firefox
+# --username +1234567890
+# --username bhladla
+# --password somepassword
+
+# Если нужны субтитры
+--write-sub
+--write-auto-sub
+--sub-langs "en,ru"
+
+--write-info-json
+--write-annotations
+--write-description
+
+# Паузы между подключениями чтоб не попасть под бан HTTP Error 429: Too Many Requests
+--sleep-requests 2
+--sleep-interval 5
+
 # Convert thumbnails to jpg
 --convert-thumbnails "jpg"
-
-# Save thumbnail with 'folder.jpg' name
 --write-thumbnail -o "thumbnail:%(title)s/folder.%(ext)s"
 
 # links
 # - [yt-dlp - репа](https://github.com/yt-dlp/yt-dlp)
 # - [yt-dlp - опции](https://github.com/yt-dlp/yt-dlp#usage-and-options)
 # - [yt-dlp - примеры](https://github.com/yt-dlp/yt-dlp#output-template-examples)
+
 ```
 
 ## links
