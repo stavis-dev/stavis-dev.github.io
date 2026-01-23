@@ -45,11 +45,13 @@ For exemple edit file:
 nvim $HOME/Library/Application\ Support/Code/User/settings.json
 ```
 
-**Linux**
+или, например через тот же `vscode` **Linux**
 
-```bash
-nvim $HOME/.config/Code/User/settings.json
+```bash title="ключ -n открывает приложение в новом окне"
+code -n $HOME/.config/Code/User/settings.json
 ```
+
+`-n` - открывает приложение в новом окне
 
 ### Отключение всплывающих подсказок
 
@@ -66,7 +68,7 @@ nvim $HOME/.config/Code/User/settings.json
 
 ### Вертикальная полоса ограничитель символов
 
-```js
+```js title="~/.config/Code/User/snippets/python.json"
 "editor.rulers": [80,120],
 ```
 
