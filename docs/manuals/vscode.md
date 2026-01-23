@@ -39,8 +39,16 @@ Here are 2 ways to reach that global `settings.json` file.
 You can add the settings to this file (may be given by a extension) and make all of these settings global.
 For exemple edit file:
 
+**macOS**
+
 ```bash
 nvim $HOME/Library/Application\ Support/Code/User/settings.json
+```
+
+**Linux**
+
+```bash
+nvim $HOME/.config/Code/User/settings.json
 ```
 
 ### Отключение всплывающих подсказок
@@ -56,7 +64,22 @@ nvim $HOME/Library/Application\ Support/Code/User/settings.json
 "editor.hover.enabled": false,
 ```
 
-### Снипет ifmain
+### Вертикальная полоса ограничитель символов
+
+```js
+"editor.rulers": [80,120],
+```
+
+Так же можно устанавить цвет линии Например красный: `"#ff4081"`
+
+```js
+"workbench.colorCustomizations": {
+  "editorRuler.foreground": "#ff4081"
+  },
+```
+## Снипеты
+
+Для снипетов в VSCode используется **другой** файл!!!
 
 In vscode, `File` -> `Preferences` -> `User Snippets`.  
 Type `py` and choose **python**. A json file will open
@@ -67,6 +90,8 @@ on Unix sistems:
 ```bash
 nvim $HOME/.config/Code/User/snippets/python.json
 ```
+
+### Снипет ifmain
 
 Paste all or the specific snippets you want in the file and save
 `Ctrl+Shift+P`
@@ -82,18 +107,4 @@ This is the default main snippet:
         "body": ["if __name__ == \"__main__\":", "    ${1:pass}"],
         "description": "Code snippet for a `if __name__ == \"__main__\": ...` block"
     },
-```
-
-### Вертикальная полоса ограничитель символов
-
-```js
-"editor.rulers": [80,120],
-```
-
-Так же можно устанавить цвет линии Например красный: `"#ff4081"`
-
-```js
-"workbench.colorCustomizations": {
-  "editorRuler.foreground": "#ff4081"
-  },
 ```
