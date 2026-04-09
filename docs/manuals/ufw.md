@@ -7,12 +7,13 @@ description: "Базовая настройка фаервола ufw на сер
 tags: ["ufw", "config", "manual"]
 
 ---
+**UFW (Uncomplicated Firewall)** — это не самостоятельный файрвол, а удобная надстройка (frontend) над сетевыми фильтрами Linux (netfilter). Must-have - инструмент который обязан стоять на абсолютно любом сервере (ИМХО).
 
-## 1. Начало
+## 0. Начало
 
-Подразумевается что на сервере настроен SSH Вход по ключам, кастомный порт и отключен вход по паролю Как это сделать читать в [статье](https://stavis-dev.github.io/blog/2023/08/24/ssh-config/). 
+Подразумевается, что на сервере настроен SSH-вход по ключам, кастомный порт и отключен вход по паролю. Как это сделать читать в [статье](https://stavis-dev.github.io/blog/2023/08/24/ssh-config/). 
 
-## 2. Настройка UFW (Uncomplicated Firewall)
+## 1. Настройка UFW (Uncomplicated Firewall)
 
 ### Включаем базовые политики (Запретить всё входящее, разрешить исходящее):
 ```bash
@@ -35,7 +36,7 @@ vim /etc/ufw/before.rules
 
 Находим блоки правил `icmp` выглядят они так:
 
-```bash
+```bash title="/etc/ufw/before.rules"
 # ok icmp codes for INPUT  
 -A ufw-before-input -p icmp --icmp-type destination-unreachable -j ACCEPT  
 -A ufw-before-input -p icmp --icmp-type time-exceeded -j ACCEPT  
@@ -51,7 +52,7 @@ vim /etc/ufw/before.rules
 
 И заменяем этими:
 
-```bash
+```bash title="/etc/ufw/before.rules"
 # ok icmp codes for INPUT
 -A ufw-before-input -p icmp --icmp-type destination-unreachable -j DROP
 -A ufw-before-input -p icmp --icmp-type time-exceeded -j DROP
@@ -81,7 +82,7 @@ sudo ufw enable
 ufw status verbose
 ```
 
-## 3. Проверка результата
+## 2. Проверка результата
 
 ### Должно отображаться:
 ```
