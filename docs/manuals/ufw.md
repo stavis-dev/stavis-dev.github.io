@@ -7,7 +7,7 @@ description: "Базовая настройка фаервола ufw на сер
 tags: ["ufw", "config", "manual"]
 
 ---
-**UFW (Uncomplicated Firewall)** — это не самостоятельный файрвол, а удобная надстройка (frontend) над сетевыми фильтрами Linux (netfilter). Must-have - инструмент который обязан стоять на абсолютно любом сервере (ИМХО).
+**UFW (Uncomplicated Firewall)** — это не самостоятельный файрвол, а удобная надстройка (frontend) над сетевыми фильтрами Linux (netfilter). Must-have - инструмент который обязан быть на абсолютно любом сервере (ИМХО).
 
 ## 0. Начало
 
@@ -29,6 +29,10 @@ ufw limit proto tcp from any to any port 1234 comment 'SSH rate limit'
 Внимание: `port 1234` сменить на свой. Установленный для входа
 
 ### Блокируем ответ на ping (ICMP Echo Request):
+
+Выбирайте любой из вариантов.
+
+**Вариант мой** - параноидальный, блокирует ping и все ICMP:
 
 ```bash
 vim /etc/ufw/before.rules
@@ -67,6 +71,8 @@ vim /etc/ufw/before.rules
 -A ufw-before-forward -p icmp --icmp-type echo-request -j DROP
 ```
 
+
+**Вариант мягкий** - скрываем только пинг.
 
 ```bash
 sudo ufw deny proto icmp from any to any type echo-request
