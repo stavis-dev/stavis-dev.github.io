@@ -66,6 +66,11 @@ sudo pacman -Rs $(pacman -Qdtq)
 ```bash
 sudo pacman -Syu
 ```
+Иногда полезно проверить версию пакета перед обновлением. Используем ключи `-Qi`
+
+```bash
+pacman -Qi visual-studio-code-bin
+```
 
 ## Поиск в pacman
 
