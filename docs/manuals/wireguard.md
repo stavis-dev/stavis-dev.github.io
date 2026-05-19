@@ -201,6 +201,14 @@ pacman -S systemd-resolvconf
 
 :::
 
+### Автозапуск
+
+Для автозапуска wireguard, запускаем нужный конфиг через `systemctl`
+
+```bash
+sudo systemctl enable wg-quick@wg0
+```
+
 ## Дополнения
 
 ### lswg
