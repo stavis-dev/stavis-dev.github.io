@@ -89,10 +89,16 @@ echo public_key_string >> ~/.ssh/authorized_keys
 
 ## Перезапуск сервиса
 
-На **Ubuntu / Debian**:
+На **Debian / Ubuntu (до v 22.10) **:
 
 ```bash
 sudo service ssh restart
+```
+
+На **Ubuntu (v 22.10 и выше) **:
+
+```bash
+sudo systemctl daemon-reload && sudo systemctl restart ssh.socket
 ```
 
 **CentOS/Fedora/Manjaro** этот демон носит имя `sshd`:
